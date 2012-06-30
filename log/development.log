@@ -1594,3 +1594,71 @@ Compilation failed in require at (eval 252) line 1.
 [Sat Jun 30 17:29:08 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
 [Sat Jun 30 17:29:08 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
 [Sat Jun 30 17:29:08 2012] [debug] 200 OK (0.001865s, 536.193/s).
+[Sat Jun 30 18:34:23 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 18:34:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:34:24 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:34:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:34:24 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 18:34:24 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 18:34:24 2012] [debug] 200 OK (0.018016s, 55.506/s).
+[Sat Jun 30 18:34:25 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:34:25 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:34:25 2012] [debug] 200 OK (0.001410s, 709.220/s).
+[Sat Jun 30 18:56:48 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:56:48 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:56:48 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 18:56:48 2012] [debug] 302 Found (0.005251s, 190.440/s).
+[Sat Jun 30 18:56:52 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:56:52 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:56:52 2012] [error] Can't locate object method "new" via package "Mojo::UserAgent" at script/../lib/Fsq2mixi/Login.pm line 22.
+
+[Sat Jun 30 18:56:52 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 18:56:52 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 18:56:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 18:56:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 18:56:52 2012] [debug] 500 Internal Server Error (0.022426s, 44.591/s).
+[Sat Jun 30 18:56:52 2012] [error] Can't locate object method "new" via package "Mojo::UserAgent" at script/../lib/Fsq2mixi/Login.pm line 22.
+
+[Sat Jun 30 18:57:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:57:08 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:57:08 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:57:09 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 18:57:09 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 18:57:09 2012] [debug] 200 OK (1.429812s, 0.699/s).
+[Sat Jun 30 18:57:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:57:44 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:57:44 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:57:45 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 18:57:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 18:57:45 2012] [debug] 200 OK (1.387013s, 0.721/s).
+[Sat Jun 30 18:58:10 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:58:10 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:58:10 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:58:11 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 18:58:11 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 18:58:11 2012] [debug] 200 OK (1.359519s, 0.736/s).
+[Sat Jun 30 18:59:21 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 18:59:21 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 18:59:21 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 18:59:23 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 18:59:23 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 18:59:23 2012] [debug] 200 OK (1.366142s, 0.732/s).
+[Sat Jun 30 19:00:04 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:00:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 19:00:04 2012] [debug] 302 Found (0.002669s, 374.672/s).
+[Sat Jun 30 19:00:05 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:00:05 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 19:00:05 2012] [debug] 302 Found (0.000709s, 1410.437/s).
+[Sat Jun 30 19:00:37 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:00:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 19:00:38 2012] [debug] 200 OK (1.423423s, 0.703/s).
+[Sat Jun 30 19:07:16 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:09:41 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:09:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:09:41 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 19:09:41 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 19:09:41 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 19:09:41 2012] [debug] 200 OK (0.024366s, 41.041/s).
+[Sat Jun 30 19:09:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:09:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 19:09:42 2012] [debug] 200 OK (0.001624s, 615.764/s).
