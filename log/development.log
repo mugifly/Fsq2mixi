@@ -1847,3 +1847,1478 @@ Compilation failed in require at (eval 265) line 1.
 [Sat Jun 30 21:12:17 2012] [debug] Template "not_found.development.html.ep" not found.
 [Sat Jun 30 21:12:17 2012] [debug] Template "not_found.html.ep" not found.
 [Sat Jun 30 21:12:17 2012] [debug] 404 Not Found (0.006383s, 156.666/s).
+[Sat Jun 30 21:24:58 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:25:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:25:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:25:00 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:25:00 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:25:00 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:25:00 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:25:00 2012] [debug] 404 Not Found (0.014699s, 68.032/s).
+[Sat Jun 30 21:29:12 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:29:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:29:24 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:24 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:24 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:24 2012] [debug] 404 Not Found (0.016575s, 60.332/s).
+[Sat Jun 30 21:29:25 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:25 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:25 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:25 2012] [debug] 404 Not Found (0.007357s, 135.925/s).
+[Sat Jun 30 21:29:38 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:29:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:38 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:38 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:38 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:38 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:38 2012] [debug] 404 Not Found (0.014859s, 67.299/s).
+[Sat Jun 30 21:29:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:29:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:44 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:44 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:44 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:44 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:29:44 2012] [debug] 404 Not Found (0.015108s, 66.190/s).
+[Sat Jun 30 21:29:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:44 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:44 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:44 2012] [debug] 404 Not Found (0.005421s, 184.468/s).
+[Sat Jun 30 21:29:45 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:29:45 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:29:45 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:29:45 2012] [debug] 404 Not Found (0.007499s, 133.351/s).
+[Sat Jun 30 21:30:51 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:30:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:30:54 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:30:54 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:30:54 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:30:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:30:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:30:54 2012] [debug] 404 Not Found (0.020344s, 49.155/s).
+[Sat Jun 30 21:30:55 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:30:55 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:30:55 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:30:55 2012] [debug] 404 Not Found (0.005159s, 193.836/s).
+[Sat Jun 30 21:31:02 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:31:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:31:02 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:31:02 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:31:02 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:31:02 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:31:02 2012] [debug] 404 Not Found (0.014521s, 68.866/s).
+[Sat Jun 30 21:32:33 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:32:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:32:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:32:36 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:32:36 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:32:36 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:32:36 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:32:36 2012] [debug] 404 Not Found (0.015190s, 65.833/s).
+[Sat Jun 30 21:32:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:32:38 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:32:38 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:32:38 2012] [debug] 404 Not Found (0.007151s, 139.841/s).
+[Sat Jun 30 21:32:43 2012] [debug] GET /a (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:32:43 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:32:43 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:32:43 2012] [debug] 404 Not Found (0.004944s, 202.265/s).
+[Sat Jun 30 21:32:45 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:32:45 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:32:45 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:32:45 2012] [debug] 404 Not Found (0.006089s, 164.231/s).
+[Sat Jun 30 21:33:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:33:12 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:12 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:33:12 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:33:12 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:12 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:12 2012] [debug] 404 Not Found (0.014415s, 69.372/s).
+[Sat Jun 30 21:33:12 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:12 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:33:12 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:33:12 2012] [debug] 404 Not Found (0.006906s, 144.802/s).
+[Sat Jun 30 21:33:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:33:36 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:36 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 21:33:36 2012] [error] Fsq2mixi/User.pm did not return a true value at (eval 265) line 1.
+
+[Sat Jun 30 21:33:36 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 21:33:36 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 21:33:36 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:36 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:36 2012] [debug] 500 Internal Server Error (0.020515s, 48.745/s).
+[Sat Jun 30 21:33:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:33:45 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:45 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 21:33:45 2012] [error] Fsq2mixi/User.pm did not return a true value at (eval 265) line 1.
+
+[Sat Jun 30 21:33:45 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 21:33:45 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 21:33:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:33:45 2012] [debug] 500 Internal Server Error (0.020247s, 49.390/s).
+[Sat Jun 30 21:33:46 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:46 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 21:33:46 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 21:33:46 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 21:33:46 2012] [debug] 200 OK (0.016638s, 60.103/s).
+[Sat Jun 30 21:33:48 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:33:48 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 21:33:48 2012] [debug] 200 OK (0.001654s, 604.595/s).
+[Sat Jun 30 21:34:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:34:24 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:34:24 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:34:24 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:34:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:34:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:34:24 2012] [debug] 404 Not Found (0.014519s, 68.875/s).
+[Sat Jun 30 21:34:25 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:34:25 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:34:25 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:34:25 2012] [debug] 404 Not Found (0.005673s, 176.274/s).
+[Sat Jun 30 21:34:25 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:34:25 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:34:25 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:34:25 2012] [debug] 404 Not Found (0.007533s, 132.749/s).
+[Sat Jun 30 21:34:26 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:34:26 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:34:26 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:34:26 2012] [debug] 404 Not Found (0.004967s, 201.329/s).
+[Sat Jun 30 21:34:27 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:34:27 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:34:27 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:34:27 2012] [debug] 404 Not Found (0.004979s, 200.844/s).
+[Sat Jun 30 21:36:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:36:53 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:36:53 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:36:53 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:36:53 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:36:53 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:36:53 2012] [debug] 404 Not Found (0.014038s, 71.235/s).
+[Sat Jun 30 21:36:54 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:36:54 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:36:54 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:36:54 2012] [debug] 404 Not Found (0.006733s, 148.522/s).
+[Sat Jun 30 21:36:55 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:36:55 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:36:55 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:36:55 2012] [debug] 404 Not Found (0.005218s, 191.644/s).
+[Sat Jun 30 21:36:55 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:36:55 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:36:55 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:36:55 2012] [debug] 404 Not Found (0.004637s, 215.657/s).
+[Sat Jun 30 21:37:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:37:05 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:37:05 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:37:05 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:37:05 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:37:05 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:37:05 2012] [debug] 404 Not Found (0.014837s, 67.399/s).
+[Sat Jun 30 21:37:05 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:37:05 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:37:05 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:37:05 2012] [debug] 404 Not Found (0.005359s, 186.602/s).
+[Sat Jun 30 21:37:16 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:37:16 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:37:16 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:37:16 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:37:16 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:37:16 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:37:16 2012] [debug] 404 Not Found (0.018981s, 52.684/s).
+[Sat Jun 30 21:39:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:39:52 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:39:52 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:39:52 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:39:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:39:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:39:52 2012] [debug] 404 Not Found (0.015808s, 63.259/s).
+[Sat Jun 30 22:35:50 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:35:50 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:50 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:50 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:50 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:35:50 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:35:50 2012] [debug] 404 Not Found (0.014890s, 67.159/s).
+[Sat Jun 30 22:35:51 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:51 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:51 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:51 2012] [debug] 404 Not Found (0.005589s, 178.923/s).
+[Sat Jun 30 22:35:53 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:53 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:53 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:53 2012] [debug] 404 Not Found (0.005036s, 198.570/s).
+[Sat Jun 30 22:35:53 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:53 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:53 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:53 2012] [debug] 404 Not Found (0.005499s, 181.851/s).
+[Sat Jun 30 22:35:54 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:54 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:54 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:54 2012] [debug] 404 Not Found (0.007759s, 128.883/s).
+[Sat Jun 30 22:35:57 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:35:57 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:35:57 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:35:57 2012] [debug] 404 Not Found (0.005312s, 188.253/s).
+[Sat Jun 30 22:37:17 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:37:17 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:17 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:17 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:17 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:17 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:17 2012] [debug] 404 Not Found (0.014805s, 67.545/s).
+[Sat Jun 30 22:37:18 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:18 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:18 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:18 2012] [debug] 404 Not Found (0.005958s, 167.842/s).
+[Sat Jun 30 22:37:19 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:19 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:19 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:19 2012] [debug] 404 Not Found (0.007118s, 140.489/s).
+[Sat Jun 30 22:37:20 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:20 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:20 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:20 2012] [debug] 404 Not Found (0.004861s, 205.719/s).
+[Sat Jun 30 22:37:20 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:20 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:20 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:21 2012] [debug] 404 Not Found (0.008163s, 122.504/s).
+[Sat Jun 30 22:37:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:37:37 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:37 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:37 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:37 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:37 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:37 2012] [debug] 404 Not Found (0.014950s, 66.890/s).
+[Sat Jun 30 22:37:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:37:45 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:45 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:45 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:45 2012] [debug] 404 Not Found (0.014398s, 69.454/s).
+[Sat Jun 30 22:37:46 2012] [debug] GET /p (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:46 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:37:46 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:37:46 2012] [debug] 404 Not Found (0.006997s, 142.918/s).
+[Sat Jun 30 22:37:48 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:48 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:37:48 2012] [error] Fsq2mixi/User.pm did not return a true value at (eval 267) line 1.
+
+[Sat Jun 30 22:37:48 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:37:48 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:37:48 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:48 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:37:48 2012] [debug] 500 Internal Server Error (0.023720s, 42.159/s).
+[Sat Jun 30 22:37:49 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:49 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:37:49 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:37:49 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:37:49 2012] [debug] 200 OK (0.014324s, 69.813/s).
+[Sat Jun 30 22:37:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:50 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:37:50 2012] [debug] 200 OK (0.001706s, 586.166/s).
+[Sat Jun 30 22:37:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:37:52 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:37:52 2012] [debug] 200 OK (0.005070s, 197.239/s).
+[Sat Jun 30 22:39:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:39:07 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:07 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:07 2012] [error] Fsq2mixi/User.pm did not return a true value at (eval 265) line 1.
+
+[Sat Jun 30 22:39:07 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:39:07 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:39:07 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:07 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:07 2012] [debug] 500 Internal Server Error (0.020788s, 48.105/s).
+[Sat Jun 30 22:39:09 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:09 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:09 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:39:09 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:39:09 2012] [debug] 200 OK (0.011689s, 85.551/s).
+[Sat Jun 30 22:39:09 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:09 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:09 2012] [debug] 200 OK (0.002539s, 393.856/s).
+[Sat Jun 30 22:39:11 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:11 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:11 2012] [debug] 200 OK (0.001779s, 562.114/s).
+[Sat Jun 30 22:39:12 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:12 2012] [debug] Dispatching "logout".
+[Sat Jun 30 22:39:12 2012] [debug] logout does not exist, maybe a typo?
+[Sat Jun 30 22:39:12 2012] [debug] Template "logout.html.ep" not found.
+[Sat Jun 30 22:39:12 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:39:12 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:39:12 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:12 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:12 2012] [debug] 404 Not Found (0.017715s, 56.449/s).
+[Sat Jun 30 22:39:33 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:39:33 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:33 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:39:33 2012] [error] Fsq2mixi/Logout.pm did not return a true value at (eval 265) line 1.
+
+[Sat Jun 30 22:39:33 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:39:33 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:39:33 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:33 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:33 2012] [debug] 500 Internal Server Error (0.020134s, 49.667/s).
+[Sat Jun 30 22:39:41 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:39:41 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:41 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:39:41 2012] [debug] 302 Found (0.001897s, 527.148/s).
+[Sat Jun 30 22:39:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:41 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:41 2012] [error] Fsq2mixi/User.pm did not return a true value at (eval 266) line 1.
+
+[Sat Jun 30 22:39:41 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:39:41 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:39:41 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:41 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:39:41 2012] [debug] 500 Internal Server Error (0.020442s, 48.919/s).
+[Sat Jun 30 22:39:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:39:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:52 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:52 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:39:52 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:39:52 2012] [debug] 200 OK (0.014832s, 67.422/s).
+[Sat Jun 30 22:39:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:53 2012] [debug] 200 OK (0.002250s, 444.444/s).
+[Sat Jun 30 22:39:53 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:53 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:39:53 2012] [debug] 302 Found (0.001332s, 750.751/s).
+[Sat Jun 30 22:39:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:39:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:39:53 2012] [debug] 200 OK (0.001448s, 690.608/s).
+[Sat Jun 30 22:40:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:40:12 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:12 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:12 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:40:12 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:40:12 2012] [debug] 200 OK (0.016191s, 61.763/s).
+[Sat Jun 30 22:40:13 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:13 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:13 2012] [debug] 200 OK (0.001899s, 526.593/s).
+[Sat Jun 30 22:40:14 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:14 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:14 2012] [debug] 200 OK (0.002073s, 482.393/s).
+[Sat Jun 30 22:40:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:40:25 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:25 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:26 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:40:26 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:40:26 2012] [debug] 200 OK (0.017145s, 58.326/s).
+[Sat Jun 30 22:40:26 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:26 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:26 2012] [debug] 200 OK (0.002261s, 442.282/s).
+[Sat Jun 30 22:40:57 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:57 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:40:57 2012] [debug] 302 Found (0.001230s, 813.008/s).
+[Sat Jun 30 22:40:57 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:40:57 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:40:57 2012] [debug] 200 OK (0.001541s, 648.929/s).
+[Sat Jun 30 22:43:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:43:04 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:04 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:04 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:43:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:43:04 2012] [debug] 200 OK (0.015942s, 62.727/s).
+[Sat Jun 30 22:43:06 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:06 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:43:06 2012] [error] Fsq2mixi/Logout.pm did not return a true value at (eval 268) line 1.
+
+[Sat Jun 30 22:43:06 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:43:06 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:43:06 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:43:06 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:43:06 2012] [debug] 500 Internal Server Error (0.022039s, 45.374/s).
+[Sat Jun 30 22:43:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:43:14 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:14 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:43:14 2012] [debug] 302 Found (0.001940s, 515.464/s).
+[Sat Jun 30 22:43:14 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:14 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:14 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:43:14 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:43:14 2012] [debug] 200 OK (0.014272s, 70.067/s).
+[Sat Jun 30 22:43:16 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:16 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:43:16 2012] [debug] 302 Found (0.001151s, 868.810/s).
+[Sat Jun 30 22:43:16 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:16 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:16 2012] [debug] 200 OK (0.002917s, 342.818/s).
+[Sat Jun 30 22:43:17 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:17 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:17 2012] [debug] 200 OK (0.001861s, 537.346/s).
+[Sat Jun 30 22:43:17 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:17 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:17 2012] [debug] 200 OK (0.001910s, 523.560/s).
+[Sat Jun 30 22:43:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:43:18 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:43:18 2012] [debug] 200 OK (0.001792s, 558.036/s).
+[Sat Jun 30 22:44:00 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:44:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:44:00 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:44:00 2012] [debug] 200 OK (0.004169s, 239.866/s).
+[Sat Jun 30 22:44:02 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:44:02 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:44:02 2012] [debug] 200 OK (0.001995s, 501.253/s).
+[Sat Jun 30 22:44:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:44:05 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:44:05 2012] [debug] 200 OK (0.001670s, 598.802/s).
+[Sat Jun 30 22:44:27 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:44:27 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:44:27 2012] [debug] 302 Found (0.001372s, 728.863/s).
+[Sat Jun 30 22:44:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:44:27 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:44:27 2012] [debug] 200 OK (0.001528s, 654.450/s).
+[Sat Jun 30 22:45:04 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:45:04 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:45:04 2012] [debug] 200 OK (0.002178s, 459.137/s).
+[Sat Jun 30 22:45:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:45:59 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:45:59 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:45:59 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:45:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:45:59 2012] [debug] 200 OK (0.015188s, 65.841/s).
+[Sat Jun 30 22:46:00 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:00 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:00 2012] [debug] 302 Found (0.001585s, 630.915/s).
+[Sat Jun 30 22:46:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:00 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:00 2012] [debug] 200 OK (0.001899s, 526.593/s).
+[Sat Jun 30 22:46:01 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:01 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:01 2012] [debug] 302 Found (0.000657s, 1522.070/s).
+[Sat Jun 30 22:46:01 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:01 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:01 2012] [debug] 200 OK (0.002909s, 343.761/s).
+[Sat Jun 30 22:46:02 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:02 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:02 2012] [debug] 302 Found (0.000680s, 1470.588/s).
+[Sat Jun 30 22:46:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:02 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:02 2012] [debug] 200 OK (0.001736s, 576.037/s).
+[Sat Jun 30 22:46:02 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:02 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:02 2012] [debug] 302 Found (0.000866s, 1154.734/s).
+[Sat Jun 30 22:46:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:02 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:02 2012] [debug] 200 OK (0.002733s, 365.898/s).
+[Sat Jun 30 22:46:05 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 22:46:06 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:46:06 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:06 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:06 2012] [debug] 302 Found (0.001915s, 522.193/s).
+[Sat Jun 30 22:46:06 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:06 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:06 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:46:06 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:46:06 2012] [debug] 200 OK (0.012369s, 80.847/s).
+[Sat Jun 30 22:46:09 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:09 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:09 2012] [debug] 302 Found (0.000568s, 1760.563/s).
+[Sat Jun 30 22:46:09 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:09 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:09 2012] [debug] 200 OK (0.001562s, 640.205/s).
+[Sat Jun 30 22:46:27 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:46:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:27 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:27 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:46:27 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:46:27 2012] [debug] 200 OK (0.015365s, 65.083/s).
+[Sat Jun 30 22:46:28 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:28 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:28 2012] [debug] 302 Found (0.001505s, 664.452/s).
+[Sat Jun 30 22:46:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:28 2012] [debug] 200 OK (0.001401s, 713.776/s).
+[Sat Jun 30 22:46:41 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:46:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:41 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:41 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:46:41 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:46:41 2012] [debug] 200 OK (0.015272s, 65.479/s).
+[Sat Jun 30 22:46:43 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:43 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:43 2012] [debug] 302 Found (0.003006s, 332.668/s).
+[Sat Jun 30 22:46:43 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:43 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:43 2012] [debug] 200 OK (0.001503s, 665.336/s).
+[Sat Jun 30 22:46:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:46:51 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:51 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:51 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:46:51 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:46:51 2012] [debug] 200 OK (0.023094s, 43.301/s).
+[Sat Jun 30 22:46:52 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:52 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:46:52 2012] [debug] 302 Found (0.001171s, 853.971/s).
+[Sat Jun 30 22:46:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:46:52 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:46:52 2012] [debug] 200 OK (0.001684s, 593.824/s).
+[Sat Jun 30 22:47:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:47:01 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:01 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:01 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:47:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:47:01 2012] [debug] 200 OK (0.017450s, 57.307/s).
+[Sat Jun 30 22:47:03 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:03 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:47:03 2012] [debug] 302 Found (0.001161s, 861.326/s).
+[Sat Jun 30 22:47:03 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:03 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:03 2012] [debug] 200 OK (0.001603s, 623.830/s).
+[Sat Jun 30 22:47:03 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:03 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:47:03 2012] [debug] 302 Found (0.000985s, 1015.228/s).
+[Sat Jun 30 22:47:03 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:03 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:03 2012] [debug] 200 OK (0.002346s, 426.257/s).
+[Sat Jun 30 22:47:19 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:47:19 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:19 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:19 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:47:19 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:47:19 2012] [debug] 200 OK (0.016287s, 61.399/s).
+[Sat Jun 30 22:47:21 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:21 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:47:21 2012] [debug] 302 Found (0.001539s, 649.773/s).
+[Sat Jun 30 22:47:21 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:21 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:21 2012] [debug] 200 OK (0.002260s, 442.478/s).
+[Sat Jun 30 22:47:50 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:47:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:50 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:50 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:47:50 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:47:50 2012] [debug] 200 OK (0.015638s, 63.947/s).
+[Sat Jun 30 22:47:51 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:51 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:51 2012] [debug] 200 OK (0.002178s, 459.137/s).
+[Sat Jun 30 22:47:53 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:53 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:47:53 2012] [debug] 302 Found (0.001121s, 892.061/s).
+[Sat Jun 30 22:47:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:53 2012] [debug] 200 OK (0.002093s, 477.783/s).
+[Sat Jun 30 22:47:53 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:53 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:47:53 2012] [debug] 302 Found (0.001221s, 819.001/s).
+[Sat Jun 30 22:47:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:47:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:47:53 2012] [debug] 200 OK (0.002291s, 436.491/s).
+[Sat Jun 30 22:48:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:48:29 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:48:29 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:48:29 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:48:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:48:29 2012] [debug] 200 OK (0.016956s, 58.976/s).
+[Sat Jun 30 22:48:30 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:48:30 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:48:30 2012] [debug] 200 OK (0.002094s, 477.555/s).
+[Sat Jun 30 22:49:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:49:26 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:26 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:49:26 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:49:26 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:49:26 2012] [debug] 200 OK (0.014687s, 68.087/s).
+[Sat Jun 30 22:49:28 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:28 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:49:28 2012] [debug] 302 Found (0.001194s, 837.521/s).
+[Sat Jun 30 22:49:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:49:28 2012] [debug] 200 OK (0.002244s, 445.633/s).
+[Sat Jun 30 22:49:30 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:30 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:49:30 2012] [debug] 302 Found (0.000655s, 1526.718/s).
+[Sat Jun 30 22:49:30 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:30 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:49:30 2012] [debug] 200 OK (0.001559s, 641.437/s).
+[Sat Jun 30 22:49:30 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:30 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:49:30 2012] [debug] 302 Found (0.000971s, 1029.866/s).
+[Sat Jun 30 22:49:30 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:30 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:49:30 2012] [debug] 200 OK (0.002395s, 417.537/s).
+[Sat Jun 30 22:49:36 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:36 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:49:36 2012] [debug] 302 Found (0.000826s, 1210.654/s).
+[Sat Jun 30 22:49:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:49:36 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:49:36 2012] [debug] 200 OK (0.001494s, 669.344/s).
+[Sat Jun 30 22:50:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:50:54 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:50:54 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:50:54 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:50:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:50:54 2012] [debug] 200 OK (0.015025s, 66.556/s).
+[Sat Jun 30 22:50:55 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:50:55 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:50:55 2012] [debug] 302 Found (0.001185s, 843.882/s).
+[Sat Jun 30 22:50:55 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:50:55 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:50:55 2012] [debug] 200 OK (0.001756s, 569.476/s).
+[Sat Jun 30 22:51:42 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:51:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:42 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:42 2012] [error] Can't locate object method "redirect_to" via package "Mojo::Message::Response" at script/../lib/Fsq2mixi.pm line 61.
+
+[Sat Jun 30 22:51:42 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 22:51:42 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 22:51:42 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:51:42 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:51:42 2012] [debug] 500 Internal Server Error (0.025962s, 38.518/s).
+[Sat Jun 30 22:51:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:51:57 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.001013s, 987.167/s).
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000939s, 1064.963/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.001124s, 889.680/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000709s, 1410.437/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000903s, 1107.420/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000827s, 1209.190/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000553s, 1808.318/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000555s, 1801.802/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000555s, 1801.802/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000642s, 1557.632/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000598s, 1672.241/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000833s, 1200.480/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.001195s, 836.820/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000803s, 1245.330/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000639s, 1564.945/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000599s, 1669.449/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000600s, 1666.667/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.001150s, 869.565/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000740s, 1351.351/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000599s, 1669.449/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:51:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:51:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:51:57 2012] [debug] 302 Found (0.000591s, 1692.047/s).
+[Sat Jun 30 22:51:57 2012] [debug] Template "login.html.ep" not found.
+[Sat Jun 30 22:52:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.001361s, 734.754/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000640s, 1562.500/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000640s, 1562.500/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000646s, 1547.988/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000583s, 1715.266/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000669s, 1494.768/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000575s, 1739.130/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000581s, 1721.170/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000581s, 1721.170/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000583s, 1715.266/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000582s, 1718.213/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000591s, 1692.047/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000586s, 1706.485/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000609s, 1642.036/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000594s, 1683.502/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000574s, 1742.160/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000762s, 1312.336/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000919s, 1088.139/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000636s, 1572.327/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000602s, 1661.130/s).
+[Sat Jun 30 22:52:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:04 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:04 2012] [debug] 302 Found (0.000809s, 1236.094/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000662s, 1510.574/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000622s, 1607.717/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000717s, 1394.700/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000631s, 1584.786/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000622s, 1607.717/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000599s, 1669.449/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000601s, 1663.894/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000870s, 1149.425/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000852s, 1173.709/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000480s, 2083.333/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000483s, 2070.393/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000577s, 1733.102/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000767s, 1303.781/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000486s, 2057.613/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000477s, 2096.436/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000763s, 1310.616/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000482s, 2074.689/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.001107s, 903.342/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000800s, 1250.000/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000498s, 2008.032/s).
+[Sat Jun 30 22:52:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:05 2012] [debug] 302 Found (0.000625s, 1600.000/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000872s, 1146.789/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000641s, 1560.062/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.001077s, 928.505/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000651s, 1536.098/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000602s, 1661.130/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000567s, 1763.668/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000579s, 1727.116/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000568s, 1760.563/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000599s, 1669.449/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000589s, 1697.793/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000587s, 1703.578/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000591s, 1692.047/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000588s, 1700.680/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000639s, 1564.945/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000676s, 1479.290/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000668s, 1497.006/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000727s, 1375.516/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000739s, 1353.180/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000650s, 1538.462/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000628s, 1592.357/s).
+[Sat Jun 30 22:52:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:07 2012] [debug] 302 Found (0.000821s, 1218.027/s).
+[Sat Jun 30 22:52:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:52:29 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:52:29 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:52:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:52:29 2012] [debug] 200 OK (0.015082s, 66.304/s).
+[Sat Jun 30 22:52:31 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:31 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:52:31 2012] [debug] 302 Found (0.001353s, 739.098/s).
+[Sat Jun 30 22:52:31 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:31 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:52:31 2012] [debug] 200 OK (0.002072s, 482.625/s).
+[Sat Jun 30 22:52:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:52:33 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 22:52:33 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 22:52:33 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:52:33 2012] [debug] Rendering inline template.
+[Sat Jun 30 22:52:33 2012] [debug] 404 Not Found (0.015433s, 64.796/s).
+[Sat Jun 30 22:53:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:53:03 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:53:03 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 22:53:03 2012] [debug] 302 Found (0.002180s, 458.716/s).
+[Sat Jun 30 22:53:16 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:53:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 22:53:19 2012] [debug] Rendering template "login/foursquare_callback.html.ep".
+[Sat Jun 30 22:53:19 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:53:19 2012] [debug] 200 OK (2.521608s, 0.397/s).
+[Sat Jun 30 22:53:55 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:53:55 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:53:55 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:53:55 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:53:55 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:53:55 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:53:55 2012] [debug] 200 OK (0.017685s, 56.545/s).
+[Sat Jun 30 22:53:57 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:53:57 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:53:57 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:53:57 2012] [debug] 200 OK (0.002523s, 396.354/s).
+[Sat Jun 30 22:53:58 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:53:58 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:53:58 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:53:58 2012] [debug] 200 OK (0.002341s, 427.168/s).
+[Sat Jun 30 22:54:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:54:36 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:36 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:54:36 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 22:54:36 2012] [debug] 302 Found (0.003279s, 304.971/s).
+[Sat Jun 30 22:54:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:36 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:54:36 2012] [debug] 302 Found (0.000921s, 1085.776/s).
+[Sat Jun 30 22:54:36 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:36 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:54:36 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:54:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:54:36 2012] [debug] 200 OK (0.015736s, 63.549/s).
+[Sat Jun 30 22:54:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 22:54:37 2012] [debug] 302 Found (0.000961s, 1040.583/s).
+[Sat Jun 30 22:54:51 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:51 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 22:54:54 2012] [debug] 302 Found (3.055969s, 0.327/s).
+[Sat Jun 30 22:54:54 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:54:54 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:54:54 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 22:54:54 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 22:54:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:54:54 2012] [debug] 200 OK (0.007815s, 127.959/s).
+[Sat Jun 30 22:55:55 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:55:55 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:55:55 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:55:55 2012] [debug] 302 Found (0.006616s, 151.149/s).
+[Sat Jun 30 22:55:55 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:55:55 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:55:55 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:55:55 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:55:55 2012] [debug] 200 OK (0.014393s, 69.478/s).
+[Sat Jun 30 22:55:56 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:55:56 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:55:56 2012] [debug] 200 OK (0.002120s, 471.698/s).
+[Sat Jun 30 22:56:05 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:56:05 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:56:05 2012] [debug] 200 OK (0.002132s, 469.043/s).
+[Sat Jun 30 22:57:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:57:15 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:57:15 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:57:15 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:57:15 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:57:15 2012] [debug] 200 OK (0.016683s, 59.941/s).
+[Sat Jun 30 22:57:16 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:57:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:57:16 2012] [debug] 200 OK (0.001322s, 756.430/s).
+[Sat Jun 30 22:57:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:57:18 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:57:18 2012] [debug] 302 Found (0.001952s, 512.295/s).
+[Sat Jun 30 22:57:18 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:57:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:57:18 2012] [debug] 200 OK (0.001448s, 690.608/s).
+[Sat Jun 30 22:58:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 22:58:39 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:58:39 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:58:39 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 22:58:40 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 22:58:40 2012] [debug] 200 OK (0.015289s, 65.407/s).
+[Sat Jun 30 22:58:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:58:42 2012] [debug] Dispatching callback.
+[Sat Jun 30 22:58:42 2012] [debug] 302 Found (0.002091s, 478.240/s).
+[Sat Jun 30 22:58:42 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 22:58:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 22:58:42 2012] [debug] 200 OK (0.001251s, 799.361/s).
+[Sat Jun 30 23:00:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:00:45 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:45 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:00:45 2012] [debug] 302 Found (0.003126s, 319.898/s).
+[Sat Jun 30 23:00:45 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:45 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:00:45 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:00:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:00:45 2012] [debug] 200 OK (0.012843s, 77.863/s).
+[Sat Jun 30 23:00:48 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:48 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:00:48 2012] [debug] 200 OK (0.001749s, 571.755/s).
+[Sat Jun 30 23:00:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:00:57 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:57 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:00:57 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:00:57 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:00:57 2012] [debug] 200 OK (0.019249s, 51.951/s).
+[Sat Jun 30 23:00:59 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:59 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:00:59 2012] [debug] 302 Found (0.002129s, 469.704/s).
+[Sat Jun 30 23:00:59 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:00:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:00:59 2012] [debug] 200 OK (0.001327s, 753.580/s).
+[Sat Jun 30 23:03:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:03:20 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:03:20 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:03:20 2012] [error] Can't locate object method "next" via package "Fsq2mixi::DB::User::user" at script/../lib/Fsq2mixi.pm line 71.
+
+[Sat Jun 30 23:03:20 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:03:20 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:03:20 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:03:20 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:03:20 2012] [debug] 500 Internal Server Error (0.035192s, 28.416/s).
+[Sat Jun 30 23:04:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:04:03 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:04:03 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:04:03 2012] [debug] 302 Found (0.002038s, 490.677/s).
+[Sat Jun 30 23:04:03 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:04:03 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:04:03 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:04:03 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:04:03 2012] [debug] 200 OK (0.012874s, 77.676/s).
+[Sat Jun 30 23:04:07 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:04:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:04:07 2012] [debug] 302 Found (0.001428s, 700.280/s).
+[Sat Jun 30 23:04:07 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:04:07 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:04:07 2012] [debug] 200 OK (0.001352s, 739.645/s).
+[Sat Jun 30 23:05:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:05:04 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:05:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:05:04 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:05:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:05:04 2012] [debug] 200 OK (0.014204s, 70.403/s).
+[Sat Jun 30 23:05:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:05:05 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:05:05 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:05:05 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:05:05 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:05:05 2012] [debug] 200 OK (0.007505s, 133.245/s).
+[Sat Jun 30 23:05:07 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:05:07 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:05:07 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:05:07 2012] [debug] 200 OK (0.002811s, 355.745/s).
+[Sat Jun 30 23:05:28 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:05:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:05:28 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:05:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:05:28 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:05:28 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:05:28 2012] [debug] 200 OK (0.015789s, 63.335/s).
+[Sat Jun 30 23:05:30 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:05:30 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 23:05:30 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 23:05:30 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:05:30 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:05:30 2012] [debug] 404 Not Found (0.015234s, 65.643/s).
+[Sat Jun 30 23:09:46 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:09:46 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:09:46 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:09:46 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:09:46 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:09:46 2012] [debug] 200 OK (0.014909s, 67.074/s).
+[Sat Jun 30 23:09:47 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:09:47 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:09:47 2012] [debug] 200 OK (0.001970s, 507.614/s).
+[Sat Jun 30 23:09:49 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:09:49 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:09:49 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:09:49 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:09:49 2012] [error] Global symbol "$is_mixiLogin" requires explicit package name at (eval 270) line 6.
+syntax error at (eval 270) line 8, near "} else"
+syntax error at (eval 270) line 10, near "} $_M "
+Global symbol "$_M" requires explicit package name at (eval 270) line 10.
+Global symbol "$_M" requires explicit package name at (eval 270) line 11.
+Global symbol "$_M" requires explicit package name at (eval 270) line 12.
+Global symbol "$_M" requires explicit package name at (eval 270) line 12.
+Global symbol "$_M" requires explicit package name at (eval 270) line 12.
+Global symbol "$_M" requires explicit package name at (eval 270) line 13.
+Global symbol "$_M" requires explicit package name at (eval 270) line 13.
+syntax error at (eval 270) line 13, near "; }"
+(eval 270) has too many errors.
+
+[Sat Jun 30 23:09:49 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:09:49 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:09:49 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:09:49 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:09:49 2012] [debug] 500 Internal Server Error (0.024082s, 41.525/s).
+[Sat Jun 30 23:09:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:09:50 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:09:50 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:09:50 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:09:50 2012] [error] Global symbol "$is_mixiLogin" requires explicit package name at (eval 274) line 6.
+syntax error at (eval 274) line 8, near "} else"
+syntax error at (eval 274) line 10, near "} $_M "
+Global symbol "$_M" requires explicit package name at (eval 274) line 10.
+Global symbol "$_M" requires explicit package name at (eval 274) line 11.
+Global symbol "$_M" requires explicit package name at (eval 274) line 12.
+Global symbol "$_M" requires explicit package name at (eval 274) line 12.
+Global symbol "$_M" requires explicit package name at (eval 274) line 12.
+Global symbol "$_M" requires explicit package name at (eval 274) line 13.
+Global symbol "$_M" requires explicit package name at (eval 274) line 13.
+syntax error at (eval 274) line 13, near "; }"
+(eval 274) has too many errors.
+
+[Sat Jun 30 23:09:50 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:09:50 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:09:50 2012] [debug] 500 Internal Server Error (0.010608s, 94.268/s).
+[Sat Jun 30 23:10:15 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:10:15 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:10:15 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:10:15 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:10:15 2012] [error] Global symbol "$is_mixiLogin" requires explicit package name at (eval 276) line 6.
+syntax error at (eval 276) line 8, near "} else"
+syntax error at (eval 276) line 10, near "} $_M "
+Global symbol "$_M" requires explicit package name at (eval 276) line 10.
+Global symbol "$_M" requires explicit package name at (eval 276) line 11.
+Global symbol "$_M" requires explicit package name at (eval 276) line 12.
+Global symbol "$_M" requires explicit package name at (eval 276) line 12.
+Global symbol "$_M" requires explicit package name at (eval 276) line 12.
+Global symbol "$_M" requires explicit package name at (eval 276) line 13.
+Global symbol "$_M" requires explicit package name at (eval 276) line 13.
+syntax error at (eval 276) line 13, near "; }"
+(eval 276) has too many errors.
+
+[Sat Jun 30 23:10:15 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:10:15 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:10:15 2012] [debug] 500 Internal Server Error (0.010851s, 92.157/s).
+[Sat Jun 30 23:13:38 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:13:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:13:38 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:13:38 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:13:38 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:13:38 2012] [error] syntax error at (eval 267) line 8, near "} else"
+syntax error at (eval 267) line 10, near "} $_M "
+Global symbol "$_M" requires explicit package name at (eval 267) line 10.
+Global symbol "$_M" requires explicit package name at (eval 267) line 11.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+syntax error at (eval 267) line 13, near "; }"
+(eval 267) has too many errors.
+
+[Sat Jun 30 23:13:38 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:13:38 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:13:38 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:13:38 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:13:38 2012] [debug] 500 Internal Server Error (0.032029s, 31.222/s).
+[Sat Jun 30 23:13:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:13:59 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:13:59 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:13:59 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:13:59 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:13:59 2012] [error] syntax error at (eval 267) line 6, near "+ if"
+syntax error at (eval 267) line 8, near "} else"
+Global symbol "$_M" requires explicit package name at (eval 267) line 8.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 10.
+syntax error at (eval 267) line 10, near "; }"
+Global symbol "$_M" requires explicit package name at (eval 267) line 10.
+Global symbol "$_M" requires explicit package name at (eval 267) line 11.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+syntax error at (eval 267) line 13, near "; }"
+(eval 267) has too many errors.
+
+[Sat Jun 30 23:13:59 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:13:59 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:13:59 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:13:59 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:13:59 2012] [debug] 500 Internal Server Error (0.033307s, 30.024/s).
+[Sat Jun 30 23:14:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:14:00 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:14:00 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:14:00 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:14:00 2012] [error] syntax error at (eval 271) line 6, near "+ if"
+syntax error at (eval 271) line 8, near "} else"
+Global symbol "$_M" requires explicit package name at (eval 271) line 8.
+Global symbol "$_M" requires explicit package name at (eval 271) line 9.
+Global symbol "$_M" requires explicit package name at (eval 271) line 9.
+Global symbol "$_M" requires explicit package name at (eval 271) line 9.
+Global symbol "$_M" requires explicit package name at (eval 271) line 10.
+syntax error at (eval 271) line 10, near "; }"
+Global symbol "$_M" requires explicit package name at (eval 271) line 10.
+Global symbol "$_M" requires explicit package name at (eval 271) line 11.
+Global symbol "$_M" requires explicit package name at (eval 271) line 12.
+Global symbol "$_M" requires explicit package name at (eval 271) line 12.
+Global symbol "$_M" requires explicit package name at (eval 271) line 12.
+Global symbol "$_M" requires explicit package name at (eval 271) line 13.
+Global symbol "$_M" requires explicit package name at (eval 271) line 13.
+syntax error at (eval 271) line 13, near "; }"
+(eval 271) has too many errors.
+
+[Sat Jun 30 23:14:00 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:14:00 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:14:00 2012] [debug] 500 Internal Server Error (0.010578s, 94.536/s).
+[Sat Jun 30 23:14:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:14:54 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:14:54 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:14:54 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:14:54 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:14:54 2012] [error] syntax error at (eval 267) line 6, near "+ if"
+syntax error at (eval 267) line 8, near "} else"
+Global symbol "$_M" requires explicit package name at (eval 267) line 8.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 9.
+Global symbol "$_M" requires explicit package name at (eval 267) line 10.
+syntax error at (eval 267) line 10, near "; }"
+Global symbol "$_M" requires explicit package name at (eval 267) line 10.
+Global symbol "$_M" requires explicit package name at (eval 267) line 11.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 12.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+Global symbol "$_M" requires explicit package name at (eval 267) line 13.
+syntax error at (eval 267) line 13, near "; }"
+(eval 267) has too many errors.
+
+[Sat Jun 30 23:14:54 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 23:14:54 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 23:14:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:14:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 23:14:54 2012] [debug] 500 Internal Server Error (0.033184s, 30.135/s).
+[Sat Jun 30 23:16:14 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 23:16:17 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:16:17 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:16:17 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:16:17 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:16:17 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:16:17 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:16:17 2012] [debug] 200 OK (0.019800s, 50.505/s).
+[Sat Jun 30 23:16:20 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:16:20 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:16:20 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:16:20 2012] [debug] 200 OK (0.002126s, 470.367/s).
+[Sat Jun 30 23:16:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:16:35 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:16:35 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:16:35 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:16:35 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:16:35 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:16:35 2012] [debug] 200 OK (0.019777s, 50.564/s).
+[Sat Jun 30 23:17:27 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:17:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:17:27 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:17:27 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:17:27 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:17:27 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:17:27 2012] [debug] 200 OK (0.015953s, 62.684/s).
+[Sat Jun 30 23:17:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:17:28 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:17:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:17:28 2012] [debug] 200 OK (0.002406s, 415.628/s).
+[Sat Jun 30 23:17:46 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:17:46 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:17:46 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:17:46 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:17:46 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:17:46 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:17:46 2012] [debug] 200 OK (0.020954s, 47.724/s).
+[Sat Jun 30 23:17:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:17:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:17:53 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:17:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:17:53 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:17:53 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:17:53 2012] [debug] 200 OK (0.015940s, 62.735/s).
+[Sat Jun 30 23:18:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:18:29 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:18:29 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:18:29 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:18:29 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:18:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:18:29 2012] [debug] 200 OK (0.023143s, 43.210/s).
+[Sat Jun 30 23:18:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:18:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:18:36 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:18:36 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:18:36 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:18:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:18:36 2012] [debug] 200 OK (0.020264s, 49.349/s).
+[Sat Jun 30 23:18:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:18:59 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:18:59 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:18:59 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:18:59 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:18:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:18:59 2012] [debug] 200 OK (0.016405s, 60.957/s).
+[Sat Jun 30 23:19:28 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:19:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:19:28 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:19:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:19:28 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:19:28 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:19:28 2012] [debug] 200 OK (0.015981s, 62.574/s).
+[Sat Jun 30 23:19:41 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:19:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:19:41 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:19:41 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:19:41 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:19:41 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:19:41 2012] [debug] 200 OK (0.016915s, 59.119/s).
+[Sat Jun 30 23:20:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:20:39 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:20:39 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:20:39 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:20:39 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:20:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:20:39 2012] [debug] 200 OK (0.017061s, 58.613/s).
+[Sat Jun 30 23:20:48 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:20:48 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:20:48 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:20:48 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:20:48 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:20:48 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:20:48 2012] [debug] 200 OK (0.017558s, 56.954/s).
+[Sat Jun 30 23:21:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:21:01 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:21:01 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:21:01 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:21:01 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:21:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:21:01 2012] [debug] 200 OK (0.015651s, 63.894/s).
+[Sat Jun 30 23:22:11 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:22:11 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:22:11 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:22:11 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:22:11 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:22:11 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:22:11 2012] [debug] 200 OK (0.021551s, 46.402/s).
+[Sat Jun 30 23:22:27 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:22:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:22:27 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:22:27 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:22:27 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:22:27 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:22:27 2012] [debug] 200 OK (0.017441s, 57.336/s).
+[Sat Jun 30 23:23:35 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:23:35 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:23:35 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:23:35 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:23:35 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:23:35 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:23:35 2012] [debug] 200 OK (0.017121s, 58.408/s).
+[Sat Jun 30 23:23:47 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:23:47 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:23:47 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:23:47 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sat Jun 30 23:23:47 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sat Jun 30 23:23:47 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:23:47 2012] [debug] 200 OK (0.016778s, 59.602/s).
+[Sat Jun 30 23:24:15 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:15 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:24:15 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sat Jun 30 23:24:15 2012] [debug] 302 Found (0.003428s, 291.715/s).
+[Sat Jun 30 23:24:15 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:15 2012] [debug] Dispatching callback.
+[Sat Jun 30 23:24:15 2012] [debug] 302 Found (0.000563s, 1776.199/s).
+[Sat Jun 30 23:24:15 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:15 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:24:15 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:24:15 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:24:15 2012] [debug] 200 OK (0.005517s, 181.258/s).
+[Sat Jun 30 23:24:16 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:24:16 2012] [debug] 200 OK (0.001909s, 523.834/s).
+[Sat Jun 30 23:24:58 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:24:58 2012] [debug] 200 OK (0.001878s, 532.481/s).
+[Sat Jun 30 23:24:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:24:59 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:24:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:24:59 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:24:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:24:59 2012] [debug] 200 OK (0.014703s, 68.013/s).
+[Sat Jun 30 23:25:00 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:25:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:25:00 2012] [debug] 200 OK (0.001399s, 714.796/s).
+[Sat Jun 30 23:25:11 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:25:11 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:25:11 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:25:11 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:25:11 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:25:11 2012] [debug] 200 OK (0.015169s, 65.924/s).
+[Sat Jun 30 23:25:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:25:43 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:25:43 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:25:43 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:25:43 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:25:43 2012] [debug] 200 OK (0.014123s, 70.806/s).
+[Sat Jun 30 23:25:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:25:54 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:25:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:25:54 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:25:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:25:54 2012] [debug] 200 OK (0.014917s, 67.038/s).
+[Sat Jun 30 23:26:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:26:51 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:26:51 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:26:51 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:26:51 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:26:51 2012] [debug] 200 OK (0.014859s, 67.299/s).
+[Sat Jun 30 23:28:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:01 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:01 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:01 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:01 2012] [debug] 200 OK (0.016161s, 61.877/s).
+[Sat Jun 30 23:28:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:12 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:12 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:12 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:12 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:12 2012] [debug] 200 OK (0.014687s, 68.087/s).
+[Sat Jun 30 23:28:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:20 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:20 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:20 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:20 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:20 2012] [debug] 200 OK (0.014402s, 69.435/s).
+[Sat Jun 30 23:28:34 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:34 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:34 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:34 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:34 2012] [debug] 200 OK (0.015450s, 64.725/s).
+[Sat Jun 30 23:28:49 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:49 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:49 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:49 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:49 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:49 2012] [debug] 200 OK (0.014720s, 67.935/s).
+[Sat Jun 30 23:28:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 23:28:59 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:28:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 23:28:59 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 23:28:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 23:28:59 2012] [debug] 200 OK (0.019494s, 51.298/s).
+[Sat Jun 30 23:29:05 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 23:29:05 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 23:29:05 2012] [debug] 302 Found (0.003024s, 330.688/s).

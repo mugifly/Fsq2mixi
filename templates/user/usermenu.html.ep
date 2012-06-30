@@ -1,8 +1,20 @@
 % layout 'default';
-% title 'ログインメニュー';
-<h2><%= $message %></h2>
+% title 'ログインメニュー - 4sq2mixi';
+<h1>4sq2mixi</h1>
+<h3>mixiとの連携状態</h3>
 <ul>
-<li><%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>
-<li><%= link_to logout => begin %>ログアウト<% end %>
+<li>認証状態:
+	<% if ($is_mixiLogin eq 1) { %>
+		認証済み
+	<% } else { %>
+		未認証 (<%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>)<br>
+		<font size="-2">(mixiへの自動投稿を行うにはmixiへのログイン認証が必要です。)</font>
+	<% } %>
+<li>投稿先モード: mixiボイス | mixiチェックイン</li>
+<li>前回の投稿: </li>
+</li>
 </ul>
+<%= link_to logout => begin %>ログアウト<% end %>
+<hr>
+4sq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, Masanori.
 

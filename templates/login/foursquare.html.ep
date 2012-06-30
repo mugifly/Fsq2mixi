@@ -1,5 +1,12 @@
 % layout 'default';
-% title 'Welcome';
-<h2><%= $message %></h2>
-foursquareへのログインを行ないます: <%= link_to foursquare_redirect_authpage => begin %>ログイン<% end %>
+% title '4sq2mixi';
+<h1>4sq2mixi</h1>
+4sq2mixiは、foursquareでのチェックイン時にmixiへ自動投稿を行うサービスです。<br>
+利用するには...まず以下から、ご自分のfoursquareアカウントで、4sq2mixiを接続許可してください。
+<h3>foursquareへのログイン (4sq2mixiの接続許可)</h3>
+<%= link_to foursquare_redirect_authpage => begin %>ログイン<% end %><br>
+<font size="-1">(foursquareのウェブサイトへジャンプして認証します。)</font>
+<hr>
+4sq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, Masanori.
+
 

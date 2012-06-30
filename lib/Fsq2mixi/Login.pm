@@ -82,7 +82,7 @@ sub foursquare_callback {
 	
 	# セッション保存
 	$self->session(fsq_token => $token);
-	$self->render(message => "OK");
+	$self->redirect_to('/');
 }
 
 1;

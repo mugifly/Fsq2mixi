@@ -27,7 +27,7 @@ sub startup {
 	for my $target ($db->schema_names) {
 		my $dbh = $db->get_driver($target)->rw_handle;
 		for my $sql ($db->as_sqls($target)) {
-			$dbh->do($sql);
+			#$dbh->do($sql);
 		}
 	}
 	
@@ -53,29 +53,36 @@ sub startup {
 	# Routes
 	my $r = $self->routes;
 	
-	$r = $r->under(sub {
-		my $self = shift;
-		my $fsq_token = $self->session('fsq_token');
-		if($fsq_token eq ""){
-			 my @users = $db->get('user' => {
-				where => [
-					fsq_token => $fsq_token
-				]
-			});
-			if(defined($users[0]->{id})){
-				$is4sq = 1;
+	$r->route('/login')->to('login#foursquare');
+	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
+	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
+	
+	$r = $r->bridge->to(
+		cb => sub {
+			my $self = shift;
+			my $fsq_token = $self->session('fsq_token');
+			
+			if($fsq_token ne ""){
+				 my $users = $db->get('user' => {
+					where => [
+						fsq_token => $fsq_token
+					]
+				});
+				my $r = $users->next;
+				if(!defined($r->id)){
+					$self->redirect_to('/login');
+					return 0;
+				}
+			}else{
+				$self->redirect_to('/login');
+				return 0;
 			}
+			return 1;
 		}
-		if($is4sq eq 0){
-			$r->route('/')->to('login#foursquare');
-			$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
-			$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
-		}else{
-			$r->route('/')->to('user#usermenu');
-			#$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
-			#$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
-		}
-	});
+	);
+	
+	$r->route('/logout')->to('logout#logout');
+	$r->route('/')->to('user#usermenu');
 }
 
 1;
