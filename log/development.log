@@ -3322,3 +3322,1009 @@ syntax error at (eval 267) line 13, near "; }"
 [Sat Jun 30 23:29:05 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
 [Sat Jun 30 23:29:05 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
 [Sat Jun 30 23:29:05 2012] [debug] 302 Found (0.003024s, 330.688/s).
+[Sun Jul  1 00:22:59 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:22:59 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:22:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:22:59 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sun Jul  1 00:22:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:22:59 2012] [debug] 200 OK (0.016907s, 59.147/s).
+[Sun Jul  1 00:23:00 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:23:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:23:00 2012] [debug] 200 OK (0.001288s, 776.398/s).
+[Sun Jul  1 00:23:06 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:23:06 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:23:06 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:23:06 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sun Jul  1 00:23:06 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:23:06 2012] [debug] 200 OK (0.016785s, 59.577/s).
+[Sun Jul  1 00:23:16 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:23:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:23:16 2012] [debug] 200 OK (0.001434s, 697.350/s).
+[Sun Jul  1 00:23:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:23:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 00:23:53 2012] [debug] 302 Found (0.001510s, 662.252/s).
+[Sun Jul  1 00:24:04 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:24:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sun Jul  1 00:24:37 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::st execute failed: database is locked at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 323.
+
+SQL     : INSERT INTO user
+          (fsq_token, fsq_id)
+          VALUES (?, ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          [
+            'fsq_token',
+            'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+          ],
+          [
+            'fsq_id',
+            '4224217'
+          ]
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi/Login.pm line 78
+
+[Sun Jul  1 00:24:37 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:24:37 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:24:37 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:24:37 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:24:37 2012] [debug] 500 Internal Server Error (33.084024s, 0.030/s).
+[Sun Jul  1 00:24:37 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::st execute failed: database is locked at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 323.
+
+SQL     : INSERT INTO user
+          (fsq_token, fsq_id)
+          VALUES (?, ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          [
+            'fsq_token',
+            'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+          ],
+          [
+            'fsq_id',
+            '4224217'
+          ]
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi/Login.pm line 78
+
+[Sun Jul  1 00:24:47 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:24:47 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sun Jul  1 00:24:50 2012] [debug] 302 Found (3.105931s, 0.322/s).
+[Sun Jul  1 00:24:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:24:50 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:24:51 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:24:51 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:24:51 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:24:51 2012] [debug] 200 OK (0.013945s, 71.710/s).
+[Sun Jul  1 00:24:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:24:52 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:24:52 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:24:52 2012] [debug] 200 OK (0.002419s, 413.394/s).
+[Sun Jul  1 00:25:03 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:03 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:03 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:03 2012] [debug] 200 OK (0.002328s, 429.553/s).
+[Sun Jul  1 00:25:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:25:04 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:04 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:04 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:04 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:25:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:25:04 2012] [debug] 200 OK (0.017004s, 58.810/s).
+[Sun Jul  1 00:25:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:05 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:05 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:05 2012] [debug] 200 OK (0.002347s, 426.076/s).
+[Sun Jul  1 00:25:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:25:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:36 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:36 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:36 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:25:36 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:25:36 2012] [debug] 200 OK (0.016036s, 62.360/s).
+[Sun Jul  1 00:25:45 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:45 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:45 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:45 2012] [debug] 200 OK (0.002710s, 369.004/s).
+[Sun Jul  1 00:25:48 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:48 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:25:48 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:25:48 2012] [debug] 200 OK (0.005923s, 168.833/s).
+[Sun Jul  1 00:25:57 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:25:57 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 00:25:57 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 00:25:57 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:25:58 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:25:58 2012] [debug] 404 Not Found (0.018366s, 54.448/s).
+[Sun Jul  1 00:26:40 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:26:40 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:26:40 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:26:40 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:26:40 2012] [debug] 302 Found (0.004331s, 230.894/s).
+[Sun Jul  1 00:27:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:27:42 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:27:42 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:27:42 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:27:42 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:27:42 2012] [debug] 200 OK (0.014652s, 68.250/s).
+[Sun Jul  1 00:27:51 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:27:51 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 00:27:51 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 00:27:51 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:27:51 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:27:51 2012] [debug] 404 Not Found (0.016801s, 59.520/s).
+[Sun Jul  1 00:30:02 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:30:02 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:30:02 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:30:02 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 00:30:02 2012] [debug] 302 Found (0.486141s, 2.057/s).
+[Sun Jul  1 00:30:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:30:02 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:30:02 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:30:02 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:30:02 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:30:02 2012] [debug] 200 OK (0.020822s, 48.026/s).
+[Sun Jul  1 00:30:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:30:53 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:30:53 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:30:53 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:30:53 2012] [debug] 302 Found (0.002947s, 339.328/s).
+[Sun Jul  1 00:31:02 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:31:02 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:31:02 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 00:31:02 2012] [debug] 302 Found (0.400258s, 2.498/s).
+[Sun Jul  1 00:31:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:31:02 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:31:02 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:31:02 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:31:02 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:31:02 2012] [debug] 200 OK (0.014382s, 69.531/s).
+[Sun Jul  1 00:31:22 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:31:22 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:31:22 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:31:22 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:31:22 2012] [debug] 302 Found (0.003412s, 293.083/s).
+[Sun Jul  1 00:31:31 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:31:31 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:31:31 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 00:31:31 2012] [debug] 302 Found (0.323093s, 3.095/s).
+[Sun Jul  1 00:31:31 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:31:31 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:31:31 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:31:31 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:31:31 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:31:31 2012] [debug] 200 OK (0.018432s, 54.253/s).
+[Sun Jul  1 00:37:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:37:13 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:37:13 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:37:13 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:37:13 2012] [debug] 302 Found (0.004029s, 248.201/s).
+[Sun Jul  1 00:37:17 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:37:17 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:37:17 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:37:17 2012] [debug] 302 Found (0.003550s, 281.690/s).
+[Sun Jul  1 00:37:27 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:37:27 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:37:27 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 00:37:28 2012] [debug] 302 Found (0.348118s, 2.873/s).
+[Sun Jul  1 00:37:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:37:28 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:37:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:37:28 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:37:28 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:37:28 2012] [debug] 200 OK (0.014151s, 70.666/s).
+[Sun Jul  1 00:43:18 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:43:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:43:18 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:43:18 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: no such table: user at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 147.
+
+SQL     : SELECT id, fsq_id, fsq_token, fsq_name, mixi_token, mixi_name, mixi_is_active, mixi_rtoken, mixi_latestsend
+          FROM user
+          WHERE (fsq_token = ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi.pm line 66
+
+[Sun Jul  1 00:43:18 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:43:18 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:43:18 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:43:18 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:43:18 2012] [debug] 500 Internal Server Error (0.025302s, 39.523/s).
+[Sun Jul  1 00:43:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:43:44 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:43:44 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: no such table: user at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 147.
+
+SQL     : SELECT id, fsq_id, fsq_token, fsq_name, mixi_token, mixi_name, mixi_is_active, mixi_rtoken, mixi_latestsend
+          FROM user
+          WHERE (fsq_token = ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi.pm line 66
+
+[Sun Jul  1 00:43:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:43:44 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:43:44 2012] [debug] 500 Internal Server Error (0.011554s, 86.550/s).
+[Sun Jul  1 00:43:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:43:50 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:43:50 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: no such table: user at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 147.
+
+SQL     : SELECT id, fsq_id, fsq_token, fsq_name, mixi_token, mixi_name, mixi_is_active, mixi_rtoken, mixi_latestsend
+          FROM user
+          WHERE (fsq_token = ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi.pm line 66
+
+[Sun Jul  1 00:43:50 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:43:50 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:43:50 2012] [debug] 500 Internal Server Error (0.009807s, 101.968/s).
+[Sun Jul  1 00:44:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:44:15 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:44:15 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:44:15 2012] [error] Can't call method "id" on an undefined value at script/../lib/Fsq2mixi.pm line 72.
+
+[Sun Jul  1 00:44:15 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:44:15 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:44:15 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:15 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:15 2012] [debug] 500 Internal Server Error (0.023213s, 43.079/s).
+[Sun Jul  1 00:44:22 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:44:22 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:44:22 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:44:22 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: no such table: user at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 147.
+
+SQL     : SELECT id, fsq_id, fsq_token, fsq_name, mixi_token, mixi_name, mixi_is_active, mixi_rtoken, mixi_latestsend
+          FROM user
+          WHERE (fsq_token = ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi.pm line 66
+
+[Sun Jul  1 00:44:22 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:44:22 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:44:22 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:22 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:22 2012] [debug] 500 Internal Server Error (0.022354s, 44.735/s).
+[Sun Jul  1 00:44:23 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:44:23 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:44:23 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: no such table: user at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 147.
+
+SQL     : SELECT id, fsq_id, fsq_token, fsq_name, mixi_token, mixi_name, mixi_is_active, mixi_rtoken, mixi_latestsend
+          FROM user
+          WHERE (fsq_token = ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi.pm line 66
+
+[Sun Jul  1 00:44:23 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:44:23 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:44:23 2012] [debug] 500 Internal Server Error (0.008844s, 113.071/s).
+[Sun Jul  1 00:44:38 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:44:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:44:38 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:44:38 2012] [error] Can't call method "id" on an undefined value at script/../lib/Fsq2mixi.pm line 72.
+
+[Sun Jul  1 00:44:38 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:44:38 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:44:38 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:38 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:38 2012] [debug] 500 Internal Server Error (0.026763s, 37.365/s).
+[Sun Jul  1 00:44:40 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:44:40 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:44:40 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:44:40 2012] [error] Can't call method "id" on an undefined value at script/../lib/Fsq2mixi.pm line 72.
+
+[Sun Jul  1 00:44:40 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 00:44:40 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 00:44:40 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:40 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:44:40 2012] [debug] 500 Internal Server Error (0.022392s, 44.659/s).
+[Sun Jul  1 00:45:15 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 00:45:15 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:45:15 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:45:15 2012] [debug] 302 Found (0.001990s, 502.513/s).
+[Sun Jul  1 00:45:15 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:45:15 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:45:15 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sun Jul  1 00:45:15 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:45:15 2012] [debug] 200 OK (0.014107s, 70.887/s).
+[Sun Jul  1 00:45:16 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:45:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 00:45:16 2012] [debug] 200 OK (0.001394s, 717.360/s).
+[Sun Jul  1 00:45:17 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:45:17 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 00:45:17 2012] [debug] 302 Found (0.002397s, 417.188/s).
+[Sun Jul  1 00:45:34 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:45:34 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 00:45:34 2012] [debug] 302 Found (0.000757s, 1321.004/s).
+[Sun Jul  1 00:48:11 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:11 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 00:48:11 2012] [debug] 302 Found (0.000867s, 1153.403/s).
+[Sun Jul  1 00:48:20 2012] [debug] GET /fsq2mixi/oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:20 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 00:48:20 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 00:48:20 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:48:20 2012] [debug] Rendering inline template.
+[Sun Jul  1 00:48:20 2012] [debug] 404 Not Found (0.020681s, 48.354/s).
+[Sun Jul  1 00:48:24 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sun Jul  1 00:48:28 2012] [debug] 302 Found (3.317357s, 0.301/s).
+[Sun Jul  1 00:48:28 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:28 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:48:28 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:48:28 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 00:48:28 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 00:48:28 2012] [debug] 200 OK (0.007740s, 129.199/s).
+[Sun Jul  1 00:48:30 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:30 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:48:30 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 00:48:30 2012] [debug] 302 Found (0.001890s, 529.101/s).
+[Sun Jul  1 00:48:42 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:42 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:48:42 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 00:48:42 2012] [debug] 302 Found (0.334408s, 2.990/s).
+[Sun Jul  1 00:48:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 00:48:42 2012] [debug] Dispatching callback.
+[Sun Jul  1 00:48:42 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 00:48:42 2012] [debug] 200 OK (0.002337s, 427.899/s).
+[Sun Jul  1 01:09:19 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:09:19 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:19 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:19 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:09:19 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:09:19 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:09:19 2012] [debug] 200 OK (0.016698s, 59.887/s).
+[Sun Jul  1 01:09:20 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:20 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:20 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 01:09:20 2012] [debug] 302 Found (0.004041s, 247.463/s).
+[Sun Jul  1 01:09:23 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:23 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:23 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:09:23 2012] [debug] 200 OK (0.002491s, 401.445/s).
+[Sun Jul  1 01:09:25 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:25 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:25 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 01:09:25 2012] [debug] 302 Found (0.001624s, 615.764/s).
+[Sun Jul  1 01:09:28 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:28 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:28 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 01:09:28 2012] [debug] 302 Found (0.001650s, 606.061/s).
+[Sun Jul  1 01:09:37 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:37 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:37 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:09:37 2012] [debug] Template "login/mixi_callback.html.ep" not found.
+[Sun Jul  1 01:09:37 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 01:09:52 2012] [error] Connection timeout.
+[Sun Jul  1 01:09:52 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:09:52 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:09:52 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:09:52 2012] [debug] Template "login/mixi_callback.html.ep" not found.
+[Sun Jul  1 01:09:52 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 01:10:07 2012] [error] Connection timeout.
+[Sun Jul  1 01:10:45 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:10:45 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:10:45 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:10:45 2012] [debug] Template "login/mixi_callback.html.ep" not found.
+[Sun Jul  1 01:10:45 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 01:10:46 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:10:46 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:10:46 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:10:46 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:10:47 2012] [debug] 302 Found (0.352528s, 2.837/s).
+[Sun Jul  1 01:10:47 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:10:47 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:10:47 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:10:47 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:10:47 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:10:47 2012] [debug] 200 OK (0.010378s, 96.358/s).
+[Sun Jul  1 01:11:14 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:11:14 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:11:14 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:11:15 2012] [debug] 302 Found (0.331702s, 3.015/s).
+[Sun Jul  1 01:11:15 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:11:15 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:11:15 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:11:15 2012] [debug] 200 OK (0.005443s, 183.722/s).
+[Sun Jul  1 01:11:57 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:11:57 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:11:57 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:11:57 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:11:57 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:11:57 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:11:57 2012] [debug] 200 OK (0.015816s, 63.227/s).
+[Sun Jul  1 01:12:00 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:00 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:00 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:12:00 2012] [debug] 302 Found (0.353932s, 2.825/s).
+[Sun Jul  1 01:12:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:00 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:00 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:12:00 2012] [debug] 200 OK (0.007169s, 139.489/s).
+[Sun Jul  1 01:12:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:12:13 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:13 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:13 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:12:13 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:12:13 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:12:13 2012] [debug] 200 OK (0.015529s, 64.396/s).
+[Sun Jul  1 01:12:18 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:18 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:18 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:12:18 2012] [debug] 302 Found (0.523080s, 1.912/s).
+[Sun Jul  1 01:12:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:18 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:18 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:12:18 2012] [debug] 200 OK (0.002696s, 370.920/s).
+[Sun Jul  1 01:12:33 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:12:33 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:12:33 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 01:12:33 2012] [debug] 302 Found (0.001776s, 563.063/s).
+[Sun Jul  1 01:13:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:13:29 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:13:29 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:13:29 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:13:29 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:13:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:13:29 2012] [debug] 200 OK (0.016040s, 62.344/s).
+[Sun Jul  1 01:13:37 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:13:37 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:13:37 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:13:38 2012] [debug] 302 Found (0.320190s, 3.123/s).
+[Sun Jul  1 01:13:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:13:38 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:13:38 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:13:38 2012] [debug] 200 OK (0.006301s, 158.705/s).
+[Sun Jul  1 01:21:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:21:26 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:21:26 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:21:26 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:21:27 2012] [debug] 302 Found (0.474709s, 2.107/s).
+[Sun Jul  1 01:21:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:21:27 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:21:27 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:21:27 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:21:27 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:21:27 2012] [debug] 200 OK (0.009256s, 108.038/s).
+[Sun Jul  1 01:21:55 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:21:55 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:21:55 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:21:55 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:21:56 2012] [debug] 302 Found (0.347214s, 2.880/s).
+[Sun Jul  1 01:21:56 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:21:56 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:21:56 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:21:56 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:21:56 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:21:56 2012] [debug] 200 OK (0.009016s, 110.914/s).
+[Sun Jul  1 01:37:41 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:37:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:37:41 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:37:41 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:37:41 2012] [error] Can't locate object method "user" via package "Fsq2mixi::User" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sun Jul  1 01:37:41 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 01:37:41 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 01:37:41 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:37:41 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:37:41 2012] [debug] 500 Internal Server Error (0.032142s, 31.112/s).
+[Sun Jul  1 01:37:41 2012] [error] Can't locate object method "user" via package "Fsq2mixi::User" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sun Jul  1 01:38:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:38:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:38:05 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:38:05 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:38:05 2012] [error] Can't locate object method "getUserName" via package "Mixi" at script/../lib/Fsq2mixi/User.pm line 14.
+
+[Sun Jul  1 01:38:05 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 01:38:05 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 01:38:05 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:38:05 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:38:05 2012] [debug] 500 Internal Server Error (0.022664s, 44.123/s).
+[Sun Jul  1 01:38:05 2012] [error] Can't locate object method "getUserName" via package "Mixi" at script/../lib/Fsq2mixi/User.pm line 14.
+
+[Sun Jul  1 01:38:06 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:38:06 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:38:06 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:38:06 2012] [error] Can't locate object method "getUserName" via package "Mixi" at script/../lib/Fsq2mixi/User.pm line 14.
+
+[Sun Jul  1 01:38:06 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 01:38:06 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 01:38:06 2012] [debug] 500 Internal Server Error (0.008433s, 118.582/s).
+[Sun Jul  1 01:38:06 2012] [error] Can't locate object method "getUserName" via package "Mixi" at script/../lib/Fsq2mixi/User.pm line 14.
+
+[Sun Jul  1 01:38:18 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:38:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:38:18 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:38:18 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:38:19 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:38:19 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:38:19 2012] [debug] 200 OK (0.438150s, 2.282/s).
+[Sun Jul  1 01:38:20 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:38:20 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:38:20 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:38:21 2012] [debug] 200 OK (0.574140s, 1.742/s).
+[Sun Jul  1 01:38:58 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:38:58 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:38:58 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:38:58 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:38:58 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:38:58 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:38:58 2012] [debug] 200 OK (0.287600s, 3.477/s).
+[Sun Jul  1 01:39:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:39:44 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:39:44 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:39:45 2012] [debug] 200 OK (0.244132s, 4.096/s).
+[Sun Jul  1 01:39:46 2012] [debug] GET /mixi_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:39:46 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:39:46 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_redirect_authpage".
+[Sun Jul  1 01:39:46 2012] [debug] 302 Found (0.003007s, 332.557/s).
+[Sun Jul  1 01:39:56 2012] [debug] GET /oauth_callback_mixi (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:39:56 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:39:56 2012] [debug] Dispatching "Fsq2mixi::Login->mixi_callback".
+[Sun Jul  1 01:39:56 2012] [debug] 302 Found (0.346944s, 2.882/s).
+[Sun Jul  1 01:39:56 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:39:56 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:39:56 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:39:56 2012] [debug] 200 OK (0.254208s, 3.934/s).
+[Sun Jul  1 01:39:59 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:39:59 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:39:59 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:40:00 2012] [debug] 200 OK (0.297287s, 3.364/s).
+[Sun Jul  1 01:40:33 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:40:33 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:40:33 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:40:33 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:40:34 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:40:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:40:34 2012] [debug] 200 OK (0.315677s, 3.168/s).
+[Sun Jul  1 01:42:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:42:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:42:05 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:42:05 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:42:05 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:42:05 2012] [error] Bareword "mixiUserName" not allowed while "strict subs" in use at template "user/usermenu.html.ep" line 8, near "	<% } else { %>".
+3: <h1>4sq2mixi</h1>
+4: <h3>mixiとの連携状態</h3>
+5: <ul>
+6: <li>認証状態:
+7: 	<% if ($is_mixiLogin eq 1) { %>
+8: 		認証済み (<%= mixiUserName %>)
+9: 	<% } else { %>
+10: 		未認証<br>
+11: 		<font size="-1">(mixiへの自動投稿を行うにはmixiへのログイン認証が必要です: <%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>)</font>
+12: 	<% } %>
+13: <li>投稿先モード: mixiボイス | mixiチェックイン</li>
+
+[Sun Jul  1 01:42:05 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 01:42:05 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 01:42:05 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:42:05 2012] [debug] Rendering inline template.
+[Sun Jul  1 01:42:05 2012] [debug] 500 Internal Server Error (0.296719s, 3.370/s).
+[Sun Jul  1 01:42:22 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:42:22 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:42:22 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:42:22 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:42:22 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:42:22 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:42:22 2012] [debug] 200 OK (0.422124s, 2.369/s).
+[Sun Jul  1 01:42:23 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:42:23 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:42:23 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:42:24 2012] [debug] 200 OK (0.246190s, 4.062/s).
+[Sun Jul  1 01:45:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:45:07 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:45:07 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:45:07 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:45:07 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:45:07 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:45:07 2012] [debug] 200 OK (0.283090s, 3.532/s).
+[Sun Jul  1 01:45:09 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:45:09 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:45:09 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:45:09 2012] [debug] 200 OK (0.249389s, 4.010/s).
+[Sun Jul  1 01:45:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:45:24 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:45:24 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:45:24 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:45:24 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:45:24 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:45:24 2012] [debug] 200 OK (0.320973s, 3.116/s).
+[Sun Jul  1 01:45:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:45:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:45:44 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:45:44 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:45:44 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:45:44 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:45:44 2012] [debug] 200 OK (0.281768s, 3.549/s).
+[Sun Jul  1 01:45:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 01:45:54 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:45:54 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:45:54 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:45:54 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 01:45:54 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 01:45:54 2012] [debug] 200 OK (0.272910s, 3.664/s).
+[Sun Jul  1 01:47:10 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 01:47:10 2012] [debug] Dispatching callback.
+[Sun Jul  1 01:47:10 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 01:47:11 2012] [debug] 200 OK (0.493727s, 2.025/s).
+[Sun Jul  1 02:08:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:08:54 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:08:54 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:08:54 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:08:54 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:08:54 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:08:54 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:08:54 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:08:54 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:08:54 2012] [debug] 404 Not Found (0.017585s, 56.867/s).
+[Sun Jul  1 02:09:11 2012] [debug] GET /foursquare_pushreceiver/ (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:09:11 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:09:11 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:09:11 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:09:11 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:09:11 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:09:11 2012] [debug] 404 Not Found (0.007536s, 132.696/s).
+[Sun Jul  1 02:09:16 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:09:16 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:09:16 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:09:16 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:09:16 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:09:16 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:09:16 2012] [debug] 404 Not Found (0.008669s, 115.354/s).
+[Sun Jul  1 02:10:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:10:00 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:10:00 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:10:00 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:10:00 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:10:00 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:10:00 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:10:00 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:10:00 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:10:00 2012] [debug] 404 Not Found (0.019481s, 51.332/s).
+[Sun Jul  1 02:10:01 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:10:01 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:10:01 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:10:01 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:10:01 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:10:01 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:10:01 2012] [debug] 404 Not Found (0.007533s, 132.749/s).
+[Sun Jul  1 02:10:06 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 02:10:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:10:08 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:10:08 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:10:08 2012] [debug] Fsq2mixi::Pushreceiver does not exist, maybe a typo?
+[Sun Jul  1 02:10:08 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:10:08 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:10:08 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:10:08 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:10:08 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:10:08 2012] [debug] 404 Not Found (0.017217s, 58.082/s).
+[Sun Jul  1 02:11:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:11:29 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:11:29 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:11:29 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:11:29 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:11:29 2012] [debug] 404 Not Found (0.015948s, 62.704/s).
+[Sun Jul  1 02:11:29 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:11:29 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:11:29 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:11:29 2012] [debug] 404 Not Found (0.008180s, 122.249/s).
+[Sun Jul  1 02:11:30 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:11:30 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:11:30 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] 404 Not Found (0.005428s, 184.230/s).
+[Sun Jul  1 02:11:30 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:11:30 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:11:30 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] 404 Not Found (0.005285s, 189.215/s).
+[Sun Jul  1 02:11:30 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:11:30 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:11:30 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:11:30 2012] [debug] 404 Not Found (0.008591s, 116.401/s).
+[Sun Jul  1 02:12:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:12:32 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:12:32 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:12:32 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:12:32 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:12:32 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:12:32 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:12:32 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:12:32 2012] [debug] 404 Not Found (0.019092s, 52.378/s).
+[Sun Jul  1 02:12:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:12:37 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:12:37 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:12:37 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:12:37 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:12:37 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:12:37 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:12:37 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:12:37 2012] [debug] 404 Not Found (0.015752s, 63.484/s).
+[Sun Jul  1 02:12:39 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:12:39 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:12:39 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:12:39 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 02:12:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 02:12:39 2012] [debug] 200 OK (0.275550s, 3.629/s).
+[Sun Jul  1 02:12:44 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 02:13:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:13:14 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:13:14 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:13:14 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:13:14 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:13:14 2012] [debug] 404 Not Found (0.016154s, 61.904/s).
+[Sun Jul  1 02:13:14 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:13:14 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:13:14 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:13:14 2012] [debug] 404 Not Found (0.008395s, 119.119/s).
+[Sun Jul  1 02:13:34 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:13:34 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:13:34 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:13:34 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 02:13:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 02:13:34 2012] [debug] 200 OK (0.277611s, 3.602/s).
+[Sun Jul  1 02:14:49 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:14:49 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:14:49 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:14:49 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:14:49 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:14:49 2012] [debug] 404 Not Found (0.005508s, 181.554/s).
+[Sun Jul  1 02:14:50 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:14:50 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:14:50 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:14:50 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:14:50 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:14:50 2012] [debug] 404 Not Found (0.007558s, 132.310/s).
+[Sun Jul  1 02:15:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:15:08 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:15:08 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:15:08 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:15:08 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:15:08 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:15:08 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:08 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:08 2012] [debug] 404 Not Found (0.015612s, 64.053/s).
+[Sun Jul  1 02:15:09 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:15:09 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:15:09 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:15:09 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:15:09 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:15:09 2012] [debug] 404 Not Found (0.011035s, 90.621/s).
+[Sun Jul  1 02:15:28 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:15:28 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:15:28 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:15:28 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:15:28 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:28 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:28 2012] [debug] 404 Not Found (0.017656s, 56.638/s).
+[Sun Jul  1 02:15:30 2012] [debug] GET /a (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:15:30 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:15:30 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:15:30 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:15:30 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:15:30 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:30 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:15:30 2012] [debug] 404 Not Found (0.020038s, 49.905/s).
+[Sun Jul  1 02:16:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:16:37 2012] [debug] GET /a (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:16:37 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:16:37 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:16:37 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:16:37 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 02:16:52 2012] [error] Connection timeout.
+[Sun Jul  1 02:16:56 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:16:56 2012] [debug] GET /a (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:16:56 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jul  1 02:16:56 2012] [debug] Template "not_found.html.ep" not found.
+[Sun Jul  1 02:16:56 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:16:56 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:16:56 2012] [debug] 404 Not Found (0.016097s, 62.123/s).
+[Sun Jul  1 02:16:59 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:16:59 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:16:59 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:16:59 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:16:59 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 02:17:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:17:14 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:17:14 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:17:14 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:14 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:14 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 02:17:29 2012] [error] Connection timeout.
+[Sun Jul  1 02:17:33 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:17:33 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:17:33 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:17:33 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:33 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:33 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sun Jul  1 02:17:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:17:52 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:17:52 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:17:52 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:52 2012] [debug] 401 Unauthorized (0.009575s, 104.439/s).
+[Sun Jul  1 02:17:57 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 02:17:58 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:17:58 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:17:58 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:17:58 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:17:58 2012] [debug] 401 Unauthorized (0.010143s, 98.590/s).
+[Sun Jul  1 02:18:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:18:52 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:18:52 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:18:52 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:18:52 2012] [debug] 401 Unauthorized (0.016209s, 61.694/s).
+[Sun Jul  1 02:18:52 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:18:52 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:18:52 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:18:52 2012] [debug] 401 Unauthorized (0.001012s, 988.142/s).
+[Sun Jul  1 02:21:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:21:20 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:21:20 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:21:20 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:21:20 2012] [debug] 401 Unauthorized (0.013746s, 72.748/s).
+[Sun Jul  1 02:21:20 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:21:20 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:21:20 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:21:20 2012] [debug] 401 Unauthorized (0.001001s, 999.001/s).
+[Sun Jul  1 02:22:51 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:22:51 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:22:51 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:22:51 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:22:51 2012] [debug] 401 Unauthorized (0.272236s, 3.673/s).
+[Sun Jul  1 02:22:51 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:22:51 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:22:52 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:22:52 2012] [debug] 401 Unauthorized (0.256659s, 3.896/s).
+[Sun Jul  1 02:26:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:26:43 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:26:43 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:26:43 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 114.
+
+[Sun Jul  1 02:26:43 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 02:26:43 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 02:26:43 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:26:43 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:26:43 2012] [debug] 500 Internal Server Error (0.288859s, 3.462/s).
+[Sun Jul  1 02:26:43 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 114.
+
+[Sun Jul  1 02:28:08 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 02:28:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:28:13 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:28:13 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:28:13 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 114.
+
+[Sun Jul  1 02:28:13 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 02:28:13 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 02:28:13 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:28:13 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:28:13 2012] [debug] 500 Internal Server Error (0.267202s, 3.742/s).
+[Sun Jul  1 02:28:13 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 114.
+
+[Sun Jul  1 02:29:47 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:29:47 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:29:47 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:29:48 2012] [error] Can't use string ("") as a HASH ref while "strict refs" in use at script/../lib/Mixi.pm line 58.
+
+[Sun Jul  1 02:29:48 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 02:29:48 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 02:29:48 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:29:48 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:29:48 2012] [debug] 500 Internal Server Error (0.270051s, 3.703/s).
+[Sun Jul  1 02:29:48 2012] [error] Can't use string ("") as a HASH ref while "strict refs" in use at script/../lib/Mixi.pm line 58.
+
+[Sun Jul  1 02:30:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:30:45 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:30:45 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:30:45 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:30:45 2012] [debug] 401 Unauthorized (0.482993s, 2.070/s).
+[Sun Jul  1 02:30:46 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:30:46 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:30:46 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:30:46 2012] [debug] 401 Unauthorized (0.489933s, 2.041/s).
+[Sun Jul  1 02:31:01 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:31:01 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:31:01 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:31:01 2012] [debug] 401 Unauthorized (0.497400s, 2.010/s).
+[Sun Jul  1 02:31:01 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:31:01 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:31:02 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:31:02 2012] [debug] 401 Unauthorized (0.489776s, 2.042/s).
+[Sun Jul  1 02:32:02 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:32:02 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:32:02 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:32:02 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:32:02 2012] [debug] 401 Unauthorized (0.477900s, 2.092/s).
+[Sun Jul  1 02:32:02 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:32:02 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 02:32:03 2012] [debug] Template "pushreceiver/fsq_checkin_receiver.html.ep" not found.
+[Sun Jul  1 02:32:03 2012] [debug] 401 Unauthorized (0.478488s, 2.090/s).
+[Sun Jul  1 02:32:18 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:32:18 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:32:18 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:32:18 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:32:18 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 02:32:18 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 02:32:18 2012] [debug] 200 OK (0.430394s, 2.323/s).
+[Sun Jul  1 02:33:53 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:33:53 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:33:53 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:33:53 2012] [debug] 200 OK (0.276475s, 3.617/s).
+[Sun Jul  1 02:36:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:36:25 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:36:25 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:36:25 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:36:26 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 43.
+
+[Sun Jul  1 02:36:26 2012] [debug] Template "exception.development.html.ep" not found.
+[Sun Jul  1 02:36:26 2012] [debug] Template "exception.html.ep" not found.
+[Sun Jul  1 02:36:26 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:36:26 2012] [debug] Rendering inline template.
+[Sun Jul  1 02:36:26 2012] [debug] 500 Internal Server Error (0.275311s, 3.632/s).
+[Sun Jul  1 02:36:26 2012] [error] Can't locate object method "success" via package "Mojo::Message::Response" at script/../lib/Mixi.pm line 43.
+
+[Sun Jul  1 02:36:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 02:36:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:36:44 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:36:44 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:36:45 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 02:36:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 02:36:45 2012] [debug] 200 OK (0.796096s, 1.256/s).
+[Sun Jul  1 02:36:49 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:36:49 2012] [debug] Dispatching callback.
+[Sun Jul  1 02:36:49 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 02:36:50 2012] [debug] 200 OK (0.731673s, 1.367/s).
+[Sun Jul  1 02:36:57 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 02:36:57 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".

@@ -5,6 +5,7 @@ use JSON;
 use Config::Pit;
 use Fsq2mixi::DB::User;
 use Data::Model::Driver::DBI;
+use Mixi;
 
 # This method will run once at server start
 sub startup {
@@ -31,29 +32,15 @@ sub startup {
 		}
 	}
 	
-	# OAuth Consumerの準備
-	my $fsq_consumer = OAuth::Lite::Consumer->new(
-		consumer_key		=> $self->config->{fsq_client_id},
-		consumer_secret		=> $self->config->{fsq_client_secret},
-		site				=> q{https://ja.foursquare.com},
-		access_token_path	=> q{/oauth2/access_token},
-		authorize_path		=> q{/oauth2/access_token},
-	);
-	$self->helper(fsq => sub{return $fsq_consumer});
-	my $mixi_consumer = OAuth::Lite::Consumer->new(
-		consumer_key		=> $self->config->{mixi_consumer_key},
-		consumer_secret		=> $self->config->{mixi_consumer_secret},
-		site				=> q{https://secure.mixi-platform.com},
-		access_token_path	=> q{/2/token}
-	);
-	$self->helper(mixi => sub{return $mixi_consumer});
-	
-	my $is4sq = 0;
+	# ユーザ情報
+	my $user;
+	$self->helper(ownUser => sub{return $user});
 	
 	# Routes
 	my $r = $self->routes;
 	
 	$r->route('/login')->to('login#foursquare');
+	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
 	
@@ -69,9 +56,11 @@ sub startup {
 					]
 				});
 				my $r = $users->next;
-				if(!defined($r->id)){
+				if(!defined($r) || !defined($r->id)){
 					$self->redirect_to('/login');
 					return 0;
+				}else{
+					$user = $r->{column_values};
 				}
 			}else{
 				$self->redirect_to('/login');
@@ -80,7 +69,8 @@ sub startup {
 			return 1;
 		}
 	);
-	
+	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
+	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
 	$r->route('/logout')->to('logout#logout');
 	$r->route('/')->to('user#usermenu');
 }

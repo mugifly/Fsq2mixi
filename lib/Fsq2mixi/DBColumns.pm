@@ -18,7 +18,32 @@ column_sugar 'user.fsq_token'
 		required => 0,
 		size     => 255,
 };
+column_sugar 'user.fsq_name'
+	=> 'varchar' => {
+		required => 0,
+		size     => 255,
+};
 column_sugar 'user.mixi_token'
+	=> 'varchar' => {
+		required => 0,
+		size     => 255,
+};
+column_sugar 'user.mixi_name'
+	=> 'varchar' => {
+		required => 0,
+		size     => 255,
+};
+column_sugar 'user.mixi_rtoken'
+	=> 'varchar' => {
+		required => 0,
+		size     => 255,
+};
+column_sugar 'user.mixi_is_active'
+	=> int => {
+		required => 0,
+		unsigned => 1,
+};
+column_sugar 'user.mixi_latestsend'
 	=> 'varchar' => {
 		required => 0,
 		size     => 255,

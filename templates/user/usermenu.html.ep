@@ -5,10 +5,10 @@
 <ul>
 <li>認証状態:
 	<% if ($is_mixiLogin eq 1) { %>
-		認証済み
+		認証済み - <%= $mixiUserName %>
 	<% } else { %>
-		未認証 (<%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>)<br>
-		<font size="-2">(mixiへの自動投稿を行うにはmixiへのログイン認証が必要です。)</font>
+		未認証<br>
+		<font size="-1">(mixiへの自動投稿を行うにはmixiへのログイン認証が必要です: <%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>)</font>
 	<% } %>
 <li>投稿先モード: mixiボイス | mixiチェックイン</li>
 <li>前回の投稿: </li>

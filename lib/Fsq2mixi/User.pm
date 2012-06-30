@@ -5,8 +5,23 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub usermenu {
 	my $self = shift;
-	$self->stash(is_mixiLogin => 1);
-		$self->render(
+	my $user = $self->ownUser;
+	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
+		access_token => $user->{mixi_token},
+		refresh_token => $user->{mixi_rtoken},
+	);
+	
+	# mixiのユーザ情報を取得
+	my $mixiUserName = $mixi->getUser_MixiName();
+	$self->stash(mixiUserName => $mixiUserName);
+	if(!defined($mixiUserName) || $mixiUserName eq ""){
+		$self->stash(is_mixiLogin => 0);
+	}else{
+		$self->stash(is_mixiLogin => 1);
+	}
+	
+	# 出力
+	$self->render(
 		message => 'ユーザーメニュー'
 		
 	);

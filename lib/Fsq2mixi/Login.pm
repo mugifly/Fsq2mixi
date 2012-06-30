@@ -14,31 +14,19 @@ sub foursquare {
 
 sub mixi_redirect_authpage {
 	my $self = shift;
-	$self->redirect_to("https://mixi.jp/connect_authorize.pl".
-		'?client_id='.$self->config->{mixi_consumer_key}.
-		'&response_type=code'.
-		'&scope=r_voice%20w_voice'.
-		'&display=touch'
-	);
+	my $mixi = Mixi->new('consumer_key'=> $self->config->{mixi_consumer_key}, 'consumer_secret' => $self->config->{mixi_consumer_secret});
+	$self->redirect_to($mixi->getRedirectURL());
 }
 
 sub mixi_callback {
 	my $self = shift;
-	my $ua = $self->ua->new;
-	my $res = $ua->get('https://ja.foursquare.com/oauth2/access_token'.
-		'?client_id='.$self->config->{mixi_consumer_key}.
-		'&client_secret='.$self->config->{mixi_consumer_secret}.
-		'&grant_type=authorization_code'.
-		'&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/oauth_callback_mixi'.
-		'&code='.$self->param("code")
-	)->res;
-	my $token = $res->json('/access_token');
-	my $rtoken = $res->json('/refresh_token');
 	
-	# セッションを取得
+	# mixiサーバからアクセストークンを取得
+	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret});
+	my ($mixi_token, $mixi_rtoken) = $mixi->getTokens($self->param('code'));
+	
+	# セッション情報を取得
 	my $fsq_token = $self->session('fsq_token');
-	
-	
 	
 	# DB上のユーザ情報を更新
 	my ($d, ) = $self->db->get('user' => {
@@ -46,10 +34,11 @@ sub mixi_callback {
 			fsq_token => $fsq_token
 		],
 	});
-	$d->mixi_token($token);
+	$d->mixi_token($mixi_token);
+	$d->mixi_rtoken($mixi_rtoken);
 	$d->update;
 	
-	$self->render(message => "4sq and mixi is OK");
+	$self->redirect_to('/');
 }
 
 sub foursquare_redirect_authpage {
