@@ -1762,3 +1762,88 @@ $VAR1 = [
 [Sat Jun 30 19:31:31 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
 [Sat Jun 30 19:31:31 2012] [debug] Rendering template "layouts/default.html.ep".
 [Sat Jun 30 19:31:31 2012] [debug] 200 OK (1.371269s, 0.729/s).
+[Sat Jun 30 20:50:10 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:50:11 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:50:11 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:50:11 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:50:11 2012] [error] Global symbol "$c" requires explicit package name at script/../lib/Fsq2mixi/Login.pm line 84.
+Compilation failed in require at (eval 265) line 1.
+
+[Sat Jun 30 20:50:11 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 20:50:11 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 20:50:11 2012] [debug] Rendering inline template.
+[Sat Jun 30 20:50:11 2012] [debug] Rendering inline template.
+[Sat Jun 30 20:50:11 2012] [debug] 500 Internal Server Error (0.025479s, 39.248/s).
+[Sat Jun 30 20:50:37 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:50:39 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:50:39 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:50:39 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:50:40 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:50:42 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:50:42 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 20:50:57 2012] [error] Connection timeout.
+[Sat Jun 30 20:52:03 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:52:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:52:04 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:52:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 20:52:04 2012] [debug] 302 Found (0.001594s, 627.353/s).
+[Sat Jun 30 20:52:27 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:52:27 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:52:30 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:52:30 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:52:30 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 20:52:45 2012] [error] Connection timeout.
+[Sat Jun 30 20:53:09 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:53:10 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:53:10 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:53:10 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:53:13 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:53:13 2012] [debug] Template "login/foursquare_callback.html.ep" not found.
+[Sat Jun 30 20:53:13 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 20:53:28 2012] [error] Connection timeout.
+[Sat Jun 30 20:54:04 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:54:05 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:54:05 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:54:05 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:54:08 2012] [debug] Rendering template "login/foursquare_callback.html.ep".
+[Sat Jun 30 20:54:08 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 20:54:08 2012] [debug] 200 OK (3.147192s, 0.318/s).
+[Sat Jun 30 20:54:29 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 20:54:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 20:54:31 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 20:54:31 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sat Jun 30 20:54:34 2012] [debug] Rendering template "login/foursquare_callback.html.ep".
+[Sat Jun 30 20:54:34 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 20:54:34 2012] [debug] 200 OK (3.330334s, 0.300/s).
+[Sat Jun 30 21:10:18 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:10:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:10:31 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:10:31 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:10:31 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:10:31 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:10:31 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:10:31 2012] [debug] 404 Not Found (0.016797s, 59.534/s).
+[Sat Jun 30 21:10:33 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:10:33 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:10:33 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:10:33 2012] [debug] 404 Not Found (0.007716s, 129.601/s).
+[Sat Jun 30 21:11:43 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 21:11:45 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 21:11:45 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:11:45 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:11:45 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:11:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:11:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 21:11:45 2012] [debug] 404 Not Found (0.016527s, 60.507/s).
+[Sat Jun 30 21:12:06 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:12:06 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:12:06 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:12:06 2012] [debug] 404 Not Found (0.005193s, 192.567/s).
+[Sat Jun 30 21:12:15 2012] [debug] GET /a (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:12:15 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:12:15 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:12:15 2012] [debug] 404 Not Found (0.005348s, 186.986/s).
+[Sat Jun 30 21:12:17 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 21:12:17 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 21:12:17 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 21:12:17 2012] [debug] 404 Not Found (0.006383s, 156.666/s).

@@ -48,13 +48,34 @@ sub startup {
 	);
 	$self->helper(mixi => sub{return $mixi_consumer});
 	
+	my $is4sq = 0;
+	
 	# Routes
 	my $r = $self->routes;
 	
-	# Normal route to controller
-	$r->route('/')->to('login#foursquare');
-	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
-	$r->route('/oauth_callback_fsq')->to('login#foursquare_redirect_callback');
+	$r = $r->under(sub {
+		my $self = shift;
+		my $fsq_token = $self->session('fsq_token');
+		if($fsq_token eq ""){
+			 my @users = $db->get('user' => {
+				where => [
+					fsq_token => $fsq_token
+				]
+			});
+			if(defined($users[0]->{id})){
+				$is4sq = 1;
+			}
+		}
+		if($is4sq eq 0){
+			$r->route('/')->to('login#foursquare');
+			$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
+			$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
+		}else{
+			$r->route('/')->to('user#usermenu');
+			#$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
+			#$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
+		}
+	});
 }
 
 1;
