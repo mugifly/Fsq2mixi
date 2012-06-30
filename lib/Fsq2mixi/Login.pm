@@ -12,6 +12,16 @@ sub foursquare {
 	);
 }
 
+sub mixi_redirect_authpage {
+	my $self = shift;
+	$self->redirect_to("https://mixi.jp/connect_authorize.pl".
+		'?client_id='.$self->config->{mixi_consumer_key}.
+		'&response_type=code'.
+		'&scope=r_voice%20w_voice'.
+		'&display=touch'
+	);
+}
+
 sub foursquare_redirect_authpage {
 	my $self = shift;
 	$self->redirect_to("https://foursquare.com/oauth2/authenticate?client_id=".$self->config->{fsq_client_id}."&response_type=code&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq");

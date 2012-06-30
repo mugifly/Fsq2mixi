@@ -40,7 +40,13 @@ sub startup {
 		authorize_path		=> q{/oauth2/access_token},
 	);
 	$self->helper(fsq => sub{return $fsq_consumer});
-	
+	my $mixi_consumer = OAuth::Lite::Consumer->new(
+		consumer_key		=> $self->config->{mixi_consumer_key},
+		consumer_secret		=> $self->config->{mixi_consumer_secret},
+		site				=> q{https://secure.mixi-platform.com},
+		access_token_path	=> q{/2/token}
+	);
+	$self->helper(mixi => sub{return $mixi_consumer});
 	
 	# Routes
 	my $r = $self->routes;
