@@ -21,8 +21,14 @@ sub startup {
 	my $db = Fsq2mixi::DB::User->new();
 	$self->helper(db => sub{return $db});
 	{
-		my $driver = Data::Model::Driver::DBI->new(dsn => 'dbi:SQLite:dbname=fsq2mixi_db.db');
+		my $driver = Data::Model::Driver::DBI->new(dsn => 'dbi:SQLite:dbname=db_fsq2mixi.db');
 		$db->set_base_driver($driver);
+	}
+	for my $target ($db->schema_names) {
+		my $dbh = $db->get_driver($target)->rw_handle;
+		for my $sql ($db->as_sqls($target)) {
+			$dbh->do($sql);
+		}
 	}
 	
 	# OAuth Consumerの準備

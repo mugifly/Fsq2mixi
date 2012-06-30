@@ -30,6 +30,18 @@ sub foursquare_redirect_callback {
 	->res->json('/access_token');
 	$self->render(message => "OK");
 	
+	# ユーザ情報をfoursquareから取得
+	my $js = $ua->get('https://api.foursquare.com/v2/users/self?oauth_token='.$token);
+	my $fsq_id = $js->res->json('/response/user/id');
+	
+	# DBにユーザ情報を追加
+	$self->db->set('user'=> {
+		fsq_token => $token,
+		fsq_id => $fsq_id
+	});
+	
+	# セッション保存
+	$c->session(name => 'Ken');
 }
 
 1;

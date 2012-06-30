@@ -8,6 +8,11 @@ column_sugar 'user.id'
 		required => 1,
 		unsigned => 1,
 };
+column_sugar 'user.fsq_id'
+	=> int => {
+		required => 0,
+		unsigned  => 1,
+};
 column_sugar 'user.fsq_token'
 	=> 'varchar' => {
 		required => 0,

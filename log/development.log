@@ -1662,3 +1662,103 @@ Compilation failed in require at (eval 252) line 1.
 [Sat Jun 30 19:09:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
 [Sat Jun 30 19:09:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
 [Sat Jun 30 19:09:42 2012] [debug] 200 OK (0.001624s, 615.764/s).
+[Sat Jun 30 19:14:47 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:14:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:14:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:14:52 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 19:14:52 2012] [error] Bareword "token" not allowed while "strict subs" in use at script/../lib/Fsq2mixi/Login.pm line 34.
+Compilation failed in require at (eval 264) line 1.
+
+[Sat Jun 30 19:14:52 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 19:14:52 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 19:14:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 19:14:52 2012] [debug] Rendering inline template.
+[Sat Jun 30 19:14:52 2012] [debug] 500 Internal Server Error (0.028161s, 35.510/s).
+[Sat Jun 30 19:15:29 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:15:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:15:31 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:15:31 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 19:15:31 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 19:15:31 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 19:15:31 2012] [debug] 200 OK (0.014891s, 67.155/s).
+[Sat Jun 30 19:15:32 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:15:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 19:15:32 2012] [debug] 200 OK (0.001408s, 710.227/s).
+[Sat Jun 30 19:20:23 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:20:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:20:26 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:20:26 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 19:20:26 2012] [debug] 302 Found (0.001481s, 675.219/s).
+[Sat Jun 30 19:20:41 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:20:41 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 19:20:43 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 19:20:43 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 19:20:43 2012] [debug] 200 OK (1.365782s, 0.732/s).
+[Sat Jun 30 19:20:49 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:20:49 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 19:20:50 2012] [debug] 200 OK (1.346062s, 0.743/s).
+[Sat Jun 30 19:25:33 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:25:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:25:37 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:25:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 19:25:39 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 19:25:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 19:25:39 2012] [debug] 200 OK (1.364160s, 0.733/s).
+[Sat Jun 30 19:25:40 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: table user has no column named fsq_id at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 321.
+
+SQL     : INSERT INTO user
+          (fsq_token, fsq_id)
+          VALUES (?, ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          [
+            'fsq_token',
+            'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+          ],
+          [
+            'fsq_id',
+            '4224217'
+          ]
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi/Login.pm line 38
+
+[Sat Jun 30 19:25:40 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 19:25:40 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 19:25:40 2012] [debug] Rendering inline template.
+[Sat Jun 30 19:25:41 2012] [debug] Rendering inline template.
+[Sat Jun 30 19:25:41 2012] [error]     **** { Data::Model::Driver::DBI 's Exception ****
+Reason : DBD::SQLite::db prepare_cached failed: table user has no column named fsq_id at /usr/local/share/perl/5.10.1/Data/Model/Driver/DBI.pm line 321.
+
+SQL     : INSERT INTO user
+          (fsq_token, fsq_id)
+          VALUES (?, ?)
+          
+    **** BINDS DUMP ****
+$VAR1 = [
+          [
+            'fsq_token',
+            'OFRKRNKPVXV55WHGJY5142PF50LLLX2ICIRHCC2CPK4NSZS5'
+          ],
+          [
+            'fsq_id',
+            '4224217'
+          ]
+        ];
+
+    **** Data::Model::Driver::DBI 's Exception } ****
+ at script/../lib/Fsq2mixi/Login.pm line 38
+
+[Sat Jun 30 19:31:10 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 19:31:16 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 19:31:16 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:31:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 19:31:16 2012] [debug] 302 Found (0.001426s, 701.262/s).
+[Sat Jun 30 19:31:29 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 19:31:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 19:31:31 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 19:31:31 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 19:31:31 2012] [debug] 200 OK (1.371269s, 0.729/s).
