@@ -1,2 +1,3 @@
-4sq2mixi
+Fsq2mixi (4sq2mixi)
 ========
+When you check-in to foursquare, automation-post to mixi.
