@@ -1,0 +1,1596 @@
+[Sat Jun 30 16:22:56 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 16:23:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:23:03 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:03 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:23:03 2012] [debug] Rendering template "example/welcome.html.ep".
+[Sat Jun 30 16:23:03 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 16:23:03 2012] [debug] 200 OK (0.007668s, 130.412/s).
+[Sat Jun 30 16:23:05 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:05 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:23:05 2012] [debug] 200 OK (0.001288s, 776.398/s).
+[Sat Jun 30 16:23:11 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:11 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:23:11 2012] [debug] 200 OK (0.001419s, 704.722/s).
+[Sat Jun 30 16:23:24 2012] [debug] GET /Example (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:24 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:23:24 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:23:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:23:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:23:24 2012] [debug] 404 Not Found (0.018690s, 53.505/s).
+[Sat Jun 30 16:23:28 2012] [debug] GET /example (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:28 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:23:28 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:23:28 2012] [debug] 404 Not Found (0.005526s, 180.963/s).
+[Sat Jun 30 16:23:34 2012] [debug] GET /welcome (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:34 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:23:34 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:23:34 2012] [debug] 404 Not Found (0.005560s, 179.856/s).
+[Sat Jun 30 16:23:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:23:41 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:23:41 2012] [debug] 200 OK (0.001762s, 567.537/s).
+[Sat Jun 30 16:24:12 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:24:12 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:12 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:12 2012] [debug] Rendering template "example/welcome.html.ep".
+[Sat Jun 30 16:24:12 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 16:24:12 2012] [debug] 200 OK (0.008020s, 124.688/s).
+[Sat Jun 30 16:24:13 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:13 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:13 2012] [debug] 200 OK (0.001495s, 668.896/s).
+[Sat Jun 30 16:24:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:24:31 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:31 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:31 2012] [error] Can't locate UTF.pm in @INC (@INC contains: script/../lib script/lib /usr/local/bin/../lib /usr/local/bin/lib /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at script/../lib/Fsq2mixi/Example.pm line 2.
+BEGIN failed--compilation aborted at script/../lib/Fsq2mixi/Example.pm line 2.
+Compilation failed in require at (eval 238) line 1.
+
+[Sat Jun 30 16:24:31 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:31 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:31 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:24:31 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:24:31 2012] [debug] 500 Internal Server Error (0.022529s, 44.387/s).
+[Sat Jun 30 16:24:32 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:32 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:32 2012] [error] Attempt to reload Fsq2mixi/Example.pm aborted.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Jun 30 16:24:32 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:32 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:32 2012] [debug] 500 Internal Server Error (0.007182s, 139.237/s).
+[Sat Jun 30 16:24:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:24:37 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:37 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:37 2012] [error] Can't locate UTF8.pm in @INC (@INC contains: script/../lib script/lib /usr/local/bin/../lib /usr/local/bin/lib /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at script/../lib/Fsq2mixi/Example.pm line 2.
+BEGIN failed--compilation aborted at script/../lib/Fsq2mixi/Example.pm line 2.
+Compilation failed in require at (eval 238) line 1.
+
+[Sat Jun 30 16:24:37 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:37 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:37 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:24:37 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:24:37 2012] [debug] 500 Internal Server Error (0.021153s, 47.275/s).
+[Sat Jun 30 16:24:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:38 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:38 2012] [error] Attempt to reload Fsq2mixi/Example.pm aborted.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Jun 30 16:24:38 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:38 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:38 2012] [debug] 500 Internal Server Error (0.013146s, 76.069/s).
+[Sat Jun 30 16:24:38 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:38 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:38 2012] [error] Attempt to reload Fsq2mixi/Example.pm aborted.
+Compilation failed in require at (eval 242) line 1.
+
+[Sat Jun 30 16:24:38 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:38 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:38 2012] [debug] 500 Internal Server Error (0.007016s, 142.531/s).
+[Sat Jun 30 16:24:39 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:24:39 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:24:39 2012] [error] Attempt to reload Fsq2mixi/Example.pm aborted.
+Compilation failed in require at (eval 243) line 1.
+
+[Sat Jun 30 16:24:39 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:24:39 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:24:39 2012] [debug] 500 Internal Server Error (0.008801s, 113.623/s).
+[Sat Jun 30 16:25:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:25:01 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:25:01 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:25:02 2012] [debug] Rendering template "example/welcome.html.ep".
+[Sat Jun 30 16:25:02 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 16:25:02 2012] [debug] 200 OK (0.107685s, 9.286/s).
+[Sat Jun 30 16:25:02 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:25:02 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:25:02 2012] [debug] 200 OK (0.001169s, 855.432/s).
+[Sat Jun 30 16:25:35 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:25:35 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:25:35 2012] [debug] 200 OK (0.001522s, 657.030/s).
+[Sat Jun 30 16:25:56 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:25:56 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:25:56 2012] [debug] 200 OK (0.002613s, 382.702/s).
+[Sat Jun 30 16:25:56 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:25:56 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:25:56 2012] [debug] Dispatching "Fsq2mixi::Example->welcome".
+[Sat Jun 30 16:25:56 2012] [debug] Rendering template "example/welcome.html.ep".
+[Sat Jun 30 16:25:56 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 16:25:56 2012] [debug] 200 OK (0.015563s, 64.255/s).
+[Sat Jun 30 16:31:42 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:31:42 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:31:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:31:42 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:31:42 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:31:42 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:31:48 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 16:31:50 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:31:50 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:31:50 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:31:50 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:31:50 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:31:50 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:32:05 2012] [error] Connection timeout.
+[Sat Jun 30 16:32:23 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:32:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:32:23 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:23 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:23 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:32:28 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 16:32:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:32:29 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:32:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:32:29 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:29 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:29 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:32:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:32:52 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:32:52 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:32:52 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:52 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:32:52 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:32:58 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 16:33:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:33:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:00 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:00 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:00 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:33:15 2012] [error] Connection timeout.
+[Sat Jun 30 16:33:24 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:33:24 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:24 2012] [debug] Action "Fsq2mixi::Login->foursquare" not found, assuming template without action.
+[Sat Jun 30 16:33:24 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:24 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:33:24 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:33:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:24 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:24 2012] [debug] 404 Not Found (0.020650s, 48.426/s).
+[Sat Jun 30 16:33:25 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:25 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:25 2012] [debug] Action "Fsq2mixi::Login->foursquare" not found, assuming template without action.
+[Sat Jun 30 16:33:25 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:25 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:33:25 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:33:25 2012] [debug] 404 Not Found (0.005866s, 170.474/s).
+[Sat Jun 30 16:33:26 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:26 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:26 2012] [debug] Action "Fsq2mixi::Login->foursquare" not found, assuming template without action.
+[Sat Jun 30 16:33:26 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:26 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:33:26 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:33:26 2012] [debug] 404 Not Found (0.005993s, 166.861/s).
+[Sat Jun 30 16:33:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:27 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:27 2012] [debug] Action "Fsq2mixi::Login->foursquare" not found, assuming template without action.
+[Sat Jun 30 16:33:27 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] 404 Not Found (0.005735s, 174.368/s).
+[Sat Jun 30 16:33:27 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:27 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:27 2012] [debug] Action "Fsq2mixi::Login->foursquare" not found, assuming template without action.
+[Sat Jun 30 16:33:27 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 16:33:27 2012] [debug] 404 Not Found (0.008105s, 123.381/s).
+[Sat Jun 30 16:33:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:33:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:44 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:44 2012] [error] syntax error at script/../lib/Fsq2mixi/Login.pm line 12, near ")"
+Compilation failed in require at (eval 238) line 1.
+
+[Sat Jun 30 16:33:44 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:33:44 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:33:44 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:44 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:44 2012] [debug] 500 Internal Server Error (0.021446s, 46.629/s).
+[Sat Jun 30 16:33:45 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:45 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:45 2012] [error] Can't locate object method "foursquare" via package "Fsq2mixi::Login" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sat Jun 30 16:33:45 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:33:45 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:33:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:45 2012] [debug] Rendering inline template.
+[Sat Jun 30 16:33:45 2012] [debug] 500 Internal Server Error (0.028611s, 34.952/s).
+[Sat Jun 30 16:33:45 2012] [error] Can't locate object method "foursquare" via package "Fsq2mixi::Login" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sat Jun 30 16:33:46 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:33:46 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:33:46 2012] [error] Can't locate object method "foursquare" via package "Fsq2mixi::Login" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sat Jun 30 16:33:46 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 16:33:46 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 16:33:46 2012] [debug] 500 Internal Server Error (0.010863s, 92.056/s).
+[Sat Jun 30 16:33:46 2012] [error] Can't locate object method "foursquare" via package "Fsq2mixi::Login" at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+
+[Sat Jun 30 16:34:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 16:34:29 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:34:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:34:29 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:34:29 2012] [debug] Template "login/foursquare.html.ep" not found.
+[Sat Jun 30 16:34:29 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 16:34:44 2012] [error] Connection timeout.
+[Sat Jun 30 16:35:16 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:35:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:35:16 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 16:35:16 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 16:35:16 2012] [debug] 200 OK (0.004819s, 207.512/s).
+[Sat Jun 30 16:35:17 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 16:35:17 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 16:35:17 2012] [debug] 200 OK (0.001113s, 898.473/s).
+[Sat Jun 30 17:01:47 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 17:01:47 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:01:47 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:01:47 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:01:47 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:01:47 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:01:47 2012] [debug] 200 OK (0.019147s, 52.228/s).
+[Sat Jun 30 17:01:48 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:01:48 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:01:48 2012] [debug] 200 OK (0.001234s, 810.373/s).
+[Sat Jun 30 17:02:55 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:02:55 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:02:55 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:02:55 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:02:55 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:02:55 2012] [debug] 200 OK (0.015247s, 65.587/s).
+[Sat Jun 30 17:02:59 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 17:03:00 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:03:00 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:03:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:03:00 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:03:00 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:03:00 2012] [debug] 200 OK (0.013861s, 72.145/s).
+[Sat Jun 30 17:03:36 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:03:36 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:03:36 2012] [debug] 200 OK (0.001273s, 785.546/s).
+[Sat Jun 30 17:03:37 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:03:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:03:37 2012] [debug] 200 OK (0.001292s, 773.994/s).
+[Sat Jun 30 17:03:42 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 17:03:44 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:03:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:03:44 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:03:44 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:03:44 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:03:44 2012] [debug] 200 OK (0.013538s, 73.866/s).
+[Sat Jun 30 17:07:09 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:07:09 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:07:09 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:07:09 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:07:09 2012] [error] Bareword "foursquare_redirect_authpage" not allowed while "strict subs" in use at template "login/foursquare.html.ep" line 5.
+Unmatched right curly bracket at template "login/foursquare.html.ep" line 5.
+syntax error at template "login/foursquare.html.ep" line 5.
+1: % layout 'default';
+2: % title 'Welcome';
+3: <h2><%= $message %></h2>
+4: foursquareへのログインを行ないます:
+5: <%= link_to Login => foursquare_redirect_authpage %>Home<% end %>
+
+[Sat Jun 30 17:07:09 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:07:09 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:07:09 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:07:09 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:07:09 2012] [debug] 500 Internal Server Error (0.054643s, 18.301/s).
+[Sat Jun 30 17:07:10 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:07:10 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:07:10 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:07:10 2012] [error] Bareword "foursquare_redirect_authpage" not allowed while "strict subs" in use at template "login/foursquare.html.ep" line 5.
+Unmatched right curly bracket at template "login/foursquare.html.ep" line 5.
+syntax error at template "login/foursquare.html.ep" line 5.
+1: % layout 'default';
+2: % title 'Welcome';
+3: <h2><%= $message %></h2>
+4: foursquareへのログインを行ないます:
+5: <%= link_to Login => foursquare_redirect_authpage %>Home<% end %>
+
+[Sat Jun 30 17:07:10 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:07:10 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:07:10 2012] [debug] 500 Internal Server Error (0.010398s, 96.172/s).
+[Sat Jun 30 17:07:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:07:43 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:07:43 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:07:43 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:07:43 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:07:43 2012] [debug] 200 OK (0.014348s, 69.696/s).
+[Sat Jun 30 17:07:44 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:07:44 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:07:44 2012] [debug] 200 OK (0.001368s, 730.994/s).
+[Sat Jun 30 17:07:46 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:07:46 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 17:07:46 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 17:07:46 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:07:46 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:07:46 2012] [debug] 404 Not Found (0.018286s, 54.687/s).
+[Sat Jun 30 17:08:04 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:08:04 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:08:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sat Jun 30 17:08:04 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sat Jun 30 17:08:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:08:04 2012] [debug] 200 OK (0.015682s, 63.767/s).
+[Sat Jun 30 17:08:05 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:08:05 2012] [debug] Template "not_found.development.html.ep" not found.
+[Sat Jun 30 17:08:05 2012] [debug] Template "not_found.html.ep" not found.
+[Sat Jun 30 17:08:05 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:08:05 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:08:05 2012] [debug] 404 Not Found (0.016371s, 61.084/s).
+[Sat Jun 30 17:08:31 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:08:31 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:08:31 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:08:31 2012] [debug] Template "login/foursquare_redirect_authpage.html.ep" not found.
+[Sat Jun 30 17:08:31 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:08:46 2012] [error] Connection timeout.
+[Sat Jun 30 17:08:54 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:08:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:08:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:08:54 2012] [error] syntax error at script/../lib/Fsq2mixi/Login.pm line 12, near ")"
+Compilation failed in require at (eval 252) line 1.
+
+[Sat Jun 30 17:08:54 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:08:54 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:08:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:08:54 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:08:54 2012] [debug] 500 Internal Server Error (0.023808s, 42.003/s).
+[Sat Jun 30 17:09:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:09:07 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:09:07 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:09:07 2012] [debug] Template "login/foursquare_redirect_authpage.html.ep" not found.
+[Sat Jun 30 17:09:07 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:09:22 2012] [error] Connection timeout.
+[Sat Jun 30 17:10:10 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:10:10 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:10:10 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:10:10 2012] [error] Can't locate object method "tx" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:10:10 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:10:10 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:10:10 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:10:10 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:10:10 2012] [debug] 500 Internal Server Error (0.024422s, 40.947/s).
+[Sat Jun 30 17:10:10 2012] [error] Can't locate object method "tx" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:10:11 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:10:11 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:10:11 2012] [error] Can't locate object method "tx" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:10:11 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:10:11 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:10:11 2012] [debug] 500 Internal Server Error (0.010820s, 92.421/s).
+[Sat Jun 30 17:10:11 2012] [error] Can't locate object method "tx" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:10:19 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:10:19 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:10:19 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:10:25 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:10:25 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:10:25 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:10:25 2012] [debug] Template "login/foursquare_redirect_authpage.html.ep" not found.
+[Sat Jun 30 17:10:25 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:10:40 2012] [error] Connection timeout.
+[Sat Jun 30 17:12:37 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.004630s, 215.983/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.001039s, 962.464/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000749s, 1335.113/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000776s, 1288.660/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000803s, 1245.330/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000766s, 1305.483/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.001176s, 850.340/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000796s, 1256.281/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000752s, 1329.787/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000785s, 1273.885/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000875s, 1142.857/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000745s, 1342.282/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000730s, 1369.863/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000757s, 1321.004/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000759s, 1317.523/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000771s, 1297.017/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000772s, 1295.337/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000811s, 1233.046/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000767s, 1303.781/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000757s, 1321.004/s).
+[Sat Jun 30 17:12:37 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:37 2012] [debug] 302 Found (0.000841s, 1189.061/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.001539s, 649.773/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000795s, 1257.862/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.001004s, 996.016/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000817s, 1223.990/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000849s, 1177.856/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000778s, 1285.347/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000744s, 1344.086/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000703s, 1422.475/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000731s, 1367.989/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000712s, 1404.494/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000700s, 1428.571/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000700s, 1428.571/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000707s, 1414.427/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000705s, 1418.440/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000692s, 1445.087/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000689s, 1451.379/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000738s, 1355.014/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000734s, 1362.398/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000719s, 1390.821/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000688s, 1453.488/s).
+[Sat Jun 30 17:12:38 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:12:38 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:12:38 2012] [debug] 302 Found (0.000695s, 1438.849/s).
+[Sat Jun 30 17:13:08 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:13:08 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:13:08 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:13:08 2012] [error] Can't locate object method "redirect_to" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:13:08 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:13:08 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:13:08 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:13:08 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:13:08 2012] [debug] 500 Internal Server Error (0.023520s, 42.517/s).
+[Sat Jun 30 17:13:08 2012] [error] Can't locate object method "redirect_to" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:13:09 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:13:09 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:13:09 2012] [error] Can't locate object method "redirect_to" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:13:09 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:13:09 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:13:09 2012] [debug] 500 Internal Server Error (0.007750s, 129.032/s).
+[Sat Jun 30 17:13:09 2012] [error] Can't locate object method "redirect_to" via package "Fsq2mixi" at script/../lib/Fsq2mixi/Login.pm line 17
+
+[Sat Jun 30 17:13:23 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:13:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:13:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:13:23 2012] [error] Can't call method "redirect_to" on an undefined value at script/../lib/Fsq2mixi/Login.pm line 18.
+
+[Sat Jun 30 17:13:23 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:13:23 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:13:23 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:13:23 2012] [debug] Rendering inline template.
+[Sat Jun 30 17:13:23 2012] [debug] 500 Internal Server Error (0.022154s, 45.139/s).
+[Sat Jun 30 17:13:23 2012] [error] Can't call method "redirect_to" on an undefined value at script/../lib/Fsq2mixi/Login.pm line 18.
+
+[Sat Jun 30 17:13:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:13:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:13:23 2012] [error] Can't call method "redirect_to" on an undefined value at script/../lib/Fsq2mixi/Login.pm line 18.
+
+[Sat Jun 30 17:13:23 2012] [debug] Template "exception.development.html.ep" not found.
+[Sat Jun 30 17:13:23 2012] [debug] Template "exception.html.ep" not found.
+[Sat Jun 30 17:13:24 2012] [debug] 500 Internal Server Error (0.009688s, 103.220/s).
+[Sat Jun 30 17:13:24 2012] [error] Can't call method "redirect_to" on an undefined value at script/../lib/Fsq2mixi/Login.pm line 18.
+
+[Sat Jun 30 17:14:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.001946s, 513.875/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000752s, 1329.787/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000744s, 1344.086/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000860s, 1162.791/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000575s, 1739.130/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.001258s, 794.913/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000829s, 1206.273/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000583s, 1715.266/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000585s, 1709.402/s).
+[Sat Jun 30 17:14:32 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:32 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:32 2012] [debug] 302 Found (0.000558s, 1792.115/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001683s, 594.177/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.002123s, 471.032/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001315s, 760.456/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000724s, 1381.215/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000747s, 1338.688/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000780s, 1282.051/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000851s, 1175.088/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000841s, 1189.061/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000568s, 1760.563/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000549s, 1821.494/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000582s, 1718.213/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.002240s, 446.429/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000759s, 1317.523/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000742s, 1347.709/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000765s, 1307.190/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000831s, 1203.369/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000717s, 1394.700/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000741s, 1349.528/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001094s, 914.077/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001057s, 946.074/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001033s, 968.054/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001357s, 736.920/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000708s, 1412.429/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000694s, 1440.922/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000733s, 1364.256/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000772s, 1295.337/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000994s, 1006.036/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000680s, 1470.588/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000690s, 1449.275/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.001076s, 929.368/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000558s, 1792.115/s).
+[Sat Jun 30 17:14:33 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:33 2012] [debug] 302 Found (0.000548s, 1824.818/s).
+[Sat Jun 30 17:14:41 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 17:14:42 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.004354s, 229.674/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000786s, 1272.265/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000757s, 1321.004/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.001160s, 862.069/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000777s, 1287.001/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000784s, 1275.510/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000795s, 1257.862/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000757s, 1321.004/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000753s, 1328.021/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000765s, 1307.190/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000752s, 1329.787/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000773s, 1293.661/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000748s, 1336.898/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000779s, 1283.697/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000659s, 1517.451/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000716s, 1396.648/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000699s, 1430.615/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000694s, 1440.922/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000961s, 1040.583/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000956s, 1046.025/s).
+[Sat Jun 30 17:14:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:14:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:14:42 2012] [debug] 302 Found (0.000934s, 1070.664/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000827s, 1209.190/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000772s, 1295.337/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000819s, 1221.001/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000725s, 1379.310/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000922s, 1084.599/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000788s, 1269.036/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000743s, 1345.895/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001247s, 801.925/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001082s, 924.214/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001307s, 765.111/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001238s, 807.754/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000730s, 1369.863/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001548s, 645.995/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.001527s, 654.879/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000705s, 1418.440/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000717s, 1394.700/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000750s, 1333.333/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000948s, 1054.852/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000742s, 1347.709/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000775s, 1290.323/s).
+[Sat Jun 30 17:15:18 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:15:18 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:15:18 2012] [debug] 302 Found (0.000744s, 1344.086/s).
+[Sat Jun 30 17:16:23 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.001640s, 609.756/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000871s, 1148.106/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000834s, 1199.041/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000826s, 1210.654/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000775s, 1290.323/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000740s, 1351.351/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000839s, 1191.895/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000806s, 1240.695/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000787s, 1270.648/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000779s, 1283.697/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000802s, 1246.883/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000743s, 1345.895/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000907s, 1102.536/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000775s, 1290.323/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000885s, 1129.944/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.001053s, 949.668/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.001005s, 995.025/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000750s, 1333.333/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000820s, 1219.512/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000729s, 1371.742/s).
+[Sat Jun 30 17:16:23 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:23 2012] [debug] 301 Moved Permanently (0.000898s, 1113.586/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000924s, 1082.251/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000755s, 1324.503/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000759s, 1317.523/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000786s, 1272.265/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000847s, 1180.638/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000803s, 1245.330/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000709s, 1410.437/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000683s, 1464.129/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.001111s, 900.090/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000564s, 1773.050/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000583s, 1715.266/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000808s, 1237.624/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.001153s, 867.303/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000735s, 1360.544/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000692s, 1445.087/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000746s, 1340.483/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000800s, 1250.000/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000779s, 1283.697/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000879s, 1137.656/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000859s, 1164.144/s).
+[Sat Jun 30 17:16:24 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:24 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:24 2012] [debug] 301 Moved Permanently (0.000869s, 1150.748/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000836s, 1196.172/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000786s, 1272.265/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000756s, 1322.751/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000739s, 1353.180/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000805s, 1242.236/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000793s, 1261.034/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.001168s, 856.164/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000794s, 1259.446/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000796s, 1256.281/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000773s, 1293.661/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000772s, 1295.337/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000900s, 1111.111/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.001076s, 929.368/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000808s, 1237.624/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000765s, 1307.190/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000770s, 1298.701/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.001106s, 904.159/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000782s, 1278.772/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000893s, 1119.821/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000769s, 1300.390/s).
+[Sat Jun 30 17:16:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:29 2012] [debug] 301 Moved Permanently (0.000794s, 1259.446/s).
+[Sat Jun 30 17:16:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.003098s, 322.789/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000773s, 1293.661/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000600s, 1666.667/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000830s, 1204.819/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000876s, 1141.553/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000738s, 1355.014/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000894s, 1118.568/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000738s, 1355.014/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000789s, 1267.427/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000835s, 1197.605/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000802s, 1246.883/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000717s, 1394.700/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000899s, 1112.347/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000782s, 1278.772/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000982s, 1018.330/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000914s, 1094.092/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000712s, 1404.494/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000710s, 1408.451/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000770s, 1298.701/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.000947s, 1055.966/s).
+[Sat Jun 30 17:16:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:53 2012] [debug] 302 Found (0.001010s, 990.099/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001534s, 651.890/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000738s, 1355.014/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000758s, 1319.261/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000745s, 1342.282/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000948s, 1054.852/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000894s, 1118.568/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000806s, 1240.695/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001374s, 727.802/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001033s, 968.054/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001083s, 923.361/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000701s, 1426.534/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000959s, 1042.753/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000717s, 1394.700/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000671s, 1490.313/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000932s, 1072.961/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000689s, 1451.379/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001178s, 848.896/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.001129s, 885.740/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000719s, 1390.821/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000700s, 1428.571/s).
+[Sat Jun 30 17:16:58 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:16:58 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:16:58 2012] [debug] 302 Found (0.000768s, 1302.083/s).
+[Sat Jun 30 17:18:53 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.002452s, 407.830/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000705s, 1418.440/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000663s, 1508.296/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000666s, 1501.502/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000661s, 1512.859/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000698s, 1432.665/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000765s, 1307.190/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000691s, 1447.178/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000718s, 1392.758/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000686s, 1457.726/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000687s, 1455.604/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000705s, 1418.440/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000708s, 1412.429/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000722s, 1385.042/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000689s, 1451.379/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000824s, 1213.592/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000781s, 1280.410/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000810s, 1234.568/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.000968s, 1033.058/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.001363s, 733.676/s).
+[Sat Jun 30 17:18:53 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:53 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:53 2012] [debug] 302 Found (0.001176s, 850.340/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000781s, 1280.410/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000737s, 1356.852/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000754s, 1326.260/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000707s, 1414.427/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000747s, 1338.688/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000715s, 1398.601/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000676s, 1479.290/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000690s, 1449.275/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000675s, 1481.481/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000701s, 1426.534/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000690s, 1449.275/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000707s, 1414.427/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000676s, 1479.290/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000810s, 1234.568/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000992s, 1008.065/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000802s, 1246.883/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.001141s, 876.424/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.001075s, 930.233/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.001562s, 640.205/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.001472s, 679.348/s).
+[Sat Jun 30 17:18:54 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:54 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:54 2012] [debug] 302 Found (0.000702s, 1424.501/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000795s, 1257.862/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000742s, 1347.709/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000733s, 1364.256/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000729s, 1371.742/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000707s, 1414.427/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000668s, 1497.006/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000699s, 1430.615/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000674s, 1483.680/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000711s, 1406.470/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000704s, 1420.455/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000739s, 1353.180/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000728s, 1373.626/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000712s, 1404.494/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000750s, 1333.333/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.000908s, 1101.322/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.001093s, 914.913/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.001073s, 931.966/s).
+[Sat Jun 30 17:18:59 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:18:59 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:18:59 2012] [debug] 302 Found (0.001135s, 881.057/s).
+[Sat Jun 30 17:19:00 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:00 2012] [debug] 302 Found (0.001203s, 831.255/s).
+[Sat Jun 30 17:19:00 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:00 2012] [debug] 302 Found (0.001184s, 844.595/s).
+[Sat Jun 30 17:19:00 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:00 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:00 2012] [debug] 302 Found (0.001320s, 757.576/s).
+[Sat Jun 30 17:19:29 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.001611s, 620.732/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000720s, 1388.889/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000755s, 1324.503/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000684s, 1461.988/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000692s, 1445.087/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000660s, 1515.152/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000684s, 1461.988/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000662s, 1510.574/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000792s, 1262.626/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000684s, 1461.988/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000699s, 1430.615/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000672s, 1488.095/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000779s, 1283.697/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000777s, 1287.001/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000700s, 1428.571/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000943s, 1060.445/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.000946s, 1057.082/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.001060s, 943.396/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.001044s, 957.854/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.001164s, 859.107/s).
+[Sat Jun 30 17:19:29 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:29 2012] [debug] 302 Found (0.001149s, 870.322/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000834s, 1199.041/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000755s, 1324.503/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000731s, 1367.989/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000671s, 1490.313/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000687s, 1455.604/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000670s, 1492.537/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000668s, 1497.006/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000667s, 1499.250/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000670s, 1492.537/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000692s, 1445.087/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000690s, 1449.275/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000668s, 1497.006/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000700s, 1428.571/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000815s, 1226.994/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000772s, 1295.337/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000945s, 1058.201/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.000957s, 1044.932/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.001039s, 962.464/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.001054s, 948.767/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.001042s, 959.693/s).
+[Sat Jun 30 17:19:30 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:30 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:30 2012] [debug] 302 Found (0.001258s, 794.913/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000637s, 1569.859/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000731s, 1367.989/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000748s, 1336.898/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000725s, 1379.310/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000706s, 1416.431/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000704s, 1420.455/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000705s, 1418.440/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000679s, 1472.754/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000728s, 1373.626/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000707s, 1414.427/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000692s, 1445.087/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000708s, 1412.429/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000939s, 1064.963/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000746s, 1340.483/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.001105s, 904.977/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000948s, 1054.852/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000712s, 1404.494/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000703s, 1422.475/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000713s, 1402.525/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000794s, 1259.446/s).
+[Sat Jun 30 17:19:35 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:19:35 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:19:35 2012] [debug] 302 Found (0.000701s, 1426.534/s).
+[Sat Jun 30 17:20:07 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:20:07 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:20:07 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:20:07 2012] [debug] 302 Found (0.001408s, 710.227/s).
+[Sat Jun 30 17:20:42 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:20:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:20:42 2012] [debug] 302 Found (0.000680s, 1470.588/s).
+[Sat Jun 30 17:22:21 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:22:21 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:22:21 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sat Jun 30 17:22:21 2012] [debug] 302 Found (0.001416s, 706.215/s).
+[Sat Jun 30 17:22:40 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:22:40 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:22:40 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:22:40 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:22:40 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:22:55 2012] [error] Connection timeout.
+[Sat Jun 30 17:23:15 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:23:15 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:23:15 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:15 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:15 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:23:36 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:23:36 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:23:36 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:23:36 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:36 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:36 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:23:52 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:23:52 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:23:52 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:23:52 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:52 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:23:52 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:24:07 2012] [error] Connection timeout.
+[Sat Jun 30 17:24:26 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:24:26 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:24:26 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:24:26 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:26 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:26 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:24:37 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:24:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:24:37 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:37 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:37 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:24:42 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:24:42 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:24:42 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:42 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:42 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:24:49 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:24:49 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:24:49 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:49 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:24:49 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:25:04 2012] [error] Connection timeout.
+[Sat Jun 30 17:26:23 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:26:23 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:26:23 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:26:23 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:26:23 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:26:38 2012] [error] Connection timeout.
+[Sat Jun 30 17:27:32 2012] [info] Server listening (http://*:3000)
+[Sat Jun 30 17:27:33 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:27:33 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:27:33 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:27:33 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:27:33 2012] [debug] Template "login/foursquare_redirect_callback.html.ep" not found.
+[Sat Jun 30 17:27:33 2012] [debug] Nothing has been rendered, assuming delayed response.
+[Sat Jun 30 17:27:48 2012] [error] Connection timeout.
+[Sat Jun 30 17:29:03 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sat Jun 30 17:29:03 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:29:03 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:29:03 2012] [debug] Rendering template "login/foursquare_redirect_callback.html.ep".
+[Sat Jun 30 17:29:03 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sat Jun 30 17:29:03 2012] [debug] 200 OK (0.014114s, 70.852/s).
+[Sat Jun 30 17:29:04 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:29:04 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:29:04 2012] [debug] 200 OK (0.001551s, 644.745/s).
+[Sat Jun 30 17:29:07 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:29:07 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:29:07 2012] [debug] 200 OK (0.001374s, 727.802/s).
+[Sat Jun 30 17:29:08 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sat Jun 30 17:29:08 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_callback".
+[Sat Jun 30 17:29:08 2012] [debug] 200 OK (0.001865s, 536.193/s).
