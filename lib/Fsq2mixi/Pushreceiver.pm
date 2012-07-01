@@ -8,8 +8,6 @@ use Mojo::Base 'Mojolicious::Controller';
 sub fsq_checkin_receiver {
 	my $self = shift;
 	
-	my $json  = Mojo::JSON->new;
-	
 	my $param_checkin = $self->param('checkin');
 	my $param_secret = $self->param('secret');
 	
@@ -21,7 +19,7 @@ sub fsq_checkin_receiver {
 	}
 	
 	# extract checkin-data
-	my $checkin = $json->decode($param_checkin);
+	my $checkin = JSON->new->decode($param_checkin);
 	my $fsq_id = $checkin->{user}->{id};
 	
 	# load user-data
@@ -48,6 +46,7 @@ sub fsq_checkin_receiver {
 		
 		# make a status-text
 		my $statusText = "I'm at "
+			.$checkin->{venue}->{name}
 			.$checkin->{venue}->{location}->{name}." ("
 			.$checkin->{venue}->{location}->{city}.", "
 			.$checkin->{venue}->{location}->{state}.")"

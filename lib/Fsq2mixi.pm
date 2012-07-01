@@ -4,6 +4,7 @@ use Mojo::Base 'Mojolicious';
 use Validator::Custom;
 use Config::Pit;
 use DateTime;
+use JSON;
 
 use Data::Model::Driver::DBI;
 use Fsq2mixi::DB::User;
