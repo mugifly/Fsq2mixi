@@ -115,7 +115,8 @@ sub postVoice {
 	my $noRetry = shift;
 	my $res = $self->{ua}->post_form('https://api.mixi-platform.com/2/voice/statuses/update' => 
 		{
-			status => $text
+			status => $text,
+			oauth_token => $self->{access_token}
 		}
 	);
 	
