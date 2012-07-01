@@ -18,6 +18,8 @@ sub startup {
 	my $config = pit_get("fsq2mixi");
 	$self->helper(config => sub{return $config});
 	
+	$self->secret('fsq2mixi'.$config->{secret});
+	
 	# Documentation browser under "/perldoc"
 	$self->plugin('PODRenderer');
 	
