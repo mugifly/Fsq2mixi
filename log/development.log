@@ -4328,3 +4328,68 @@ $VAR1 = [
 [Sun Jul  1 02:36:50 2012] [debug] 200 OK (0.731673s, 1.367/s).
 [Sun Jul  1 02:36:57 2012] [debug] GET /foursquare_pushreceiver (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
 [Sun Jul  1 02:36:57 2012] [debug] Dispatching "Fsq2mixi::Pushreceiver->fsq_checkin_receiver".
+[Sun Jul  1 22:50:14 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 22:50:20 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 22:50:20 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:20 2012] [debug] Dispatching callback.
+[Sun Jul  1 22:50:20 2012] [debug] 302 Found (0.001802s, 554.939/s).
+[Sun Jul  1 22:50:20 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:20 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 22:50:20 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sun Jul  1 22:50:21 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 22:50:21 2012] [debug] 200 OK (0.730060s, 1.370/s).
+[Sun Jul  1 22:50:25 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:25 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 22:50:25 2012] [debug] 302 Found (0.000976s, 1024.590/s).
+[Sun Jul  1 22:50:37 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:37 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sun Jul  1 22:50:41 2012] [debug] 302 Found (3.517634s, 0.284/s).
+[Sun Jul  1 22:50:41 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:41 2012] [debug] Dispatching callback.
+[Sun Jul  1 22:50:41 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 22:50:42 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 22:50:42 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 22:50:42 2012] [debug] 200 OK (0.865087s, 1.156/s).
+[Sun Jul  1 22:50:46 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 22:50:46 2012] [debug] Dispatching callback.
+[Sun Jul  1 22:50:46 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 22:50:46 2012] [debug] 200 OK (0.759192s, 1.317/s).
+[Sun Jul  1 23:04:40 2012] [info] Server listening (http://*:3000)
+[Sun Jul  1 23:16:13 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul  1 23:16:13 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:13 2012] [debug] Dispatching callback.
+[Sun Jul  1 23:16:13 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 23:16:14 2012] [debug] Rendering template "user/usermenu.html.ep".
+[Sun Jul  1 23:16:14 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 23:16:14 2012] [debug] 200 OK (0.771131s, 1.297/s).
+[Sun Jul  1 23:16:16 2012] [debug] GET /logout (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:16 2012] [debug] Dispatching callback.
+[Sun Jul  1 23:16:16 2012] [debug] Dispatching "Fsq2mixi::Logout->logout".
+[Sun Jul  1 23:16:16 2012] [debug] 302 Found (0.002046s, 488.759/s).
+[Sun Jul  1 23:16:16 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:16 2012] [debug] Dispatching callback.
+[Sun Jul  1 23:16:16 2012] [debug] 302 Found (0.000608s, 1644.737/s).
+[Sun Jul  1 23:16:16 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:16 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 23:16:16 2012] [debug] Rendering template "login/foursquare.html.ep".
+[Sun Jul  1 23:16:16 2012] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jul  1 23:16:16 2012] [debug] 200 OK (0.007451s, 134.210/s).
+[Sun Jul  1 23:16:17 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:17 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 23:16:17 2012] [debug] 200 OK (0.001415s, 706.714/s).
+[Sun Jul  1 23:16:20 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:20 2012] [debug] Dispatching callback.
+[Sun Jul  1 23:16:20 2012] [debug] 302 Found (0.002424s, 412.541/s).
+[Sun Jul  1 23:16:20 2012] [debug] GET /login (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:20 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare".
+[Sun Jul  1 23:16:20 2012] [debug] 200 OK (0.001574s, 635.324/s).
+[Sun Jul  1 23:16:21 2012] [debug] GET /foursquare_redirect_authpage (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:21 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_redirect_authpage".
+[Sun Jul  1 23:16:21 2012] [debug] 302 Found (0.003051s, 327.761/s).
+[Sun Jul  1 23:16:29 2012] [debug] GET /oauth_callback_fsq (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:29 2012] [debug] Dispatching "Fsq2mixi::Login->foursquare_callback".
+[Sun Jul  1 23:16:32 2012] [debug] 302 Found (3.193970s, 0.313/s).
+[Sun Jul  1 23:16:32 2012] [debug] GET / (Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5).
+[Sun Jul  1 23:16:32 2012] [debug] Dispatching callback.
+[Sun Jul  1 23:16:32 2012] [debug] Dispatching "Fsq2mixi::User->usermenu".
+[Sun Jul  1 23:16:33 2012] [debug] 200 OK (0.741992s, 1.348/s).

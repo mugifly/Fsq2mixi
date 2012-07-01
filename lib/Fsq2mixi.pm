@@ -1,24 +1,25 @@
 package Fsq2mixi;
+
 use Mojo::Base 'Mojolicious';
-use OAuth::Lite::Consumer;
-use JSON;
+use Validator::Custom;
 use Config::Pit;
-use Fsq2mixi::DB::User;
+
 use Data::Model::Driver::DBI;
+use Fsq2mixi::DB::User;
 use Mixi;
 
 # This method will run once at server start
 sub startup {
 	my $self = shift;
 	
-	# Config::Pitで設定を取得
+	# Load settings by using Config::Pit
 	my $config = pit_get("fsq2mixi");
 	$self->helper(config => sub{return $config});
 	
 	# Documentation browser under "/perldoc"
 	$self->plugin('PODRenderer');
 	
-	# データベースの準備
+	# Prepare database & helper
 	my $db = Fsq2mixi::DB::User->new();
 	$self->helper(db => sub{return $db});
 	{
@@ -32,11 +33,11 @@ sub startup {
 		}
 	}
 	
-	# ユーザ情報
+	# Prepare user-data hash & helper
 	my $user;
 	$self->helper(ownUser => sub{return $user});
 	
-	# Routes
+	# Initial Routes (for not log-in to 4sq)
 	my $r = $self->routes;
 	
 	$r->route('/login')->to('login#foursquare');
@@ -44,6 +45,7 @@ sub startup {
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
 	
+	# Bridge (login check)
 	$r = $r->bridge->to(
 		cb => sub {
 			my $self = shift;
@@ -69,6 +71,8 @@ sub startup {
 			return 1;
 		}
 	);
+	
+	# Routes (for logged-in)
 	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
 	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
 	$r->route('/logout')->to('logout#logout');

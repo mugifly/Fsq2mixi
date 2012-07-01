@@ -6,10 +6,7 @@ use Mojo::Base 'Mojolicious::Controller';
 sub foursquare {
 	my $self = shift;
 	
-		$self->render(
-		message => 'Foursquareへのログイン'
-		
-	);
+	$self->render();
 }
 
 sub mixi_redirect_authpage {
