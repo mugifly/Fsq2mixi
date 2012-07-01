@@ -2,6 +2,10 @@ package Fsq2mixi::User;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 
+sub login {
+	my $self = shift;
+	$self->render();
+}
 
 sub usermenu {
 	my $self = shift;

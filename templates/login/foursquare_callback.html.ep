@@ -1,5 +1,0 @@
-% layout 'default';
-% title 'Welcome';
-<h2><%= $message %></h2>
-foursquareへのログインを行ないます: <%= link_to foursquare_redirect_authpage => begin %>ログイン<% end %>
-

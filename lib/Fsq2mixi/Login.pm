@@ -2,13 +2,6 @@ package Fsq2mixi::Login;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 
-
-sub foursquare {
-	my $self = shift;
-	
-	$self->render();
-}
-
 sub mixi_redirect_authpage {
 	my $self = shift;
 	my $mixi = Mixi->new('consumer_key'=> $self->config->{mixi_consumer_key}, 'consumer_secret' => $self->config->{mixi_consumer_secret});
