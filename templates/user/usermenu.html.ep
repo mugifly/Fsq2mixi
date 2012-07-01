@@ -4,14 +4,25 @@
 <h3>mixiとの連携状態</h3>
 <ul>
 <li>認証状態:
-	<% if ($is_mixiLogin eq 1) { %>
+	<% if ($is_mixiLogin eq "true") { %>
 		認証済み - <%= $mixiUserName %>
 	<% } else { %>
 		未認証<br>
 		<font size="-1">(mixiへの自動投稿を行うにはmixiへのログイン認証が必要です: <%= link_to mixi_redirect_authpage => begin %>mixiへのログイン<% end %>)</font>
 	<% } %>
-<li>投稿先モード: mixiボイス | mixiチェックイン</li>
-<li>前回の投稿: </li>
+<li>自動投稿:
+	<% if ($is_mixiLogin eq "true") { %>
+		<% if ($mixi_is_active eq "true") { %>
+			<b>[する]</b> | <%= link_to url_for('/')->query(mixi_is_active => "false") => begin %>しない<% end %>
+		<% } else { %>
+			<%= link_to url_for('/')->query(mixi_is_active => "true") => begin %>する<% end %> | <b>[しない]</b>
+		<% } %>
+	<% } else { %>
+			<font color="gray">[する] | しない</font>
+	<% } %>
+</li>
+<li>投稿先モード: <b>[mixiボイス]</b> | mixiチェックイン</li>
+<li>前回の投稿: <%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font></li>
 </li>
 </ul>
 <%= link_to logout => begin %>ログアウト<% end %>

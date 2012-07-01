@@ -13,6 +13,7 @@ our $VERSION = '1.0.0';
 use Carp;
 
 use Mojo::UserAgent;
+use Mojo::JSON;
 
 sub new {
 	my ($class, %hash) = @_;
@@ -23,6 +24,7 @@ sub new {
 	$self->{access_token}		= $hash{access_token} || "";
 	$self->{refresh_token}		= $hash{refresh_token} || "";
 	$self->{ua}					= Mojo::UserAgent->new();
+	$self->{json}				= Mojo::JSON->new();
 	
 	return $self;
 }
@@ -31,7 +33,8 @@ sub new {
 sub getUser_MixiName {
 	my $self = shift;
 	my $u = $self->getProfile();
-	return $u->json('/entry/displayName');
+	my $j = $self->{json}->decode($u);
+	return $j->{entry}->{displayName};
 }
 
 sub getProfile {
@@ -41,12 +44,13 @@ sub getProfile {
 	
 	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self?oauth_token='.$self->{access_token});
 	if($res->success){
-		$res = $res->res;
+		return $res->res->body;
 	}elsif($noRetry ne 1){
 		$self->refreshTokens($self->{refresh_token});
 		return $self->getProfile(1);
+	}else{
+		return undef;
 	}
-	return $res;
 }
 
 sub getRedirectURL {
@@ -69,10 +73,12 @@ sub refreshTokens {
 			grant_type => 		'refresh_token',
 			refresh_token =>	$rToken
 		}
-	)->res;
+	)->res->body;
 	
-	my $aToken = $res->json('/access_token');
-	$rToken = $res->json('/refresh_token');
+	my $r = $self->{json}->decode($res);
+	
+	my $aToken = $r->{access_token};
+	$rToken = $r->{refresh_token};
 	
 	if($aToken eq ""){
 		return undef;
@@ -95,10 +101,12 @@ sub getTokens {
 			redirect_uri =>		'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_mixi',
 			code =>				$code
 		}
-	)->res;
+	)->res->body;
 	
-	my $aToken = $res->json('/access_token');
-	my $rToken = $res->json('/refresh_token');
+	my $r = $self->{json}->decode($res);
+	
+	my $aToken = $r->{access_token};
+	my $rToken = $r->{refresh_token};
 	
 	if($aToken eq ""){
 		return undef;
@@ -121,8 +129,9 @@ sub postVoice {
 	);
 	
 	if($res->success){
-		$res = $res->res;
-		my $postId = $res->json('/id');
+		$res = $res->res->body;
+		my $r = $self->{json}->decode($res);
+		my $postId = $r->{id};
 		if($postId ne ""){
 			return $postId;
 		}else{

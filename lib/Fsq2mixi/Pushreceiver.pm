@@ -2,29 +2,80 @@ package Fsq2mixi::Pushreceiver;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 
+# PushReceiver
+# for Request (Push from Foursquare-server)
+
 sub fsq_checkin_receiver {
 	my $self = shift;
 	
-	my $user = $self->ownUser;
-	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
-		access_token => $user->{mixi_token},
-		refresh_token => $user->{mixi_rtoken},
-	);
 	my $json  = Mojo::JSON->new;
 	
 	my $param_checkin = $self->param('checkin');
 	my $param_secret = $self->param('secret');
-	$mixi->postVoice("これはテストです。");
+	
+	# verify push-secret
 	if($param_secret ne $self->config->{fsq_push_secret}){
 		$self->render(status => 401);
+		$self->render_json({'result' => 0, 'error_text'=>'push verify failed'});
+		return 0;
 	}
-	$self->render_json({
-		'result' => 0
+	
+	# extract checkin-data
+	my $checkin = $json->decode($param_checkin);
+	my $fsq_id = $checkin->{user}->{id};
+	
+	# load user-data
+	my $user;
+	my ($r, ) = $self->db->get('user' => {
+		where => [
+			fsq_id => $fsq_id
+		],
 	});
+	if(!defined($r) || !defined($r->id)){
+		$self->render(status => 401);
+		$self->render_json({'result' => 0, 'error_text'=>'user not found', 'chk'=> $checkin});
+		return 0;
+	}else{
+		$user = $r->{column_values};
+	}
 	
-	
-	
-	return 0;
+	if($user->{mixi_is_active} eq 1){#send to mixi is enable
+		# prepare connection for mixi
+		my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
+			access_token => $user->{mixi_token},
+			refresh_token => $user->{mixi_rtoken},
+		);
+		
+		# make a status-text
+		my $statusText = "I'm at "
+			.$checkin->{venue}->{location}->{name}." ("
+			.$checkin->{venue}->{location}->{city}.", "
+			.$checkin->{venue}->{location}->{state}.")"
+			.' (from foursquare (Fsq2mixi))';
+		
+		# send to mixi
+		my $mixi_postId = $mixi->postVoice($statusText);
+		if($mixi_postId eq undef){# failed	
+			
+		}else{ # success
+			# Update DB user-data
+			$r->mixi_latestsend_date(time());
+			$r->mixi_latestsend_text($statusText);
+			$r->mixi_token($mixi->{access_token});
+			$r->mixi_rtoken($mixi->{refresh_token});
+			$r->update;
+		}
+		
+		$self->render_json({
+			'result' => 1,
+			'mixi_voice_id' => $mixi_postId
+		});
+	}else{# send is disable
+		$self->render_json({
+			'result' => -1
+		});
+	}
+	return 1;
 }
 
 1;

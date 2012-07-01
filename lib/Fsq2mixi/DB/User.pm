@@ -18,6 +18,7 @@ install_model user => schema {
 	utf8_column 'user.mixi_name';
 	column 'user.mixi_is_active';
 	utf8_column 'user.mixi_rtoken';
-	utf8_column 'user.mixi_latestsend';
+	utf8_column 'user.mixi_latestsend_text';
+	column 'user.mixi_latestsend_date';
 };
 1;

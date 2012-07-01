@@ -9,22 +9,49 @@ sub login {
 
 sub usermenu {
 	my $self = shift;
-	my $user = $self->ownUser;
+	my $userrow = $self->ownUserRow;
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
-		access_token => $user->{mixi_token},
-		refresh_token => $user->{mixi_rtoken},
+		access_token => $userrow->mixi_token,
+		refresh_token => $userrow->mixi_rtoken,
 	);
 	
-	# mixiのユーザ情報を取得
+	if(defined($userrow->mixi_latestsend_text)){
+		$self->stash(mixi_latestsend_text => $userrow->mixi_latestsend_text);
+		$self->stash(mixi_latestsend_date => $userrow->mixi_latestsend_date);
+	}else{
+		$self->stash(mixi_latestsend_text => "-");
+		$self->stash(mixi_latestsend_date => "-");
+	}
+	
+	# setting change mode
+	if(defined($self->param("mixi_is_active"))){
+		my $mixi_is_active = $self->param("mixi_is_active");
+		if(($mixi_is_active eq "true")){
+			$userrow->mixi_is_active(1);
+		}elsif($mixi_is_active eq "false"){
+			$userrow->mixi_is_active(0);
+		}
+		$userrow->update;
+		$self->redirect_to("/");
+	}
+	
+	# post to mixi - isEnable?
+	if($userrow->mixi_is_active eq 1){
+		$self->stash(mixi_is_active => "true");
+	}else{
+		$self->stash(mixi_is_active => "false");
+	}
+	
+	# get mixi user-data
 	my $mixiUserName = $mixi->getUser_MixiName();
 	$self->stash(mixiUserName => $mixiUserName);
 	if(!defined($mixiUserName) || $mixiUserName eq ""){
-		$self->stash(is_mixiLogin => 0);
+		$self->stash(is_mixiLogin => "false");
 	}else{
-		$self->stash(is_mixiLogin => 1);
+		$self->stash(is_mixiLogin => "true");
 	}
 	
-	# 出力
+	# output
 	$self->render(
 		message => 'ユーザーメニュー'
 		

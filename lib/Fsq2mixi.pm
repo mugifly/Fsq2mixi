@@ -3,6 +3,7 @@ package Fsq2mixi;
 use Mojo::Base 'Mojolicious';
 use Validator::Custom;
 use Config::Pit;
+use DateTime;
 
 use Data::Model::Driver::DBI;
 use Fsq2mixi::DB::User;
@@ -29,13 +30,22 @@ sub startup {
 	for my $target ($db->schema_names) {
 		my $dbh = $db->get_driver($target)->rw_handle;
 		for my $sql ($db->as_sqls($target)) {
-			#$dbh->do($sql);
+			eval{$dbh->do($sql)};
 		}
 	}
 	
 	# Prepare user-data hash & helper
 	my $user;
 	$self->helper(ownUser => sub{return $user});
+	$self->helper(ownUserRow => sub{
+		my $self = shift;
+		my ($d, ) = $self->db->get('user' => {
+			where => [
+				id => $self->ownUser->{id} 
+			],
+		});
+		return $d;
+	});
 	
 	# Initial Routes (for not log-in to 4sq)
 	my $r = $self->routes;

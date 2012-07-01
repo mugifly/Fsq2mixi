@@ -56,7 +56,8 @@ sub foursquare_callback {
 	# DBにユーザ情報を追加
 	$self->db->set('user'=> {
 		fsq_token => $token,
-		fsq_id => $fsq_id
+		fsq_id => $fsq_id,
+		mixi_is_active => 1
 	});
 	
 	# セッション保存
