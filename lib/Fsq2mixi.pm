@@ -15,7 +15,7 @@ sub startup {
 	my $self = shift;
 	
 	# Load settings by using Config::Pit
-	my $config = pit_get("fsq2mixi");# setting_name of Config::Pit
+	my $config = pit_get('fsq2mixi');# setting_name of Config::Pit
 	$self->helper(config => sub{return $config});
 	
 	# Set cookie-secret
@@ -27,7 +27,15 @@ sub startup {
 		my $self = shift;
 		if ( $self->req->headers->header('X-Forwarded-Host') && defined($config->{basepath})) {
 			# Set url base-path (directory path)
-			$self->req->url->base->path->parse($config->{basepath});
+			my @basepaths = split(/\//,$self->config->{basepath});
+			shift @basepaths;
+			foreach my $part(@basepaths){
+				if($part eq ${$self->req->url->path->parts}[0]){
+					push @{$self->req->url->base->path->parts}, shift @{$self->req->url->path->parts};
+				}else{
+					last;
+				}
+			}
 		}
 	});
 	
