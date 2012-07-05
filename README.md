@@ -30,4 +30,5 @@ __This application is still a test version.__
         "mixi_consumer_key": 'MIXI_CONSUMER_KEY'
         "mixi_consumer_secret": 'MIXI_CONSUMER_SECRET'
         "secret": 'COOKIE_SECRET'
+        "basepath": '/fsq2mixi'
 

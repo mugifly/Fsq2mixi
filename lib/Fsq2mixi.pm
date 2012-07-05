@@ -15,19 +15,19 @@ sub startup {
 	my $self = shift;
 	
 	# Load settings by using Config::Pit
-	my $config = pit_get("fsq2mixi");
+	my $config = pit_get("fsq2mixi");# setting_name of Config::Pit
 	$self->helper(config => sub{return $config});
 	
+	# Set cookie-secret
 	$self->secret('fsq2mixi'.$config->{secret});
 	
 	# Reverse proxy support
 	$ENV{MOJO_REVERSE_PROXY} = 1;
 	$self->hook('before_dispatch' => sub {
-	my $self = shift;
-	    
-	if ( $self->req->headers->header('X-Forwarded-Host')) {
-			my $prefix = shift @{$self->req->url->path->parts};
-			push @{$self->req->url->base->path->parts}, $prefix;
+		my $self = shift;
+		if ( $self->req->headers->header('X-Forwarded-Host') && defined($config->{basepath})) {
+			# Set url base-path (directory path)
+			$self->req->url->base->path->parse($config->{basepath});
 		}
 	});
 	
