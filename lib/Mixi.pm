@@ -58,7 +58,7 @@ sub getRedirectURL {
 	return "https://mixi.jp/connect_authorize.pl".
 		'?client_id='.$self->{consumer_key}.
 		'&response_type=code'.
-		'&scope=r_profile%20r_voice%20w_voice'.
+		'&scope=r_profile%20r_voice%20w_voice%20r_share%20w_share'.
 		'&display=touch';
 }
 
