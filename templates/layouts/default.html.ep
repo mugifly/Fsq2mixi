@@ -8,6 +8,7 @@
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 		}
 	</style>
+	<link rel="apple-touch-icon" href="img/fsq2mixi_icon_styled_150.png"/>
   </head>
   <body>
 	
