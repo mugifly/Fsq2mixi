@@ -23,6 +23,7 @@ sub usermenu {
 		$self->stash(mixi_latestsend_date => "-");
 	}
 	
+	
 	# setting change mode
 	if(defined($self->param("mixi_is_active"))){
 		my $mixi_is_active = $self->param("mixi_is_active");
@@ -44,7 +45,7 @@ sub usermenu {
 	
 	# get mixi user-data
 	my $mixiUserName = $mixi->getUser_MixiName();
-	$self->stash(mixiUserName => $mixiUserName);
+	$self->stash(mixiUserName => $mixiUserName.":". $mixi->getCheckinSpots());
 	if(!defined($mixiUserName) || $mixiUserName eq ""){
 		$self->stash(is_mixiLogin => "false");
 	}else{
