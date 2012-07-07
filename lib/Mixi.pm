@@ -159,7 +159,7 @@ sub getCheckinSpots{
 			foreach my $s(@{$r->{entry}}){
 				push(@spots,$s);
 			}
-			if(($req_StartPage + $REQ_PERPAGE) <= $r->{totalResults} ){
+			if(($req_StartPage + $REQ_PERPAGE) >= $r->{totalResults} ){
 				last;
 			}
 			$req_StartPage += $REQ_PERPAGE;
