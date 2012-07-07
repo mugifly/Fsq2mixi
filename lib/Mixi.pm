@@ -143,4 +143,32 @@ sub postVoice {
 	}
 }
 
+sub getCheckinSpots{
+	my ($self, $latitude,$longitude) = @_;
+	my $noRetry = 0;
+	my @spots = ();
+	my $req_StartPage = 0;
+	my $REQ_PERPAGE = 20;
+	while(1){
+		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots?oauth_token='.$self->{access_token}.'&count='.$REQ_PERPAGE
+			.'&startIndex='.$req_StartPage
+			.'&center='.$latitude.','.$longitude
+		);
+		if($res->success){
+			my $r = $self->{json}->decode($res->res->body);
+			foreach my $s(@{$r->{entry}}){
+				push(@spots,$s);
+			}
+			if(($req_StartPage + $REQ_PERPAGE) <= $r->{totalResults} ){
+				last;
+			}
+			$req_StartPage += $REQ_PERPAGE;
+		}elsif($noRetry eq 0){
+			$self->refreshTokens($self->{refresh_token});
+			$noRetry = 1;
+		}
+	}
+	return @spots;
+}
+
 1;
