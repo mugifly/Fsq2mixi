@@ -5,6 +5,7 @@ use Validator::Custom;
 use Config::Pit;
 use DateTime;
 use JSON;
+use String::Trigram;
 
 use Data::Model::Driver::DBI;
 use Fsq2mixi::DB::User;

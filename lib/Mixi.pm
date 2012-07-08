@@ -171,7 +171,7 @@ sub postCheckin{
 	};
 	my $retry = 0;
 	while($retry<=1){
-		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,JSON->new->encode($checkinData));
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,JSON->new->utf8(1)->encode($checkinData));
 		
 		if($res->success){
 			$res = $res->res->body;
@@ -208,7 +208,7 @@ sub postCheckinSpot{
 	
 	my $retry = 0;
 	while($retry<=1){
-		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',JSON->new->encode($spotData));
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',JSON->new->utf8(1)->encode($spotData));
 		
 		if($res->success){
 			$res = $res->res->body;

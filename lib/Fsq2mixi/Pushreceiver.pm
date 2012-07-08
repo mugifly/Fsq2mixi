@@ -1,5 +1,6 @@
 package Fsq2mixi::Pushreceiver;
 use utf8;
+use Encode;
 use Mojo::Base 'Mojolicious::Controller';
 
 # PushReceiver
@@ -45,16 +46,40 @@ sub fsq_checkin_receiver {
 		);
 		
 		if($user->{mixi_mode} eq "checkin"){ # mixi-checkin mode
+			my $spotName = $checkin->{venue}->{name};
 			my $latitude = $checkin->{venue}->{location}->{lat};
 			my $longitude = $checkin->{venue}->{location}->{lng};
-			my $spotId = $mixi->postCheckinSpot($checkin->{venue}->{name},$latitude,$longitude,"");
-			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
-			if($mixi_postId eq undef){# failed
 			
+			my $isNewSpot = 0;
+			my $spotId = "";
+			
+			# search mixi-checkin-spots
+			my @spots = $mixi->getCheckinSpots($latitude,$longitude);
+			foreach my $spot(@spots){
+				my $name = Encode::decode('UTF-8',$spot->{name}->{formatted});
+				# spot-name compare
+				if(String::Trigram::compare($spotName, $name) >= 0.8){
+					$spotId = $spot->{id};
+					last;
+				}
+				
+			}
+			
+			if($spotId eq ""){# not existing mixi-check-in-spot... 
+				# make new spot
+				$spotId = $mixi->postCheckinSpot($checkin->{venue}->{name},$latitude,$longitude,"");
+				$isNewSpot = 1;
+			}
+			
+			# post check-in
+			my $mixi_postId = 0;
+			#my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
+			if($mixi_postId eq undef){# failed
+				
 			}else{ # success
 				# Update DB user-data
 				$r->mixi_latestsend_date(time());
-				$r->mixi_latestsend_text("[mixiCheckin] SpotId=$spotId ($latitude,$longitude) from foursquare (Fsq2mixi)");
+				$r->mixi_latestsend_text("[mixiCheckin] ".$checkin->{venue}->{name}." from foursquare (Fsq2mixi). (SpotId=$spotId,Lat=$latitude,Lng=$longitude,isNewMySpot=$isNewSpot)");
 				$r->mixi_token($mixi->{access_token});
 				$r->mixi_rtoken($mixi->{refresh_token});
 				$r->update;
@@ -62,7 +87,11 @@ sub fsq_checkin_receiver {
 			
 			$self->render_json({
 				'result' => 1,
-				'mixi_checkin_id' => $mixi_postId
+				'mixi_checkin_id' => $mixi_postId,
+				'debug_spotid' => $spotId,
+				'name'=> $checkin->{venue}->{name},
+				'lat'=> $latitude,
+				'lng'=> $longitude
 			});
 		}else{ # mixi-voice mode
 			# make a status-text
