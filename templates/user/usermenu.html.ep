@@ -72,4 +72,9 @@
 	<p>ログアウト: <%= link_to logout => begin %>ログアウトする<% end %></p>
 	<p>登録抹消: foursquare、mixiとの接続許可の解除は、各サービスの設定画面から行えます。</p>
 	</div>
+	<div class="span4">
+	<p><h3>本サービスについて</h3></p>
+	<p> <%= link_to about => begin %>fsq2mixiについて<% end %></p>
+	</div>
 </div>
+<hr>

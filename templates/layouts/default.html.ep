@@ -63,7 +63,7 @@
 	<div class="container">
 		<%= content %>
 	</div>
-<hr>
+
 <div align="right" style="margin-right: 50px;">fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, <a href="http://ohgita.info/">Masanori</a>.</div>
 
 </body>

@@ -83,9 +83,7 @@ sub usermenu {
 	
 	# get mixi user-data
 	my $mixiUserName = $mixi->getUser_MixiName();
-	#my @a = $mixi->getCheckinSpots("35.6813819444","139.7660838819");
-	#$mixi->postCheckin("M2752295","35.6813819444","139.7660838819",$a[0]->{name}->{formatted});
-	$self->stash(mixiUserName => $mixiUserName.":");
+	$self->stash(mixiUserName => $mixiUserName);
 	if(!defined($mixiUserName) || $mixiUserName eq ""){
 		$self->stash(is_mixiLogin => "false");
 	}else{
@@ -94,8 +92,6 @@ sub usermenu {
 		$userrow->mixi_rtoken($mixi->{refresh_token});
 		$userrow->update;
 	}
-	
-	#$mixi->postCheckinSpot("testSpot","+35.6813819444","+139.7660838889","testnow")
 	
 	# output
 	$self->render();
