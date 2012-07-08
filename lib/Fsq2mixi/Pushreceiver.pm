@@ -22,6 +22,11 @@ sub fsq_checkin_receiver {
 	# extract checkin-data
 	my $checkin = JSON->new->decode($param_checkin);
 	my $fsq_id = $checkin->{user}->{id};
+	my $fsq_shout = "";
+	if(defined($checkin->{venue}->{shout}) && $checkin->{venue}->{shout} ne ""){
+		$fsq_shout = Encode::decode('UTF-8',$checkin->{venue}->{shout});
+	}
+	my $fsq_spotName = $checkin->{venue}->{name};
 	
 	# load user-data
 	my $user;
@@ -46,7 +51,6 @@ sub fsq_checkin_receiver {
 		);
 		
 		if($user->{mixi_mode} eq "checkin"){ # mixi-checkin mode
-			my $spotName = $checkin->{venue}->{name};
 			my $latitude = $checkin->{venue}->{location}->{lat};
 			my $longitude = $checkin->{venue}->{location}->{lng};
 			
@@ -58,27 +62,26 @@ sub fsq_checkin_receiver {
 			foreach my $spot(@spots){
 				my $name = Encode::decode('UTF-8',$spot->{name}->{formatted});
 				# spot-name compare
-				if(String::Trigram::compare($spotName, $name) >= 0.8){
+				if(String::Trigram::compare($fsq_spotName, $name) >= 0.8){
 					$spotId = $spot->{id};
 					last;
-				}
-				
+				}				
 			}
 			
 			if($spotId eq ""){# not existing mixi-check-in-spot... 
 				# make new spot
-				$spotId = $mixi->postCheckinSpot($checkin->{venue}->{name},$latitude,$longitude,"");
+				$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
 				$isNewSpot = 1;
 			}
 			
 			# post check-in
-			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
+			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
 			if($mixi_postId eq undef){# failed
 				
 			}else{ # success
 				# Update DB user-data
 				$r->mixi_latestsend_date(time());
-				$r->mixi_latestsend_text("[mixiCheckin] ".$checkin->{venue}->{name}." from foursquare (Fsq2mixi). (SpotId=$spotId,Lat=$latitude,Lng=$longitude,isNewMySpot=$isNewSpot)");
+				$r->mixi_latestsend_text("[mixiCheckin] ".$fsq_spotName." ".$fsq_shout."from foursquare (Fsq2mixi). (SpotId=$spotId,Lat=$latitude,Lng=$longitude,isNewMySpot=$isNewSpot)");
 				$r->mixi_token($mixi->{access_token});
 				$r->mixi_rtoken($mixi->{refresh_token});
 				$r->update;
@@ -87,19 +90,26 @@ sub fsq_checkin_receiver {
 			$self->render_json({
 				'result' => 1,
 				'mixi_checkin_id' => $mixi_postId,
-				'debug_spotid' => $spotId,
-				'name'=> $checkin->{venue}->{name},
+				'mixi_spotid' => $spotId,
+				'name'=> $fsq_spotName,
 				'lat'=> $latitude,
 				'lng'=> $longitude
 			});
 		}else{ # mixi-voice mode
 			# make a status-text
-			my $statusText = "I'm at "
-				.$checkin->{venue}->{name}
+			my $statusText = "";
+			if($fsq_shout ne ""){
+				$statusText = $fsq_shout
+				.'(@ ' . $fsq_spotName. ")"
+				.' (from foursquare (Fsq2mixi))';
+			}else{
+				$statusText = "I'm at "
+				.$fsq_spotName
 				.$checkin->{venue}->{location}->{name}." ("
 				.$checkin->{venue}->{location}->{city}.", "
 				.$checkin->{venue}->{location}->{state}.")"
 				.' (from foursquare (Fsq2mixi))';
+			}
 			
 			# send to mixi
 			my $mixi_postId = $mixi->postVoice($statusText);
@@ -116,7 +126,8 @@ sub fsq_checkin_receiver {
 			
 			$self->render_json({
 				'result' => 1,
-				'mixi_voice_id' => $mixi_postId
+				'mixi_voice_id' => $mixi_postId,
+				'name'=> $fsq_spotName
 			});
 		}
 	}else{# send is disable
