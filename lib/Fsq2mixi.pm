@@ -66,7 +66,7 @@ sub startup {
 	$self->stash(page => "Home");
 	
 	# Prepare user-data hash & helper
-	my $user;
+	my $user = {};
 	$self->helper(ownUser => sub{return $user});
 	$self->helper(ownUserRow => sub{
 		my $self = shift;
