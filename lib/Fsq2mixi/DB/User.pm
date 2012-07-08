@@ -17,6 +17,7 @@ install_model user => schema {
 	utf8_column 'user.mixi_token';
 	utf8_column 'user.mixi_name';
 	utf8_column 'user.mixi_mode';
+	column 'user.mixi_is_makemyspot';
 	column 'user.mixi_is_active';
 	utf8_column 'user.mixi_rtoken';
 	utf8_column 'user.mixi_latestsend_text';

@@ -34,6 +34,16 @@ sub usermenu {
 		$userrow->update;
 		$self->redirect_to("/");
 	}
+	if(defined($self->param("mixi_is_makemyspot"))){
+		my $mixi_is_makemyspot = $self->param("mixi_is_makemyspot");
+		if(($mixi_is_makemyspot eq "true")){
+			$userrow->mixi_is_makemyspot(1);
+		}elsif($mixi_is_makemyspot eq "false"){
+			$userrow->mixi_is_makemyspot(0);
+		}
+		$userrow->update;
+		$self->redirect_to("/");
+	}
 	if(defined($self->param("mixi_mode"))){
 		my $mixi_mode = $self->param("mixi_mode");
 		if(($mixi_mode eq "checkin")){
@@ -50,6 +60,13 @@ sub usermenu {
 		$self->stash(mixi_is_active => "true");
 	}else{
 		$self->stash(mixi_is_active => "false");
+	}
+	
+	# mixi-checkin - isMakeMySpot?
+	if($userrow->mixi_is_makemyspot eq 1){
+		$self->stash(mixi_is_makemyspot => "true");
+	}else{
+		$self->stash(mixi_is_makemyspot => "false");
 	}
 	
 	# post mode

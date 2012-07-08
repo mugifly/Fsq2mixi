@@ -43,6 +43,11 @@ column_sugar 'user.mixi_rtoken'
 		required => 0,
 		size     => 255,
 };
+column_sugar 'user.mixi_is_makemyspot'
+	=> int => {
+		required => 0,
+		unsigned => 1,
+};
 column_sugar 'user.mixi_is_active'
 	=> int => {
 		required => 0,

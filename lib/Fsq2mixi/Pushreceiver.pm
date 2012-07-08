@@ -68,33 +68,42 @@ sub fsq_checkin_receiver {
 				}				
 			}
 			
-			if($spotId eq ""){# not existing mixi-check-in-spot... 
-				# make new spot
-				$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
-				$isNewSpot = 1;
+			if($spotId eq ""){# not existing mixi-check-in-spot...
+				if($user->{mixi_is_makemyspot} eq 1){ 
+					# make new spot
+					$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
+					$isNewSpot = 1;
+				}
 			}
 			
-			# post check-in
-			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
-			if($mixi_postId eq undef){# failed
+			if($spotId eq ""){
+				$self->render_json({
+					'result' => -1
+				});
+			}else{
+				# post check-in
+				my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
+				if($mixi_postId eq undef){# failed
+					
+				}else{ # success
+					# Update DB user-data
+					$r->mixi_latestsend_date(time());
+					$r->mixi_latestsend_text("[mixiCheckin] ".$fsq_spotName." ".$fsq_shout."from foursquare (Fsq2mixi). (SpotId=$spotId,Lat=$latitude,Lng=$longitude,isNewMySpot=$isNewSpot)");
+					$r->mixi_token($mixi->{access_token});
+					$r->mixi_rtoken($mixi->{refresh_token});
+					$r->update;
+				}
 				
-			}else{ # success
-				# Update DB user-data
-				$r->mixi_latestsend_date(time());
-				$r->mixi_latestsend_text("[mixiCheckin] ".$fsq_spotName." ".$fsq_shout."from foursquare (Fsq2mixi). (SpotId=$spotId,Lat=$latitude,Lng=$longitude,isNewMySpot=$isNewSpot)");
-				$r->mixi_token($mixi->{access_token});
-				$r->mixi_rtoken($mixi->{refresh_token});
-				$r->update;
+				$self->render_json({
+					'result' => 1,
+					'mixi_checkin_id' => $mixi_postId,
+					'mixi_spotid' => $spotId,
+					'name'=> $fsq_spotName,
+					'lat'=> $latitude,
+					'lng'=> $longitude
+
+				});
 			}
-			
-			$self->render_json({
-				'result' => 1,
-				'mixi_checkin_id' => $mixi_postId,
-				'mixi_spotid' => $spotId,
-				'name'=> $fsq_spotName,
-				'lat'=> $latitude,
-				'lng'=> $longitude
-			});
 		}else{ # mixi-voice mode
 			# make a status-text
 			my $statusText = "";

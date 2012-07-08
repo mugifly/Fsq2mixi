@@ -43,6 +43,19 @@
 		<% } %>
 	</div><br>
 </li>
+<% if ($is_mixiLogin eq "true" && $mixi_is_active eq "true" && $mixi_mode eq "checkin") { %>
+	<li><i class="icon-th-list"></i> mixiチェックイン - マイスポットの自動作成:
+		<div class="btn-group" data-toggle="buttons-checkbox">
+			<% if ($mixi_is_makemyspot eq "true") { %>
+				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
+				<a class="btn" href="<%= url_for('/')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
+			<% } else { %>
+				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
+				<a class="btn active" href="<%= url_for('/')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
+			<% } %>
+		</div>(mixiの仕様により、本サービスからのチェックインは、自分で作った「マイスポット」に対してのみ行えます。<br>ここで「しない」にした場合、既にマイスポットを作ったことがある場所のみチェックインするようになります。)<br><br>
+	</li>
+<% } %>
 <li><i class="icon-time"></i> 前回の投稿:<br>
 	<%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font>
 </li>

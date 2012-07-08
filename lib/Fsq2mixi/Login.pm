@@ -57,7 +57,9 @@ sub foursquare_callback {
 	$self->db->set('user'=> {
 		fsq_token => $token,
 		fsq_id => $fsq_id,
-		mixi_is_active => 1
+		mixi_is_active => 1,
+		mixi_is_makemyspot => 1,
+		mixi_mode => 'voice'
 	});
 	
 	# セッション保存
