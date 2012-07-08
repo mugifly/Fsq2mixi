@@ -4,6 +4,16 @@ package Mixi;
 # (C)Masanori Ohgita. (http://ohgita.info/)
 ##################################################
 
+=head1 SCRIPT NAME
+
+Mixi
+
+=head1 DESCRIPTION
+
+mixiを扱うための超簡易モジュール
+
+=cut
+
 use strict;
 use warnings;
 use utf8;
@@ -25,6 +35,7 @@ sub new {
 	$self->{access_token}		= $hash{access_token} || "";
 	$self->{refresh_token}		= $hash{refresh_token} || "";
 	$self->{ua}					= Mojo::UserAgent->new();
+	$self->{ua}->connect_timeout(5);
 	$self->{json}				= Mojo::JSON->new();
 	
 	return $self;
@@ -40,7 +51,7 @@ sub getUser_MixiName {
 
 sub getProfile {
 	my $self = shift;
-	my $noRetry = shift || undef;
+	my $noRetry = shift || 0;
 	if($self->{access_token} eq ""){return undef;}
 	
 	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self?oauth_token='.$self->{access_token});
@@ -144,7 +155,79 @@ sub postVoice {
 	}
 }
 
-# getCheckinSpots(...) - Check-in スポット検索
+# postCheckin(SpotId,Lat,Lon,Message)
+sub postCheckin{
+	my ($self, $spotid, $latitude, $longitude, $message) = @_;
+	$self->{ua}->on(start => sub {
+		my ($ua, $tx) = @_;
+		$tx->req->headers->header('Authorization', 'OAuth '.$self->{access_token});
+	});
+	my $checkinData = {
+		'message'			=> $message,
+		'location' => {
+			'latitude'		=>	$latitude,
+			'longitude'	=> 	$longitude
+		}
+	};
+	my $retry = 0;
+	while($retry<=1){
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,JSON->new->encode($checkinData));
+		
+		if($res->success){
+			$res = $res->res->body;
+			my $r = $self->{json}->decode($res);
+			my $postId = $r->{id};
+			if($postId ne ""){
+				return $postId;
+			}else{
+				return undef;
+			}
+		}else{
+			$self->refreshTokens($self->{refresh_token});
+		}
+		$retry++;
+	}
+	return undef;
+}
+
+# postCheckinSpots(Name,Lat,Lon,Description) - Check-in マイスポット作成
+sub postCheckinSpot{
+	my ($self, $name, $latitude, $longitude, $description) = @_;
+	$self->{ua}->on(start => sub {
+		my ($ua, $tx) = @_;
+		$tx->req->headers->header('Authorization', 'OAuth '.$self->{access_token});
+	});
+	my $spotData = {
+		'name'			=> $name,
+		'location' => {
+			'latitude'		=>	$latitude,
+			'longitude'	=> 	$longitude
+		},
+		'description'	=>	$description
+	};
+	
+	my $retry = 0;
+	while($retry<=1){
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',JSON->new->encode($spotData));
+		
+		if($res->success){
+			$res = $res->res->body;
+			my $r = $self->{json}->decode($res);
+			my $postId = $r->{id};
+			if($postId ne ""){
+				return $postId;
+			}else{
+				return undef;
+			}
+		}else{
+			$self->refreshTokens($self->{refresh_token});
+		}
+		$retry = $retry + 1;
+	}
+	return undef;
+}
+
+# getCheckinSpots(Lat,Lon) - Check-in スポット検索
 # (2012年07月現在、マイスポットのみ。)
 sub getCheckinSpots{
 	my ($self, $latitude,$longitude) = @_;
@@ -155,20 +238,22 @@ sub getCheckinSpots{
 	while(1){
 		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots?oauth_token='.$self->{access_token}.'&count='.$REQ_PERPAGE
 			.'&startIndex='.$req_StartPage
-			.'&center='.$latitude.'%2c'.$longitude
+			.'&center='.$latitude.','.$longitude
 		);
 		if($res->success){
 			my $r = JSON->new->decode($res->res->body);
 			foreach my $s(@{$r->{entry}}){
 				push(@spots,$s);
 			}
-			if(($req_StartPage + $REQ_PERPAGE) >= $r->{totalResults} ){
+			if(!defined($r->{totalResults}) || ($req_StartPage + $REQ_PERPAGE) >= $r->{totalResults}){
 				last;
 			}
 			$req_StartPage += $REQ_PERPAGE;
 		}elsif($noRetry eq 0){
 			$self->refreshTokens($self->{refresh_token});
 			$noRetry = 1;
+		}else{
+			last;
 		}
 	}
 	return @spots;
