@@ -62,6 +62,9 @@ sub startup {
 		}
 	}
 	
+	# template stash
+	$self->stash(page => "Home");
+	
 	# Prepare user-data hash & helper
 	my $user;
 	$self->helper(ownUser => sub{return $user});
@@ -79,10 +82,10 @@ sub startup {
 	my $r = $self->routes;
 	$r->route('/about')->to('about#about');
 	
-	$r->route('/login')->to('user#login');
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
+	$r->route('/login')->to('user#login');
 	
 	# Bridge (login check)
 	$r = $r->bridge->to(

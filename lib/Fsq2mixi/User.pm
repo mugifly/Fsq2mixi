@@ -4,11 +4,16 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub login {
 	my $self = shift;
+	$self->stash(page => "Home");
+	if(defined($self->ownUser) && defined($self->ownUser->{id})){
+		$self->redirect_to('/');
+	}
 	$self->render();
 }
 
 sub usermenu {
 	my $self = shift;
+	$self->stash(page => "Home");
 	my $userrow = $self->ownUserRow;
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 		access_token => $userrow->mixi_token,
@@ -93,10 +98,7 @@ sub usermenu {
 	#$mixi->postCheckinSpot("testSpot","+35.6813819444","+139.7660838889","testnow")
 	
 	# output
-	$self->render(
-		message => 'ユーザーメニュー'
-		
-	);
+	$self->render();
 }
 
 1;

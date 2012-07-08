@@ -33,24 +33,32 @@
   </head>
   <body>
 	
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <%= link_to '/' => (class => 'brand') => begin %><%= image '/img/fsq2mixi_icon_styled_150.png', height=>"25px" %>  fsq2mixi<% end %>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><%= link_to '/' => begin %>Home<% end %></li>
-              <li><%= link_to '/about' => begin %>About<% end %></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<%= link_to '/' => (class => 'brand') => begin %><%= image '/img/fsq2mixi_icon_styled_150.png', style=>'margin-top:-5px;' ,height=>"25px" %>&nbsp;&nbsp;&nbsp;fsq2mixi<% end %>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<% if ($page eq "Home") { %>
+							<li class="active"><%= link_to '/' => begin %>Home<% end %></li>
+							<li><%= link_to '/about' => begin %>About<% end %></li>
+						<% }elsif ($page eq "About"){ %>
+							<li><%= link_to '/' => begin %>Home<% end %></li>
+							<li class="active"><%= link_to '/about' => begin %>About<% end %></li>
+						<% }else{ %>
+							<li><%= link_to '/' => begin %>Home<% end %></li>
+							<li><%= link_to '/about' => begin %>About<% end %></li>
+						<% } %>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
 	
 	<div class="container">
 		<%= content %>

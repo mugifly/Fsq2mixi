@@ -1,6 +1,6 @@
 % layout 'default';
 % title 'ユーザメニュー - 4sq2mixi';
-<h1>fsq2mixi - ユーザメニュー</h1><br>
+<h1>ユーザメニュー</h1><br>
 <div class="hero-unit">
 <p><h3>mixiとの連携状態</h3></p>
 <ul class="unstyled">

@@ -1,10 +1,19 @@
 % layout 'default';
 % title '4sq2mixiについて - 4sq2mixi';
-<h1>fsq2mixiについて</h1><br>
-<div class="hero-unit">
+<h1>fsq2mixiについて</h1>
+<div class="page-header">
 <p>fsq2mixiは、foursquareでのチェックイン時にmixiへ自動投稿を行うサービスです。<br>
 mixiチェックイン および、mixiボイスへの自動投稿が行えます。</p>
-<p>fsq2mixiのご利用には、foursquareアカウントとmixiアカウントが必要です。</p>
+<p>友人のふとしたアイデアから作ってみることにしました。</p>
+<p>尚、fsq2mixiのご利用には、foursquareアカウントとmixiアカウントが必要です。</p>
 <p> <%= link_to '/' => begin %>トップページへ<% end %></p>
 </div>
 
+<h2>開発者</h2>
+<div class="page-header">
+<p>Masanori Ohgita - <%= link_to 'http://ohgita.info/' => begin %>http://ohgita.info/<% end %>
+ (<%= link_to 'https://plus.google.com/100193705060363203281/' => begin %>g+<% end %>)</p>
+<p>GitHubで拙いソースコードを公開しています: <%= link_to 'https://github.com/mugifly/Fsq2mixi' => begin %>https://github.com/mugifly/Fsq2mixi<% end %><br>
+適当実装なところが多いです。今後改良していければ...と考えています。<br>
+ご意見、ご要望、ご指摘などなど、お気軽に。お待ちしております。</p>
+</div>
