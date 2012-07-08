@@ -23,8 +23,8 @@ sub fsq_checkin_receiver {
 	my $checkin = JSON->new->decode($param_checkin);
 	my $fsq_id = $checkin->{user}->{id};
 	my $fsq_shout = "";
-	if(defined($checkin->{venue}->{shout}) && $checkin->{venue}->{shout} ne ""){
-		$fsq_shout = Encode::decode('UTF-8',$checkin->{venue}->{shout});
+	if(defined($checkin->{shout}) && $checkin->{shout} ne ""){
+		$fsq_shout = Encode::decode('UTF-8',$checkin->{shout});
 	}
 	my $fsq_spotName = $checkin->{venue}->{name};
 	
