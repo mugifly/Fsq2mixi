@@ -19,8 +19,9 @@ sub startup {
 	my $config = pit_get('fsq2mixi');# setting_name of Config::Pit
 	$self->helper(config => sub{return $config});
 	
-	# Set cookie-secret
+	# Set cookie-settings
 	$self->secret('fsq2mixi'.$config->{secret});
+	$self->session(expires => time + 604800);#
 	
 	# Reverse proxy support
 	$ENV{MOJO_REVERSE_PROXY} = 1;
@@ -70,8 +71,9 @@ sub startup {
 		return $d;
 	});
 	
-	# Initial Routes (for not log-in to 4sq)
+	# Initial Routes (for not log-in to 4sq , and all-users)
 	my $r = $self->routes;
+	$r->route('/about')->to('about#about');
 	
 	$r->route('/login')->to('user#login');
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');

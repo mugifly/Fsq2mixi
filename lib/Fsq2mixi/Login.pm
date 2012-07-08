@@ -4,12 +4,16 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub mixi_redirect_authpage {
 	my $self = shift;
+	$self->flash(auth_flg => 'mixiauth-'.$self->config->{mixi_consumer_key});
 	my $mixi = Mixi->new('consumer_key'=> $self->config->{mixi_consumer_key}, 'consumer_secret' => $self->config->{mixi_consumer_secret});
 	$self->redirect_to($mixi->getRedirectURL());
 }
 
 sub mixi_callback {
 	my $self = shift;
+	if(($self->flash("auth_flg") ne 'mixiauth-'.$self->config->{mixi_consumer_key}) || $self->param('code') eq ""){
+		$self->redirect_to('/');
+	}
 	
 	# mixiサーバからアクセストークンを取得
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret});
@@ -33,11 +37,16 @@ sub mixi_callback {
 
 sub foursquare_redirect_authpage {
 	my $self = shift;
+	$self->flash(auth_flg => 'fsqauth-'.$self->config->{fsq_client_id});
 	$self->redirect_to("https://foursquare.com/oauth2/authenticate?client_id=".$self->config->{fsq_client_id}."&response_type=code&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq");
 }
 
 sub foursquare_callback {
 	my $self = shift;
+	if($self->flash("auth_flg") ne 'fsqauth-'.$self->config->{fsq_client_id} || $self->param("code") eq ""){
+		$self->redirect_to('/');
+	}
+	
 	my $ua = $self->ua->new;
 	my $token = $ua->get('https://ja.foursquare.com/oauth2/access_token'.
 		'?client_id='.$self->config->{fsq_client_id}.
