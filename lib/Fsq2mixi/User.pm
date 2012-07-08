@@ -23,7 +23,6 @@ sub usermenu {
 		$self->stash(mixi_latestsend_date => "-");
 	}
 	
-	
 	# setting change mode
 	if(defined($self->param("mixi_is_active"))){
 		my $mixi_is_active = $self->param("mixi_is_active");
@@ -31,6 +30,16 @@ sub usermenu {
 			$userrow->mixi_is_active(1);
 		}elsif($mixi_is_active eq "false"){
 			$userrow->mixi_is_active(0);
+		}
+		$userrow->update;
+		$self->redirect_to("/");
+	}
+	if(defined($self->param("mixi_mode"))){
+		my $mixi_mode = $self->param("mixi_mode");
+		if(($mixi_mode eq "checkin")){
+			$userrow->mixi_mode("checkin");
+		}elsif($mixi_mode eq "voice"){
+			$userrow->mixi_mode("voice");
 		}
 		$userrow->update;
 		$self->redirect_to("/");
@@ -43,14 +52,28 @@ sub usermenu {
 		$self->stash(mixi_is_active => "false");
 	}
 	
+	# post mode
+	if($userrow->mixi_mode eq "checkin"){
+		$self->stash(mixi_mode => "checkin");
+	}else{
+		$self->stash(mixi_mode => "voice");
+	}
+	
 	# get mixi user-data
 	my $mixiUserName = $mixi->getUser_MixiName();
-	$self->stash(mixiUserName => $mixiUserName.":". $mixi->getCheckinSpots());
+	#my @a = $mixi->getCheckinSpots("35.6813819444","139.7660838819");
+	#$mixi->postCheckin("M2752295","35.6813819444","139.7660838819",$a[0]->{name}->{formatted});
+	$self->stash(mixiUserName => $mixiUserName.":");
 	if(!defined($mixiUserName) || $mixiUserName eq ""){
 		$self->stash(is_mixiLogin => "false");
 	}else{
 		$self->stash(is_mixiLogin => "true");
+		$userrow->mixi_token($mixi->{access_token});
+		$userrow->mixi_rtoken($mixi->{refresh_token});
+		$userrow->update;
 	}
+	
+	#$mixi->postCheckinSpot("testSpot","+35.6813819444","+139.7660838889","testnow")
 	
 	# output
 	$self->render(

@@ -1,35 +1,62 @@
 % layout 'default';
 % title 'ユーザメニュー - 4sq2mixi';
-<h1>fsq2mixi - ユーザメニュー</h1>
-<p><h4>mixiとの連携状態</h4></p>
+<h1>fsq2mixi - ユーザメニュー</h1><br>
+<div class="hero-unit">
+<p><h3>mixiとの連携状態</h3></p>
 <ul class="unstyled">
-<li><i class="icon-user"></i> mixi認証状態:
+<li><i class="icon-user"></i> mixi認証状態:<br>
 	<% if ($is_mixiLogin eq "true") { %>
 		<i class="icon-ok"></i> 認証済み - <%= $mixiUserName %>
 	<% } else { %>
-		<i class="icon-remove"></i> 未認証
-<p>mixiでログインしてfsq2mixiを接続許可してください: <%= link_to mixi_redirect_authpage => (class => 'btn btn-primary btn-mini') => begin %><i class="icon-user"></i> mixiへのログイン<% end %></p>
+		<i class="icon-remove"></i> 未認証 - mixiでログインしてfsq2mixiを接続許可してください: <%= link_to mixi_redirect_authpage => (class => 'btn btn-primary btn-mini') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
 	<% } %>
+	<br><br>
 <li><i class="icon-upload"></i> 自動投稿:
+	<div class="btn-group" data-toggle="buttons-checkbox">
 	<% if ($is_mixiLogin eq "true") { %>
 		<% if ($mixi_is_active eq "true") { %>
-			<i class="icon-ok"></i> <b>[する]</b> | <%= link_to url_for('/')->query(mixi_is_active => "false") => begin %>しない<% end %>
+			<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_active => "true") => begin %><% end %>"><i class="icon-ok"></i> する</a>
+			<a class="btn" href="<%= url_for('/')->query(mixi_is_active => "false") => begin %><% end %>">しない</a>
 		<% } else { %>
-			<i class="icon-remove"></i> <%= link_to url_for('/')->query(mixi_is_active => "true") => begin %>する<% end %> | <b>[しない]</b>
+			<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_is_active => "true") => begin %><% end %>">する</a>
+			<a class="btn active" href="<%= url_for('/')->query(mixi_is_active => "false") => begin %><% end %>"><i class="icon-remove"></i> しない</a>
 		<% } %>
 	<% } else { %>
-			<i class="icon-ok"></i> <font color="gray">[する] | しない</font>
+		<button class="btn disabled" data-toggle="button">する</button>
+		<button class="btn disabled" data-toggle="button">しない</button>
 	<% } %>
+	</div><br>
 </li>
 <li><i class="icon-th-list"></i> 投稿先モード:
-	<% if ($is_mixiLogin eq "true") { %>
-		<b>[mixiボイス]</b> | mixiチェックイン
-	<% } else { %>
-		<font color="gray"><b>[mixiボイス]</b> | mixiチェックイン</font>
-	<% } %>
+	<div class="btn-group" data-toggle="buttons-checkbox">
+		<% if ($is_mixiLogin eq "true" && $mixi_is_active eq "true") { %>
+			<% if ($mixi_mode eq "checkin") { %>
+				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>">mixiチェックイン</a>
+				<a class="btn" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>">mixiボイス</a>
+			<% } else { %>
+				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>">mixiチェックイン</a>
+				<a class="btn active" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>">mixiボイス</a>			
+			<% } %>
+		<% } else { %>
+			<button class="btn disabled" data-toggle="button">mixiチェックイン</button>
+			<button class="btn disabled">mixiボイス</button>
+		<% } %>
+	</div><br>
 </li>
-<li><i class="icon-time"></i> 前回の投稿: <%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font></li>
+<li><i class="icon-time"></i> 前回の投稿:<br>
+	<%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font>
 </li>
 </ul>
-<%= link_to logout => begin %>ログアウト<% end %>
-
+</div>
+<div class="row-fluid">
+	<div class="span4">
+	<p><h3>投稿先モードについて</h3></p>
+	<p>mixiチェックイン： mixiチェックインへマイスポットとしてチェックインを行ないます。</p>
+	<p>mixiボイス： foursquareのTwitter連携時と同じような文章を、mixiボイスへつぶやきを行ないます。</p>
+	</div>
+	<div class="span4">
+	<p><h3>ログアウトと登録抹消について</h3></p>
+	<p>ログアウト: <%= link_to logout => begin %>ログアウトする<% end %></p>
+	<p>登録抹消: foursquare、mixiとの接続許可の解除は、各サービスの設定画面から行えます。</p>
+	</div>
+</div>

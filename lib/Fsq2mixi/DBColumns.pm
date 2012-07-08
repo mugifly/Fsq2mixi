@@ -33,6 +33,11 @@ column_sugar 'user.mixi_name'
 		required => 0,
 		size     => 255,
 };
+column_sugar 'user.mixi_mode'
+	=> 'varchar' => {
+		required => 0,
+		size     => 255,
+};
 column_sugar 'user.mixi_rtoken'
 	=> 'varchar' => {
 		required => 0,

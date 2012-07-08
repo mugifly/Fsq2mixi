@@ -44,31 +44,53 @@ sub fsq_checkin_receiver {
 			refresh_token => $user->{mixi_rtoken},
 		);
 		
-		# make a status-text
-		my $statusText = "I'm at "
-			.$checkin->{venue}->{name}
-			.$checkin->{venue}->{location}->{name}." ("
-			.$checkin->{venue}->{location}->{city}.", "
-			.$checkin->{venue}->{location}->{state}.")"
-			.' (from foursquare (Fsq2mixi))';
-		
-		# send to mixi
-		my $mixi_postId = $mixi->postVoice($statusText);
-		if($mixi_postId eq undef){# failed	
+		if($user->{mixi_mode} eq "checkin"){ # mixi-checkin mode
+			my $latitude = $checkin->{venue}->{location}->{lat};
+			my $longitude = $checkin->{venue}->{location}->{lng};
+			my $spotId = $mixi->postCheckinSpot($checkin->{venue}->{name},$latitude,$longitude,"");
+			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
+			if($mixi_postId eq undef){# failed
 			
-		}else{ # success
-			# Update DB user-data
-			$r->mixi_latestsend_date(time());
-			$r->mixi_latestsend_text($statusText);
-			$r->mixi_token($mixi->{access_token});
-			$r->mixi_rtoken($mixi->{refresh_token});
-			$r->update;
+			}else{ # success
+				# Update DB user-data
+				$r->mixi_latestsend_date(time());
+				$r->mixi_latestsend_text("[mixiCheckin] SpotId=$spotId ($latitude,$longitude) from foursquare (Fsq2mixi)");
+				$r->mixi_token($mixi->{access_token});
+				$r->mixi_rtoken($mixi->{refresh_token});
+				$r->update;
+			}
+			
+			$self->render_json({
+				'result' => 1,
+				'mixi_checkin_id' => $mixi_postId
+			});
+		}else{ # mixi-voice mode
+			# make a status-text
+			my $statusText = "I'm at "
+				.$checkin->{venue}->{name}
+				.$checkin->{venue}->{location}->{name}." ("
+				.$checkin->{venue}->{location}->{city}.", "
+				.$checkin->{venue}->{location}->{state}.")"
+				.' (from foursquare (Fsq2mixi))';
+			
+			# send to mixi
+			my $mixi_postId = $mixi->postVoice($statusText);
+			if($mixi_postId eq undef){# failed	
+				
+			}else{ # success
+				# Update DB user-data
+				$r->mixi_latestsend_date(time());
+				$r->mixi_latestsend_text($statusText);
+				$r->mixi_token($mixi->{access_token});
+				$r->mixi_rtoken($mixi->{refresh_token});
+				$r->update;
+			}
+			
+			$self->render_json({
+				'result' => 1,
+				'mixi_voice_id' => $mixi_postId
+			});
 		}
-		
-		$self->render_json({
-			'result' => 1,
-			'mixi_voice_id' => $mixi_postId
-		});
 	}else{# send is disable
 		$self->render_json({
 			'result' => -1
