@@ -2,30 +2,36 @@
 <html>
   <head>
 	<title><%= title %></title>
-	<%= stylesheet '/css/bootstrap.css' %>
+	<%= stylesheet '/css/bootstrap.min.css' %>
+	<%= stylesheet '/css/bootstrap-responsive.min.css' %>
 	<style>
 		body {
-			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+			padding-top:60px;
+		}
+		@media (max-width: 980px) {
+			body {
+				padding-top: 0;
+			}
 		}
 	</style>
 	<link rel="apple-touch-icon" href="img/fsq2mixi_icon_styled_150.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 	
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top" style="height: 100px">
       <div class="navbar-inner">
         <div class="container">
+        <%= link_to '/' => (class => 'brand') => begin %><%= image '/img/fsq2mixi_icon_styled_150.png', height=>"25px" %><% end %>
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </a>
-          <%= link_to '/' => (class => 'brand') => begin %>fsq2mixi<% end %>
+          
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><%= link_to '/' => begin %>Home<% end %></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><%= link_to '/about' => begin %>About<% end %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

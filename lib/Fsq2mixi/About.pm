@@ -6,3 +6,4 @@ sub about {
 	my $self = shift;
 	$self->render();
 }
+1;
