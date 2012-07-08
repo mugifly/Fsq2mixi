@@ -72,8 +72,7 @@ sub fsq_checkin_receiver {
 			}
 			
 			# post check-in
-			my $mixi_postId = 0;
-			#my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
+			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,"from foursquare (Fsq2mixi)");
 			if($mixi_postId eq undef){# failed
 				
 			}else{ # success
