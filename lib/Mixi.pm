@@ -12,6 +12,7 @@ our $VERSION = '1.0.0';
 
 use Carp;
 
+use JSON;
 use Mojo::UserAgent;
 use Mojo::JSON;
 
@@ -143,6 +144,8 @@ sub postVoice {
 	}
 }
 
+# getCheckinSpots(...) - Check-in スポット検索
+# (2012年07月現在、マイスポットのみ。)
 sub getCheckinSpots{
 	my ($self, $latitude,$longitude) = @_;
 	my $noRetry = 0;
@@ -152,10 +155,10 @@ sub getCheckinSpots{
 	while(1){
 		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots?oauth_token='.$self->{access_token}.'&count='.$REQ_PERPAGE
 			.'&startIndex='.$req_StartPage
-			.'&center='.$latitude.','.$longitude
+			.'&center='.$latitude.'%2c'.$longitude
 		);
 		if($res->success){
-			my $r = $self->{json}->decode($res->res->body);
+			my $r = JSON->new->decode($res->res->body);
 			foreach my $s(@{$r->{entry}}){
 				push(@spots,$s);
 			}
