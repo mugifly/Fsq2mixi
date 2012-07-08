@@ -31,4 +31,5 @@ __This application is still a test version.__
         "mixi_consumer_secret": 'MIXI_CONSUMER_SECRET'
         "secret": 'COOKIE_SECRET'
         "basepath": '/fsq2mixi'
+        "dbpath": 'SQLITE_DATABASE_SAVEPATH'
 

@@ -48,7 +48,11 @@ sub startup {
 	my $db = Fsq2mixi::DB::User->new();
 	$self->helper(db => sub{return $db});
 	{
-		my $driver = Data::Model::Driver::DBI->new(dsn => 'dbi:SQLite:dbname=db_fsq2mixi.db');
+		my $dbpath = 'db_fsq2mixi.db';
+		if(defined($config->{dbpath}) && $config->{dbpath} ne ""){
+			$dbpath = $config->{dbpath};
+		}
+		my $driver = Data::Model::Driver::DBI->new(dsn => 'dbi:SQLite:dbname='.$dbpath);
 		$db->set_base_driver($driver);
 	}
 	for my $target ($db->schema_names) {

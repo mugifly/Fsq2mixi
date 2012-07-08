@@ -1,10 +1,14 @@
 % layout 'default';
 % title 'Fsq2mixi';
+<header class="header">
 	<h1>fsq2mixi</h1>
-	<p>fsq2mixiは、foursquareでのチェックイン時にmixiへ自動投稿を行うサービスです。</p>
+	<p class="lead">foursquareでのチェックイン時にmixiへ自動投稿を行うサービス</p>
+</header>
+<div class="page-header">
+	<h2>早速使ってみましょう。</h2>
 	<p>利用するには...まず以下から、ご自分のfoursquareアカウントでログインして、fsq2mixiを接続許可してください。</p>
 	<p><h3>foursquareでログイン</h3></p>
 	<p><%= link_to foursquare_redirect_authpage => (class=> 'btn btn-primary btn-large') => begin %> <i class="icon-user icon-white"></i> ログイン<% end %></p>
-	<p>foursquareのウェブサイトへジャンプして認証します。</p>
-
+	<small>foursquareのウェブサイトへジャンプして認証します。</small>
+</div>
 
