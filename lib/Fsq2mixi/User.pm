@@ -5,7 +5,7 @@ use Mojo::Base 'Mojolicious::Controller';
 sub login {
 	my $self = shift;
 	$self->stash(page => "Home");
-	if(defined($self->ownUser) && defined($self->ownUser->{id})){
+	if(defined($self->ownUser) && defined($self->ownUser->{id}) && $self->ownUser->{id} ne ""){
 		$self->redirect_to('/');
 	}
 	$self->render();

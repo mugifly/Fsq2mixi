@@ -86,7 +86,6 @@ sub startup {
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
 	$r->route('/login')->to('user#login');
-	$r->route('')->to('user#login');	
 	# Bridge (login check)
 	$r = $r->bridge->to(
 		cb => sub {
@@ -119,6 +118,7 @@ sub startup {
 	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
 	$r->route('/logout')->to('logout#logout');
 	$r->route('/')->to('user#usermenu');
+	$r->route('')->to('user#usermenu');
 }
 
 1;
