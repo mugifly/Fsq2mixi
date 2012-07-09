@@ -66,7 +66,7 @@ sub startup {
 	$self->stash(page => "Home");
 	
 	# Prepare user-data hash & helper
-	my $user = {};
+	my $user;$user = undef;
 	$self->helper(ownUser => sub{return $user});
 	$self->helper(ownUserRow => sub{
 		my $self = shift;
@@ -86,7 +86,7 @@ sub startup {
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
 	$r->route('/login')->to('user#login');
-	
+	$r->route('')->to('user#login');	
 	# Bridge (login check)
 	$r = $r->bridge->to(
 		cb => sub {
