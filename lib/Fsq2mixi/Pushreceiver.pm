@@ -121,10 +121,13 @@ sub fsq_checkin_receiver {
 				}elsif($checkin->{venue}->{location}->{state} ne ""){
 					$addr = "(" . $checkin->{venue}->{location}->{state} .")";
 				}
+				if($addr ne ""){
+					$addr = " (".$addr.")";
+				}
 				
 				$statusText = "I'm at "
 				.$fsq_spotName
-				.$checkin->{venue}->{location}->{name}." (".$addr.")"
+				.$checkin->{venue}->{location}->{name}.$addr
 				.' (from foursquare (Fsq2mixi))';
 			}
 			
