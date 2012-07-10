@@ -8,7 +8,7 @@ sub login {
 	if(defined($self->ownUser) && defined($self->ownUser->{id}) && $self->ownUser->{id} ne ""){
 		$self->redirect_to('/');
 	}
-	$self->session(fsq_token => 1);
+	$self->session(expires => 1);
 	$self->render();
 }
 
