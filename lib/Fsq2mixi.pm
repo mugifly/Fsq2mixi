@@ -1,4 +1,12 @@
 package Fsq2mixi;
+#######################################################
+# Fsq2mixi
+# Check-in to foursquare(4sq), automation-post to mixi.
+#######################################################
+# Copyright (c) 2012 Masanori Ohgita (http://ohgita.info/).
+# This program is free software distributed under the terms of the MIT license.
+# See LICENSE.txt for details.
+#######################################################
 
 use Mojo::Base 'Mojolicious';
 use Validator::Custom;
@@ -40,9 +48,6 @@ sub startup {
 			}
 		}
 	});
-	
-	# Documentation browser under "/perldoc"
-	$self->plugin('PODRenderer');
 	
 	# Prepare database & helper
 	my $db = Fsq2mixi::DB::User->new();

@@ -33,3 +33,10 @@ __This application is still a test version.__
         "basepath": '/fsq2mixi'
         "dbpath": 'SQLITE_DATABASE_SAVEPATH'
 
+### License and Author
+
+ Copyright (c) 2012 Masanori Ohgita (http://ohgita.info/).
+ This program is free software distributed under the terms of the MIT license.
+ See LICENSE.txt for details.
+
+
