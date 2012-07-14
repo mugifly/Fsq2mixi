@@ -84,4 +84,10 @@ column_sugar 'checkin.date'	=>	int	=> {
 		inflate => 'DateTime',
 };
 
+column_sugar 'checkin.mixi_send_status'	=>	int	=> {
+		# 0 = Unsent, 1 = Send(mixi-Voice), 2 = Send(mixi-Checkin), 100 = Error
+		required => 0,
+		unsigned => 1
+};
+
 1;
