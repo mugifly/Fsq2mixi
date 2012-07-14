@@ -16,7 +16,8 @@ use JSON;
 use String::Trigram;
 
 use Data::Model::Driver::DBI;
-use Fsq2mixi::DB::User;
+use Fsq2mixi::DBSchemas;
+use Fsq2mixi::Model::PostToMixi;
 use Mixi;
 
 # This method will run once at server start
@@ -50,7 +51,7 @@ sub startup {
 	});
 	
 	# Prepare database & helper
-	my $db = Fsq2mixi::DB::User->new();
+	my $db = Fsq2mixi::DBSchemas->new();
 	$self->helper(db => sub{return $db});
 	{
 		my $dbpath = 'db_fsq2mixi.db';
@@ -66,6 +67,10 @@ sub startup {
 			eval{$dbh->do($sql)};
 		}
 	}
+	
+	# Prepare model helper
+	my $p2m = Fsq2mixi::Model::PostToMixi->new();
+	$self->helper(PostToMixi => sub{return $p2m});
 	
 	# template stash
 	$self->stash(page => "Home");
@@ -95,7 +100,7 @@ sub startup {
 	$r = $r->bridge->to(
 		cb => sub {
 			my $self = shift;
-			my $fsq_token = $self->session('fsq_token');
+			my $fsq_token = $self->session('fsq_token') || "";
 			
 			if($fsq_token ne ""){
 				 my $users = $db->get('user' => {
@@ -121,6 +126,7 @@ sub startup {
 	# Routes (for logged-in)
 	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
 	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
+	$r->route('/1sq2mixi')->to('user#onesq2mixi');
 	$r->route('/logout')->to('logout#logout');
 	$r->route('/')->to('user#usermenu');
 	$r->route('')->to('user#usermenu');

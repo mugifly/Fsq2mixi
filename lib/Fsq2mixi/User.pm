@@ -12,6 +12,47 @@ sub login {
 	$self->render();
 }
 
+sub onesq2mixi {
+	my $self = shift;
+	$self->stash(page => "Home");
+	my $userrow = $self->ownUserRow;
+	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
+		access_token => $userrow->mixi_token,
+		refresh_token => $userrow->mixi_rtoken,
+	);
+	my $resultFlg = -1;
+	
+	# load latest checkin from DB
+	my $checkin = {};
+	my $h = $self->db->get('checkin' => {
+		where => [
+			fsq_id => $self->ownUserRow->fsq_id
+		]
+	});
+	my $r = $h->next;
+	if(!defined($r) || !defined($r->id)){
+		$checkin = $r->{column_values};
+	}
+	# post to mixi
+	if(defined($checkin) && ($checkin->{mixi_send_status} eq "0" || $checkin->{mixi_send_status} eq "100" )){# unsent or last time is error...
+		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, $userrow->mixi_is_makemyspot);
+		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
+			# Update DB user-data
+			$r->mixi_token($mixi->{access_token});
+			$r->mixi_rtoken($mixi->{refresh_token});
+			$r->mixi_latestsend_date(time());
+			$r->update;
+		}
+		$resultFlg = $ret->{sendFlg};
+		$self->stash(result => $ret);
+	}else{
+		$resultFlg = -1;
+	}
+	
+	$self->stash(resultFlg => $resultFlg);
+	$self->render();
+}
+
 sub usermenu {
 	my $self = shift;
 	$self->stash(page => "Home");
@@ -93,6 +134,19 @@ sub usermenu {
 		$userrow->mixi_rtoken($mixi->{refresh_token});
 		$userrow->update;
 	}
+	
+	# load Check-in history
+	my @histories = ();
+	my $h = $self->db->get('checkin' => {
+		where => [
+			fsq_id => $userrow->fsq_id
+		],
+		limit => 5,
+	});
+	while(my $art = $h->next){
+		push(@histories, $art->{column_values});
+	}
+	$self->stash(checkin_histories => \@histories);
 	
 	# output
 	$self->render();

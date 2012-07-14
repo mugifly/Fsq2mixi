@@ -29,22 +29,22 @@
 </li>
 <li><i class="icon-th-list"></i> 投稿先モード:
 	<div class="btn-group" data-toggle="buttons-checkbox">
-		<% if ($is_mixiLogin eq "true" && $mixi_is_active eq "true") { %>
+		<% if ($is_mixiLogin eq "true") { %>
 			<% if ($mixi_mode eq "checkin") { %>
-				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>">mixiチェックイン</a>
-				<a class="btn" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>">mixiボイス</a>
+				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
+				<a class="btn" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>
 			<% } else { %>
-				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>">mixiチェックイン</a>
-				<a class="btn active" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>">mixiボイス</a>			
+				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
+				<a class="btn active" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>			
 			<% } %>
 		<% } else { %>
-			<button class="btn disabled" data-toggle="button">mixiチェックイン</button>
-			<button class="btn disabled">mixiボイス</button>
+			<button class="btn disabled" data-toggle="button"><i class="icon-map-marker"></i> mixiチェックイン</button>
+			<button class="btn disabled"><i class="icon-comment"></i> mixiボイス</button>
 		<% } %>
 	</div><br>
 </li>
 <% if ($is_mixiLogin eq "true" && $mixi_is_active eq "true" && $mixi_mode eq "checkin") { %>
-	<li><i class="icon-th-list"></i> mixiチェックイン - マイスポットの自動作成:
+	<li><i class="icon-map-marker"></i> mixiチェックイン - マイスポットの自動作成:
 		<div class="btn-group" data-toggle="buttons-checkbox">
 			<% if ($mixi_is_makemyspot eq "true") { %>
 				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
@@ -56,8 +56,26 @@
 		</div>(mixiの仕様により、本サービスからのチェックインは、自分で作った「マイスポット」に対してのみ行えます。<br>ここで「しない」にした場合、既にマイスポットを作ったことがある場所のみチェックインするようになります。)<br><br>
 	</li>
 <% } %>
-<li><i class="icon-time"></i> 前回の投稿:<br>
-	<%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font>
+<li><i class="icon-check"></i> 1sq2mixi! (手動ワンタッチ投稿機能)<br>
+自動投稿を無効にしている場合も、手動で、最も新しいチェックインをmixiへワンタッチ投稿できます。<br>
+このリンクをホーム画面やブックマークへ登録してお使いください: <b>＜<%= link_to '/1sq2mixi' => begin %>1sq2mixi!<% end %>＞</b> <br><br>
+</li>
+<li><i class="icon-time"></i> 最近のチェックイン:<br>
+	<ul>
+		% foreach my $art (@$checkin_histories) {
+			<li><%= $art->{name} %> - (<%= $art->{date} %>) ： 
+				<% if ($art->{mixi_send_status} eq "0") { %>
+					未投稿
+				<% } elsif ($art->{mixi_send_status} eq "1") { %>
+					投稿済 (→mixiボイス)
+				<% } elsif ($art->{mixi_send_status} eq "2") { %>
+					投稿済 (→mixiチェックイン)
+				<% } elsif ($art->{mixi_send_status} eq "100") { %>
+					投稿エラー
+				<% } %>
+			 </li>
+		% }
+	</ul><br>
 </li>
 </ul>
 </div>

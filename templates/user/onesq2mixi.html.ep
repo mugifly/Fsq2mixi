@@ -1,0 +1,21 @@
+% layout 'default';
+% title '1sq2mixi! - 4sq2mixi';
+<h1>1sq2mixi!</h1><br>
+<div class="hero-unit">
+<p><h3>1sq2mixi!...</h3></p>
+<p>
+	<% if ($resultFlg eq "-1") { %>
+		<i class="icon-info-sign"></i> 最新のチェックインは既に投稿済みです。
+	<% } elsif ($resultFlg eq "1") { %>
+		<i class="icon-ok-sign"></i> 最新のチェックイン1件をmixiボイスへ投稿しました:<br> <% $result->{name} %>
+	<% } elsif ($resultFlg eq "2") { %>
+		<i class="icon-ok-sign"></i> 最新のチェックイン1件をmixiチェックインへ投稿しました:<br> <% $result->{name} %>
+	<% } else { %>
+		<i class="icon-remove-sign"></i> mixiへの投稿エラーが発生しました。後ほど再度お試しください。
+	<% } %>
+</p>
+<p>
+<a class="btn btn-info" href="<%= url_for ('/')=>begin %><% end %>">ユーザメニューへ</a>&nbsp;<a class="btn btn-primary" href="javascript:void(0);" onclick="window.open('','_self');window.close();return false;">閉じる</a>
+</p>
+</div>
+<hr>
