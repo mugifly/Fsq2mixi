@@ -163,7 +163,8 @@ sub fsq_checkin_receiver {
 	# save checkin to database
 	$self->db->set('checkin'=> {
 		'id'					=>	$checkin->{id},
-		'fsq_userid'			=>	$fsq_id,
+		'name'					=>	$fsq_spotName,
+		'fsq_id'			=>	$fsq_id,
 		'json'					=>	$param_checkin,
 		'date'					=>	time(),
 		'mixi_send_status'	=>	$sendFlg,

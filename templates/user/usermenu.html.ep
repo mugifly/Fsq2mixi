@@ -56,8 +56,22 @@
 		</div>(mixiの仕様により、本サービスからのチェックインは、自分で作った「マイスポット」に対してのみ行えます。<br>ここで「しない」にした場合、既にマイスポットを作ったことがある場所のみチェックインするようになります。)<br><br>
 	</li>
 <% } %>
-<li><i class="icon-time"></i> 前回の投稿:<br>
-	<%= $mixi_latestsend_text %> <font size="-1">(<%= $mixi_latestsend_date %>)</font>
+<li><i class="icon-time"></i> 最近のチェックイン:<br>
+	<ul>
+		% foreach my $art (@$checkin_histories) {
+			<li><%= $art->{name} %> - (<%= $art->{date} %>) ： 
+				<% if ($art->{mixi_send_status} eq "0") { %>
+					未送信
+				<% } elsif ($art->{mixi_send_status} eq "1") { %>
+					mixiボイス
+				<% } elsif ($art->{mixi_send_status} eq "2") { %>
+					mixiチェックイン
+				<% } elsif ($art->{mixi_send_status} eq "100") { %>
+					送信エラー
+				<% } %>
+			 </li>
+		% }
+	</ul>
 </li>
 </ul>
 </div>

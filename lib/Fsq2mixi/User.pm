@@ -94,6 +94,18 @@ sub usermenu {
 		$userrow->update;
 	}
 	
+	# load Check-in history
+	my @histories = ();
+	my $h = $self->db->get('checkin' => {
+		where => [
+			fsq_id => $userrow->fsq_id
+		]
+	});
+	while(my $art = $h->next){
+		push(@histories, $art->{column_values});
+	}
+	$self->stash(checkin_histories => \@histories);
+	
 	# output
 	$self->render();
 }

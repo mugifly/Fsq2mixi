@@ -95,7 +95,7 @@ sub startup {
 	$r = $r->bridge->to(
 		cb => sub {
 			my $self = shift;
-			my $fsq_token = $self->session('fsq_token');
+			my $fsq_token = $self->session('fsq_token') || "";
 			
 			if($fsq_token ne ""){
 				 my $users = $db->get('user' => {

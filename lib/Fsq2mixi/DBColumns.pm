@@ -2,6 +2,7 @@ package Fsq2mixi::DBColumns;
 use strict;
 use warnings;
 use Data::Model::Schema sugar => 'fsq2mixi';
+use Fsq2mixi::DBInflates;
 
 # User table
 
