@@ -35,7 +35,7 @@ sub onesq2mixi {
 	}
 	# post to mixi
 	if(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
-		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, $userrow->mixi_is_makemyspot);
+		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, 1);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
 			# Update DB user-data
 			$userrow->mixi_token($mixi->{access_token});

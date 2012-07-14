@@ -52,7 +52,7 @@ sub fsq_checkin_receiver {
 			refresh_token => $user->{mixi_rtoken},
 		);
 		
-		my $ret = $self->PostToMixi->postToMixi($param_checkin, $mixi, $user->{mixi_mode}, $user->{mixi_is_makemyspot});
+		my $ret = $self->PostToMixi->postToMixi($param_checkin, $mixi, $user->{mixi_mode}, 1);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
 			# Update DB user-data
 			$r->mixi_token($mixi->{access_token});
