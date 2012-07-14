@@ -12,6 +12,8 @@ sub fsq_checkin_receiver {
 	my $param_checkin = $self->param('checkin');
 	my $param_secret = $self->param('secret');
 	
+	my $sendFlg = 0;
+	
 	# verify push-secret
 	if($param_secret ne $self->config->{fsq_push_secret}){
 		$self->render(status => 401);
@@ -84,7 +86,7 @@ sub fsq_checkin_receiver {
 				# post check-in
 				my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
 				if($mixi_postId eq undef){# failed
-					
+					$sendFlg = 100;
 				}else{ # success
 					# Update DB user-data
 					$r->mixi_latestsend_date(time());
@@ -92,6 +94,7 @@ sub fsq_checkin_receiver {
 					$r->mixi_token($mixi->{access_token});
 					$r->mixi_rtoken($mixi->{refresh_token});
 					$r->update;
+					$sendFlg = 2;
 				}
 				
 				$self->render_json({
@@ -134,7 +137,7 @@ sub fsq_checkin_receiver {
 			# send to mixi
 			my $mixi_postId = $mixi->postVoice($statusText);
 			if($mixi_postId eq undef){# failed	
-				
+				$sendFlg = 100;
 			}else{ # success
 				# Update DB user-data
 				$r->mixi_latestsend_date(time());
@@ -142,6 +145,7 @@ sub fsq_checkin_receiver {
 				$r->mixi_token($mixi->{access_token});
 				$r->mixi_rtoken($mixi->{refresh_token});
 				$r->update;
+				$sendFlg = 1;
 			}
 			
 			$self->render_json({
@@ -155,6 +159,16 @@ sub fsq_checkin_receiver {
 			'result' => -1
 		});
 	}
+	
+	# save checkin to database
+	$self->db->set('checkin'=> {
+		'id'					=>	$checkin->{id},
+		'fsq_userid'			=>	$fsq_id,
+		'json'					=>	$param_checkin,
+		'date'					=>	time(),
+		'mixi_send_status'	=>	$sendFlg,
+	});
+	
 	return 1;
 }
 
