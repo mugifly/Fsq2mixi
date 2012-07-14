@@ -29,7 +29,7 @@ sub postToMixi{
 		"postId"		=>	"",
 		"spotName"		=>	$fsq_spotName,
 		"id"			=>	$fsq_id,
-		"sendFlg"		=>	0
+		"sendFlg"		=>	0 # 1 = Success(mixiVoice), 2 = Success(mixiCheck-in), 100 = Failed
 	};
 	my $latitude = $ret->{latitude};
 	my $longitude = $ret->{longitude};
