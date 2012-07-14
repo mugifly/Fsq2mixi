@@ -16,7 +16,7 @@ use JSON;
 use String::Trigram;
 
 use Data::Model::Driver::DBI;
-use Fsq2mixi::DB::User;
+use Fsq2mixi::DBSchemas;
 use Mixi;
 
 # This method will run once at server start
@@ -50,7 +50,7 @@ sub startup {
 	});
 	
 	# Prepare database & helper
-	my $db = Fsq2mixi::DB::User->new();
+	my $db = Fsq2mixi::DBSchemas->new();
 	$self->helper(db => sub{return $db});
 	{
 		my $dbpath = 'db_fsq2mixi.db';

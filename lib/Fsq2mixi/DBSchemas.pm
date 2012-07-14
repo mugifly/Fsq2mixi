@@ -1,4 +1,4 @@
-package Fsq2mixi::DB::User;
+package Fsq2mixi::DBSchemas;
 use strict;
 use warnings;
 use base 'Data::Model';
@@ -23,4 +23,14 @@ install_model user => schema {
 	utf8_column 'user.mixi_latestsend_text';
 	column 'user.mixi_latestsend_date';
 };
+
+install_model checkin => schema {
+	key 'id';
+	
+	column 'checkin.id';
+	column 'checkin.fsq_userid';
+	utf8_column 'checkin.json';
+	column 'checkin.date';
+};
+
 1;
