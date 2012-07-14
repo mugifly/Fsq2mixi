@@ -1,0 +1,11 @@
+% layout 'default';
+% title '1sq2mixi! - 4sq2mixi';
+<h1>1sq2mixi!</h1><br>
+<div class="hero-unit">
+<p><h3>1sq2mixi! 完了</h3></p>
+<p>最新のチェックイン1件をmixiへ投稿しました。</p>
+<p>
+<a class="btn btn-info" href="<%= url_for ('/')=>begin %><% end %>">ユーザメニューへ</a>&nbsp;<a class="btn btn-primary" href="javascript:void(0);" onclick="window.open('','_self');window.close();return false;">閉じる</a>
+</p>
+</div>
+<hr>

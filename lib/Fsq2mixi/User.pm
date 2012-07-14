@@ -12,6 +12,25 @@ sub login {
 	$self->render();
 }
 
+sub onesq2mixi {
+	my $self = shift;
+	$self->stash(page => "Home");
+	
+	# load latest checkin from DB
+	my $h = $self->db->get('checkin' => {
+		where => [
+			fsq_id => $self->ownUserRow->fsq_id
+		]
+	});
+	$h->next;
+	my $r = $h>next;
+	if(!defined($r) || !defined($r->id)){
+		
+	}
+	
+	$self->render();
+}
+
 sub usermenu {
 	my $self = shift;
 	$self->stash(page => "Home");
