@@ -46,7 +46,8 @@ sub onesq2mixi {
 		$resultFlg = $ret->{sendFlg};
 		$self->stash(result => $ret);
 	}else{
-		$resultFlg = -1;
+		$resultFlg = -2;
+		$self->stash(result => {});
 	}
 	
 	$self->stash(resultFlg => $resultFlg);
