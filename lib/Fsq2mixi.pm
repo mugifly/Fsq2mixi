@@ -17,6 +17,7 @@ use String::Trigram;
 
 use Data::Model::Driver::DBI;
 use Fsq2mixi::DBSchemas;
+use Fsq2mixi::Model::PostToMixi;
 use Mixi;
 
 # This method will run once at server start
@@ -66,6 +67,10 @@ sub startup {
 			eval{$dbh->do($sql)};
 		}
 	}
+	
+	# Prepare model helper
+	my $p2m = Fsq2mixi::Model::PostToMixi->new();
+	$self->helper(PostToMixi => sub{return $p2m});
 	
 	# template stash
 	$self->stash(page => "Home");
@@ -121,6 +126,7 @@ sub startup {
 	# Routes (for logged-in)
 	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
 	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
+	$r->route('/1sq2mixi')->to('user#onesq2mixi');
 	$r->route('/logout')->to('logout#logout');
 	$r->route('/')->to('user#usermenu');
 	$r->route('')->to('user#usermenu');
