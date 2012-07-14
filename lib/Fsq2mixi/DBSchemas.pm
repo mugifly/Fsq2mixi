@@ -28,7 +28,8 @@ install_model checkin => schema {
 	key 'id';
 	
 	column 'checkin.id';
-	column 'checkin.fsq_userid';
+	utf8_column 'checkin.name';
+	column 'checkin.fsq_id';
 	utf8_column 'checkin.json';
 	column 'checkin.date';
 	column 'checkin.mixi_send_status'

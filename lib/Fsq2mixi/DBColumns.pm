@@ -65,7 +65,12 @@ column_sugar 'checkin.id' => int => {
 		unsigned => 1,
 };
 
-column_sugar 'checkin.fsq_userid' => int => {
+column_sugar 'checkin.name' => 'varchar' => {
+		required => 0,
+		size => 500,
+};
+
+column_sugar 'checkin.fsq_id' => int => {
 		required => 0,
 		unsigned => 1,
 };
