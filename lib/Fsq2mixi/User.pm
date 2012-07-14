@@ -30,21 +30,27 @@ sub onesq2mixi {
 		]
 	});
 	my $r = $h->next;
-	if(!defined($r) || !defined($r->id)){
+	if(defined($r) && defined($r->id)){
 		$checkin = $r->{column_values};
 	}
 	# post to mixi
-	if(defined($checkin) && ($checkin->{mixi_send_status} eq "0" || $checkin->{mixi_send_status} eq "100" )){# unsent or last time is error...
+	if(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
 		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, $userrow->mixi_is_makemyspot);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
 			# Update DB user-data
-			$r->mixi_token($mixi->{access_token});
-			$r->mixi_rtoken($mixi->{refresh_token});
-			$r->mixi_latestsend_date(time());
+			$userrow->mixi_token($mixi->{access_token});
+			$userrow->mixi_rtoken($mixi->{refresh_token});
+			$userrow->mixi_latestsend_date(time());
+			$userrow->update;
+			
+			$r->mixi_send_status($ret->{sendFlg});
 			$r->update;
 		}
 		$resultFlg = $ret->{sendFlg};
 		$self->stash(result => $ret);
+	}elsif($checkin->{mixi_send_status} eq 1 || $checkin->{mixi_send_status} eq 2){
+		$resultFlg = -1;
+		$self->stash(result => {});
 	}else{
 		$resultFlg = -2;
 		$self->stash(result => {});
