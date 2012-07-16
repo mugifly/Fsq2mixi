@@ -28,7 +28,11 @@
 			background-color: #f5f5f5;
 		}
 	</style>
-	<link rel="apple-touch-icon" href="img/fsq2mixi_icon_styled_150.png"/>
+	<% if ($page eq "1sq2mixi") { %>
+		<link rel="apple-touch-icon" href="img/1sq2mixi_icon_styled_150.png"/>
+	<% } else { %>
+		<link rel="apple-touch-icon" href="img/fsq2mixi_icon_styled_150.png"/>
+	<% } %>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>

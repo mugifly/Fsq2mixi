@@ -14,7 +14,7 @@ sub login {
 
 sub onesq2mixi {
 	my $self = shift;
-	$self->stash(page => "Home");
+	$self->stash(page => "1sq2mixi");
 	my $userrow = $self->ownUserRow;
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 		access_token => $userrow->mixi_token,
