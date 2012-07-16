@@ -30,7 +30,6 @@ sub startup {
 	
 	# Set cookie-settings
 	$self->secret('fsq2mixi'.$config->{secret});
-	$self->session(expires => time + 604800);#
 	
 	# Reverse proxy support
 	$ENV{MOJO_REVERSE_PROXY} = 1;
@@ -95,17 +94,18 @@ sub startup {
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
-	$r->route('/login')->to('user#login');
 	# Bridge (login check)
 	$r = $r->bridge->to(
-		cb => sub {
+		cb => sub{
 			my $self = shift;
+			$self->session(expires => time + 604800);
 			my $fsq_token = "";
+			$user = {};
 			if($self->session('fsq_token') ne ""){
 				$fsq_token = $self->session('fsq_token');
 			}
 			
-			if($fsq_token ne ""){
+			if($fsq_token ne ""){#token check
 				 my $users = $db->get('user' => {
 					where => [
 						fsq_token => $fsq_token
@@ -113,18 +113,24 @@ sub startup {
 				});
 				my $r = $users->next;
 				if(!defined($r) || !defined($r->id)){
-					$self->redirect_to('/login');
-					return 0;
-				}else{
+					$self->redirect_to("/login");
+					if($self->current_route ne "login"){
+						$self->redirect_to('/login');
+						return 0;
+					}
+				}else{#found user-data from db
 					$user = $r->{column_values};
 				}
-			}else{
-				$self->redirect_to('/login');
-				return 0;
+			}else{#token is null...
+				if($self->current_route ne "login"){
+					$self->redirect_to('/login');
+					return 0;
+				}
 			}
 			return 1;
 		}
 	);
+	$r->route('/login')->to('user#login');
 	
 	# Routes (for logged-in)
 	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
