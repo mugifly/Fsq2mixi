@@ -29,9 +29,9 @@
 		}
 	</style>
 	<% if ($page eq "1sq2mixi") { %>
-		<link rel="apple-touch-icon" href="img/1sq2mixi_icon_styled_150.png"/>
+		<link rel="apple-touch-icon" href="<%= url_for("/img/1sq2mixi_icon_styled_150.png") => begin %><% end %>"/>
 	<% } else { %>
-		<link rel="apple-touch-icon" href="img/fsq2mixi_icon_styled_150.png"/>
+		<link rel="apple-touch-icon" href="<%= url_for("/img/fsq2mixi_icon_styled_150.png") => begin %><% end %>"/>
 	<% } %>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
