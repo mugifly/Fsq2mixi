@@ -74,11 +74,11 @@ sub postToMixi{
 		}else{
 			my $addr = "";
 			if($checkin->{venue}->{location}->{city} ne "" && $checkin->{venue}->{location}->{state} ne ""){
-				$addr = "(" . $checkin->{venue}->{location}->{city} . ", " . $checkin->{venue}->{location}->{state} . ")";
+				$addr = $checkin->{venue}->{location}->{city} . ", " . $checkin->{venue}->{location}->{state};
 			}elsif($checkin->{venue}->{location}->{city} ne ""){
-				$addr = "(" . $checkin->{venue}->{location}->{city} .")";
+				$addr = $checkin->{venue}->{location}->{city};
 			}elsif($checkin->{venue}->{location}->{state} ne ""){
-				$addr = "(" . $checkin->{venue}->{location}->{state} .")";
+				$addr = $checkin->{venue}->{location}->{state};
 			}
 			if($addr ne ""){
 				$addr = " (".$addr.")";
