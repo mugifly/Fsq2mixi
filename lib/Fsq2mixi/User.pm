@@ -34,7 +34,16 @@ sub onesq2mixi {
 		$checkin = $r->{column_values};
 	}
 	# post to mixi
-	if(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
+	if($self->param("nosend") eq 1){
+		# redirect: 1sq2mixi infomation page (no post)
+		$self->flash("nosend" => 1);
+		$self->redirect_to("/1sq2mixi");
+		return 0;
+	}elsif($self->flash("nosend") eq 1){
+		# 1sq2mixi infomation page (no post)
+		$self->stash(result => {});
+		$resultFlg = "INFO";
+	}elsif(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
 		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, 1);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
 			# Update DB user-data
@@ -46,14 +55,14 @@ sub onesq2mixi {
 			$r->mixi_send_status($ret->{sendFlg});
 			$r->update;
 		}
-		$resultFlg = $ret->{sendFlg};
 		$self->stash(result => $ret);
+		$resultFlg = $ret->{sendFlg};
 	}elsif($checkin->{mixi_send_status} eq 1 || $checkin->{mixi_send_status} eq 2){
-		$resultFlg = -1;
 		$self->stash(result => {});
+		$resultFlg = "SENT";
 	}else{
-		$resultFlg = -2;
 		$self->stash(result => {});
+		$resultFlg = "HISTORY_NULL";
 	}
 	
 	$self->stash(resultFlg => $resultFlg);

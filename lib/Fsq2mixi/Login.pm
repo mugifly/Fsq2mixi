@@ -1,6 +1,7 @@
 package Fsq2mixi::Login;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
+use Mojo::UserAgent;
 
 sub mixi_redirect_authpage {
 	my $self = shift;
@@ -47,7 +48,7 @@ sub foursquare_callback {
 		$self->redirect_to('/');
 	}
 	
-	my $ua = $self->ua->new;
+	my $ua = Mojo::UserAgent->new;
 	my $token = $ua->get('https://ja.foursquare.com/oauth2/access_token'.
 		'?client_id='.$self->config->{fsq_client_id}.
 		'&client_secret='.$self->config->{fsq_client_secret}.
@@ -56,7 +57,6 @@ sub foursquare_callback {
 		'&code='.$self->param("code")
 	)
 	->res->json('/access_token');
-	
 	
 	# ユーザ情報をfoursquareから取得
 	my $js = $ua->get('https://api.foursquare.com/v2/users/self?oauth_token='.$token);

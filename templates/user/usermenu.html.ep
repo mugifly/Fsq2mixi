@@ -44,7 +44,7 @@
 	</div><br>
 </li>
 <% if ($is_mixiLogin eq "true" && $mixi_is_active eq "true" && $mixi_mode eq "checkin") { %>
-	<li><i class="icon-map-marker"></i> 自動投稿：mixiチェックイン - マイスポットの自動作成:
+	<li><i class="icon-map-marker"></i> 自動投稿時：mixiチェックイン - マイスポットの自動作成:
 		<div class="btn-group" data-toggle="buttons-checkbox">
 			<% if ($mixi_is_makemyspot eq "true") { %>
 				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
@@ -53,12 +53,12 @@
 				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
 				<a class="btn active" href="<%= url_for('/')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
 			<% } %>
-		</div>(mixiの仕様により、本サービスからのチェックインは、自分で作った「マイスポット」に対してのみ行えます。<br>ここで「しない」にした場合、既にマイスポットを作ったことがある場所のみチェックインするようになります。)<br><br>
+		</div>(mixiの仕様により、本サービスからのチェックインは、「マイスポット」に対してのみ行えます。<br>ここで「する」にした場合、マイスポットが無い地点では自動作成してからチェックインされます。)<br><br>
 	</li>
 <% } %>
 <li><i class="icon-check"></i> 1sq2mixi! (手動ワンタッチ投稿機能)<br>
-自動投稿を無効にしている場合でも、最も新しいチェックインをmixiへワンタッチで手動投稿することができます。<br>
-このリンクをホーム画面やブックマークへ登録してお使いください: <b>＜<%= link_to '/1sq2mixi' => begin %>1sq2mixi!<% end %>＞</b> <br><br>
+自動投稿を無効にしている場合でも、ワンタッチでmixiへ最も新しいチェックインを手動投稿することができます。<br>
+リンクをクリックして表示される画面をホーム画面またはブックマークへ追加してお使いください: <b>＜<%= link_to '/1sq2mixi?nosend=1' => begin %>1sq2mixi!<% end %>＞</b> <br><br>
 </li>
 <li><i class="icon-time"></i> 最近のチェックイン:<br>
 	<ul>

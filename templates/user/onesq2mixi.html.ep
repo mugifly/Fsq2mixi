@@ -4,9 +4,11 @@
 <div class="hero-unit">
 <p><h3>1sq2mixi!...</h3></p>
 <p>
-	<% if ($resultFlg eq "-1") { %>
+	<% if ($resultFlg eq "INFO") { %>
+		<i class="icon-info-sign"></i> このページをホーム画面またはブックマークなどへ登録してください。<br>ワンタッチで最新のチェックインをmixiへ投稿させることができます。
+	<% } elsif ($resultFlg eq "SENT") { %>
 		<i class="icon-info-sign"></i> 最新のチェックインは既に投稿済みです。
-	<% } elsif ($resultFlg eq "-2") { %>
+	<% } elsif ($resultFlg eq "HISTORY_NULL") { %>
 		<i class="icon-info-sign"></i> チェックイン履歴がfsq2mixiにまだありません。
 	<% } elsif ($resultFlg eq "1") { %>
 		<i class="icon-ok-sign"></i> 最新のチェックイン1件をmixiボイスへ投稿しました:<br> <%= $result->{name} %>
