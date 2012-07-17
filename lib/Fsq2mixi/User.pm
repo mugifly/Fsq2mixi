@@ -26,8 +26,11 @@ sub onesq2mixi {
 	my $checkin = {};
 	my $h = $self->db->get('checkin' => {
 		where => [
-			fsq_id => $self->ownUserRow->fsq_id
-		]
+			fsq_id => $self->ownUserRow->fsq_id,
+		],
+		order => [
+			{date => 'DESC'}
+		],
 	});
 	my $r = $h->next;
 	if(defined($r) && defined($r->id)){
@@ -158,6 +161,9 @@ sub usermenu {
 			fsq_id => $userrow->fsq_id
 		],
 		limit => 5,
+		order => [
+			{date => 'DESC'}
+		],
 	});
 	while(my $art = $h->next){
 		push(@histories, $art->{column_values});
