@@ -100,7 +100,7 @@ sub fsq_checkin_receiver {
 	if(my $art = $h->next){
 		$self->db->delete(
 			'checkin' => {
-				where => [ date => { '<' => $art->id }, fsq_id => $fsq_id ],
+				where => [ date => { '<' => $art->date }, fsq_id => $fsq_id ],
 			},
 		);
 		last;
