@@ -1,7 +1,7 @@
 % layout 'default';
 % title 'fsq2mixi';
 <header class="header">
-	<h1>fsq2mixi</h1>
+	<h1>fsq2mixi <%= image '/img/fsq2mixi_icon_styled_150.png', style=>"vertical-align: text-bottom;", height=>"60" %></h1>
 	<p class="lead">foursquareでのチェックイン時にmixiへ自動投稿を行うサービス</p>
 </header>
 <div class="page-header">

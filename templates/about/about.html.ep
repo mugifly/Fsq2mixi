@@ -3,11 +3,11 @@
 <h1>fsq2mixiについて</h1>
 <div class="page-header">
 <p>fsq2mixiは、foursquareでのチェックイン時にmixiへ自動投稿を行うサービスです。<br>
-mixiチェックイン および、mixiボイスへの自動投稿が行えます。</p>
+mixiチェックイン および、mixiボイスへの自動投稿が行えます。今のところ、それだけです（＾＾）ゞ</p>
 <p>友人のふとしたアイデアから作ってみることにしました。</p>
 <p>
 <ul>
-<li>fsq2mixiのご利用には、foursquareアカウントとmixiアカウントが必要です。<%= link_to privacy => begin %> プライバシーポリシー <% end %></li>
+<li>ご利用には、foursquareアカウントとmixiアカウントが必要です。<%= link_to privacy => begin %> プライバシーポリシー <% end %></li>
 <li>更新履歴: <%= link_to 'https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja' => begin %>https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja<% end %></li>
 </ul>
 </p>
