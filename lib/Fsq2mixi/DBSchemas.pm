@@ -4,9 +4,11 @@ use warnings;
 use base 'Data::Model';
 use Data::Model::Schema sugar => 'fsq2mixi';
 use Fsq2mixi::DBColumns;
+use Data::Model::Mixin modules => ['FindOrCreate'];
   
 install_model user => schema {
 	key 'id';
+	unique 'fsq_token';
 	
 	column 'user.id' => {
 		auto_increment => 1 

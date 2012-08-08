@@ -54,7 +54,8 @@ sub foursquare_callback {
 	my $self = shift;
 	# Checking consistency
 	if($self->flash("auth_flg") ne 'fsqauth-'.$self->config->{fsq_client_id} || $self->param("code") eq ""){
-		$self->redirect_to('/');
+		$self->redirect_to('/?callback_valid');
+		return 0;
 	}
 	
 	# Get access-token from 4sq-server
@@ -68,24 +69,37 @@ sub foursquare_callback {
 	)
 	->res->json('/access_token');
 	
+	if($token eq ""){
+		# if Token is valid...
+		$self->redirect_to('/?token_valid');
+		return 0;
+	}
+	
 	# Get user-data from 4sq-server
 	my $js = $ua->get('https://api.foursquare.com/v2/users/self?oauth_token='.$token);
 	my $fsq_id = $js->res->json('/response/user/id');
 	
-	# Insert user-data to DB
-	$self->db->set('user'=> {
-		fsq_token => $token,
-		fsq_id => $fsq_id,
-		mixi_is_active => 1,
-		mixi_is_makemyspot => 1,
-		mixi_mode => 'voice'
-	});
+	# Insert and Update user-data to DB
+	my $row = $self->db->find_or_create(
+		user => {
+           fsq_token => $token ,
+		} => {
+			fsq_token				=> $token,
+			fsq_id					=> $fsq_id,
+			mixi_is_active		=> 1,
+			mixi_is_makemyspot	=> 1,
+			mixi_mode				=> 'voice'
+		}
+	);
+	$row->fsq_token($token);
+	$row->fsq_id($fsq_id);
+	$row->update;
 	
 	# Save session
 	$self->session(fsq_token => $token);
 	
 	# Redirect client
-	$self->redirect_to('/');
+	$self->redirect_to('/?logined='.$token);
 }
 
 1;
