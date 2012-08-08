@@ -16,4 +16,13 @@ mixiチェックイン および、mixiボイスへの自動投稿が行えま�
 <p>GitHubで拙いソースコードを公開しています: <%= link_to 'https://github.com/mugifly/Fsq2mixi' => begin %>https://github.com/mugifly/Fsq2mixi<% end %><br>
 適当実装なところが多いです。今後改良していければ...と考えています。<br>
 ご意見、ご要望、ご指摘などなど、お気軽に。お待ちしております。</p>
+<p>GitHubのアカウントをお持ちでない方は、<br>
+	g+でメッセージを送っていただくか、<%= link_to 'https://twitter.com/piyo3728' => begin %>Twitter:@piyo3728<% end %>へお送りください。フォローもお待ちしております!!
+</p>
+</div>
+
+<h2>クレジット</h2>
+<div class="page-header">
+<p>fsq2mixi-icon is made by Masanori Ohgita.</p>
+<p>Other icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>	
 </div>

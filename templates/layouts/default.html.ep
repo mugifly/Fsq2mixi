@@ -68,7 +68,7 @@
 		<%= content %>
 	</div>
 
-<div align="right" style="margin-right: 50px;">fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, <a href="http://ohgita.info/">Masanori</a>.</div>
-
+<div align="right" style="margin-right: 50px;">fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, 
+		<a href="http://ohgita.info/">Masanori</a> (<a href="https://plus.google.com/100193705060363203281/">g+</a>).</div>
 </body>
 </html>

@@ -9,6 +9,7 @@
 	<p>利用するには...まず以下から、ご自分のfoursquareアカウントでログインして、fsq2mixiを接続許可してください。</p>
 	<p><h3>foursquareでログイン</h3></p>
 	<p><%= link_to foursquare_redirect_authpage => (class=> 'btn btn-primary btn-large') => begin %> <i class="icon-user icon-white"></i> ログイン<% end %></p>
-	<small>foursquareのウェブサイトへジャンプして認証します。</small>
+	<p><small>foursquareのウェブサイトへジャンプして認証します。</small></p>
+	<p>これまでにfsq2mixiをお使いの方で、設定を変更されたい場合もこのボタンからログインしてください。</p>
 </div>
 
