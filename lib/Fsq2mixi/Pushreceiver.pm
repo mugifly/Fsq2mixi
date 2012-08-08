@@ -26,9 +26,9 @@ sub fsq_checkin_receiver {
 	my $fsq_id = $checkin->{user}->{id};
 	my $fsq_shout = "";
 	if(defined($checkin->{shout}) && $checkin->{shout} ne ""){
-		$fsq_shout = Encode::decode('UTF-8',$checkin->{shout})." ";
+		$fsq_shout = utf8::decode($checkin->{shout})." ";
 	}
-	my $fsq_spotName = $checkin->{venue}->{name};
+	my $fsq_spotName = utf8::decode($checkin->{venue}->{name});
 	
 	# load user-data
 	my $user;
@@ -100,7 +100,7 @@ sub fsq_checkin_receiver {
 	if(my $art = $h->next){
 		$self->db->delete(
 			'checkin' => {
-				where => [ id => { '<' => $art->id }, fsq_id => $fsq_id ],
+				where => [ date => { '<' => $art->id }, fsq_id => $fsq_id ],
 			},
 		);
 		last;

@@ -17,9 +17,9 @@ sub postToMixi{
 	my $fsq_id = $checkin->{user}->{id};
 	my $fsq_shout = "";
 	if(defined($checkin->{shout}) && $checkin->{shout} ne ""){
-		$fsq_shout = Encode::decode('UTF-8',$checkin->{shout})." ";
+		$fsq_shout = utf8::decode($checkin->{shout})." ";
 	}
-	my $fsq_spotName = $checkin->{venue}->{name};
+	my $fsq_spotName = utf8::decode($checkin->{venue}->{name});
 	
 	my $ret = {
 		"name"			=>	$fsq_spotName,
@@ -40,7 +40,7 @@ sub postToMixi{
 		# search mixi-checkin-spots
 		my @spots = $mixi->getCheckinSpots($latitude,$longitude);
 		foreach my $spot(@spots){
-			my $name = Encode::decode('UTF-8',$spot->{name}->{formatted});
+			my $name = utf8::decode($spot->{name}->{formatted});
 			# spot-name compare
 			if(String::Trigram::compare($fsq_spotName, $name) >= 0.8){
 				$ret->{spotId} = $spot->{id};
