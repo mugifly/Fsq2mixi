@@ -49,14 +49,14 @@
 				<div class="nav-collapse">
 					<ul class="nav">
 						<% if ($page eq "Home") { %>
-							<li class="active"><%= link_to '/' => begin %>Home<% end %></li>
-							<li><%= link_to '/about' => begin %>About<% end %></li>
+							<li class="active"><%= link_to '/' => begin %>ホーム<% end %></li>
+							<li><%= link_to '/about' => begin %>当サービスについて<% end %></li>
 						<% }elsif ($page eq "About"){ %>
-							<li><%= link_to '/' => begin %>Home<% end %></li>
-							<li class="active"><%= link_to '/about' => begin %>About<% end %></li>
+							<li><%= link_to '/' => begin %>ホーム<% end %></li>
+							<li class="active"><%= link_to '/about' => begin %>当サービスについて<% end %></li>
 						<% }else{ %>
-							<li><%= link_to '/' => begin %>Home<% end %></li>
-							<li><%= link_to '/about' => begin %>About<% end %></li>
+							<li><%= link_to '/' => begin %>ホーム<% end %></li>
+							<li><%= link_to '/about' => begin %>当サービスについて<% end %></li>
 						<% } %>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -69,6 +69,6 @@
 	</div>
 
 <div align="right" style="margin-right: 50px;">fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, 
-		<a href="http://ohgita.info/">Masanori</a> (<a href="https://plus.google.com/100193705060363203281/">g+</a>).</div>
+		<a href="http://ohgita.info/">Masanori</a> (<a href="https://plus.google.com/100193705060363203281/">g+</a>).<br> Powered by perl + Mojolicious.</div>
 </body>
 </html>

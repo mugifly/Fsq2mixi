@@ -7,4 +7,11 @@ sub about {
 	$self->stash(page => "About");
 	$self->render();
 }
+
+sub privacy {
+	my $self = shift;
+	$self->stash(page => "Privacy");
+	$self->render();
+}
+
 1;

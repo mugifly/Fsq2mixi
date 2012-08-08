@@ -90,6 +90,7 @@ sub startup {
 	# Initial Routes (for not log-in to 4sq , and all-users)
 	my $r = $self->routes;
 	$r->route('/about')->to('about#about');
+	$r->route('/privacy')->to('about#privacy');
 	
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
