@@ -26,9 +26,9 @@ sub fsq_checkin_receiver {
 	my $fsq_id = $checkin->{user}->{id};
 	my $fsq_shout = "";
 	if(defined($checkin->{shout}) && $checkin->{shout} ne ""){
-		$fsq_shout = utf8::decode($checkin->{shout})." ";
+		$fsq_shout = $checkin->{shout}." ";
 	}
-	my $fsq_spotName = utf8::decode($checkin->{venue}->{name});
+	my $fsq_spotName = $checkin->{venue}->{name};
 	
 	# load user-data
 	my $user;

@@ -40,7 +40,7 @@ sub postToMixi{
 		# search mixi-checkin-spots
 		my @spots = $mixi->getCheckinSpots($latitude,$longitude);
 		foreach my $spot(@spots){
-			my $name = utf8::decode($spot->{name}->{formatted});
+			my $name = $spot->{name}->{formatted};
 			# spot-name compare
 			if(String::Trigram::compare($fsq_spotName, $name) >= 0.8){
 				$ret->{spotId} = $spot->{id};
