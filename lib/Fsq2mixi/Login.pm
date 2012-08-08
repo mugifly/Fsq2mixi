@@ -99,7 +99,7 @@ sub foursquare_callback {
 	$self->session(fsq_token => $token);
 	
 	# Redirect client
-	$self->redirect_to('/?logined='.$token);
+	$self->redirect_to('/?logined');
 }
 
 1;
