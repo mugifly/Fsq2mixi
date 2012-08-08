@@ -51,7 +51,7 @@ sub postToMixi{
 			if($mixi_is_makemyspot eq 1){ 
 				# make new spot
 				$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
-				$isNewSpot = 1;
+				#$isNewSpot = 1;
 			}
 		}
 		if($spotId ne ""){
