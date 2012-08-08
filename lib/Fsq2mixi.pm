@@ -98,6 +98,14 @@ sub startup {
 	$r = $r->bridge->to(
 		cb => sub{
 			my $self = shift;
+			
+			# Checking Configuration
+			if(!defined($config->{fsq_client_id}) || !defined($config->{mixi_consumer_key})){
+				$self->render_text("Debug: Config::Pit is not configured.");
+				$self->app->log->fatal("Debug: Config::Pit is not configured.");
+				return 0;
+			}
+			
 			$self->session(expires => time + 604800);
 			my $fsq_token = "";
 			$user = {};
@@ -123,7 +131,7 @@ sub startup {
 				}
 			}else{#token is null...
 				if($self->current_route ne "login"){
-					$self->redirect_to('/login');
+					$self->redirect_to('/login?tokennull');
 					return 0;
 				}
 			}
