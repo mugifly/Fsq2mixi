@@ -45,7 +45,7 @@ sub fsq_checkin_receiver {
 		$user = $r->{column_values};
 	}
 	
-	if($user->{mixi_is_active} eq 1){#send to mixi is enable
+	if($user->{mixi_is_active} eq 1 && $user->{mixi_token} ne ""){#send to mixi is enable
 		# prepare connection for mixi
 		my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 			access_token => $user->{mixi_token},
@@ -86,6 +86,25 @@ sub fsq_checkin_receiver {
 		'mixi_send_status'	=>	$sendFlg,
 	});
 	
+	# auto deletion of old checkin
+	my $h = $self->db->get('checkin' => {
+		where => [
+			fsq_id => $fsq_id
+		],
+		limit => 9,
+		offset => 9,
+		order => [
+			{date => 'DESC'}
+		],
+	});
+	if(my $art = $h->next){
+		$self->db->delete(
+			'checkin' => {
+				where => [ id => { '<' => $art->id }, fsq_id => $fsq_id ],
+			},
+		);
+		last;
+	}
 	return 1;
 }
 
