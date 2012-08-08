@@ -46,6 +46,9 @@ sub onesq2mixi {
 		# 1sq2mixi infomation page (no post)
 		$self->stash(result => {});
 		$resultFlg = "INFO";
+	}elsif($userrow->mixi_token eq ""){
+		$self->stash(result => {});
+		$resultFlg = "NOT_AUTH";
 	}elsif(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
 		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, 1);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success

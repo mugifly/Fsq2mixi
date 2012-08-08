@@ -8,7 +8,7 @@
 	<% if ($is_mixiLogin eq "true") { %>
 		<i class="icon-ok"></i> 認証済み - <%= $mixiUserName %>
 	<% } else { %>
-		<i class="icon-remove"></i> 未認証 - mixiでログインしてfsq2mixiを接続許可してください: <%= link_to mixi_redirect_authpage => (class => 'btn btn-primary btn-mini') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
+		<i class="icon-remove"></i> 未認証 - <strong>まずmixiでログインしてfsq2mixiを接続許可してください:</strong> <%= link_to mixi_redirect_authpage => (class => 'btn btn-primary btn-mini') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
 	<% } %>
 	<br><br>
 <li><i class="icon-upload"></i> 自動投稿:

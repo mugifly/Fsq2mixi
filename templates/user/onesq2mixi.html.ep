@@ -6,6 +6,8 @@
 <p>
 	<% if ($resultFlg eq "INFO") { %>
 		<i class="icon-info-sign"></i> このページをホーム画面またはブックマークなどへ登録してください。<br>ワンタッチで最新のチェックインをmixiへ投稿させることができます。
+	<% } elsif ($resultFlg eq "NOT_AUTH") { %>
+		<i class="icon-remove-sign"></i> あなたのmixiアカウントでfsq2mixiを認証してください!
 	<% } elsif ($resultFlg eq "SENT") { %>
 		<i class="icon-info-sign"></i> 最新のチェックインは既に投稿済みです。
 	<% } elsif ($resultFlg eq "HISTORY_NULL") { %>
