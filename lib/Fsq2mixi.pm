@@ -110,7 +110,7 @@ sub startup {
 			$self->session(expires => time + 604800);
 			my $fsq_token = "";
 			$user = {};
-			if($self->session('fsq_token') ne ""){
+			if(defined($self->session('fsq_token')) && $self->session('fsq_token') ne ""){
 				$fsq_token = $self->session('fsq_token');
 			}
 			
