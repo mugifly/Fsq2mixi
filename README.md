@@ -3,6 +3,8 @@ Fsq2mixi (4sq2mixi) [![Build Status](https://secure.travis-ci.org/mugifly/Fsq2mi
 
 When you check-in to foursquare, automation-post to mixi.
 
+https://s1.mpnets.net/services/fsq2mixi
+
 ***
 
 * Perl
