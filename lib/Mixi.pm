@@ -38,21 +38,29 @@ sub new {
 	$self->{ua}->connect_timeout(5);
 	$self->{json}				= Mojo::JSON->new();
 	
+	$self->{isTest}	= 	$hash{isTest} || 0;	
+	
 	return $self;
 }
 
 
 sub getUser_MixiName {
 	my $self = shift;
+	if($self->{isTest}){return $self->getUser_MixiName_T();} 
 	my $u = $self->getProfile();
 	my $j = $self->{json}->decode($u);
 	return $j->{entry}->{displayName};
+}
+
+sub getUser_MixiName_T {
+	return "アヤコ";
 }
 
 sub getProfile {
 	my $self = shift;
 	my $noRetry = shift || 0;
 	if($self->{access_token} eq ""){return undef;}
+	if($self->{isTest}){return $self->getProfile_T();} 
 	
 	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self?oauth_token='.$self->{access_token});
 	if($res->success){
@@ -63,6 +71,18 @@ sub getProfile {
 	}else{
 		return undef;
 	}
+}
+
+sub getProfile_T {
+	my $self = shift;
+	my $json = {
+		entry => {
+				id				=>	"fq7qstgzss9dd",
+				displayName	=>	"アヤコ",
+				userHash		=>	"9g012dfnwrt6qxbctt9fw86utfg0k7yco6guzox5"
+		}		
+	};
+	return JSON::encode($json);
 }
 
 sub getRedirectURL {
