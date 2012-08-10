@@ -102,8 +102,8 @@ sub startup {
 			
 			# Checking Configuration
 			if(!defined($config->{fsq_client_id}) || !defined($config->{mixi_consumer_key})){
-				$self->render_text("Debug: Config::Pit is not configured.");
-				$self->app->log->fatal("Debug: Config::Pit is not configured.");
+				$self->render_text("fsq2mixi Debug: Config::Pit is not configured.");
+				$self->app->log->fatal("fsq2mixi Debug: Config::Pit is not configured.");
 				return 0;
 			}
 			
