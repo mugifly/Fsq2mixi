@@ -1,4 +1,4 @@
-Fsq2mixi (4sq2mixi)
+Fsq2mixi (4sq2mixi) [![Build Status](https://secure.travis-ci.org/mugifly/Fsq2mixi.png?branch=master)](http://travis-ci.org/mugifly/Fsq2mixi)
 ========
 
 When you check-in to foursquare, automation-post to mixi.
