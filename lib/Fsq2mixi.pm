@@ -32,7 +32,9 @@ sub startup {
 	$self->helper(config => sub{return $config});
 	
 	# Set cookie-settings
-	$self->secret('fsq2mixi'.$config->{secret});
+	if(defined($config->{secret})){
+		$self->secret('fsq2mixi'.$config->{secret});
+	}
 	
 	# Reverse proxy support
 	$ENV{MOJO_REVERSE_PROXY} = 1;
