@@ -38,7 +38,12 @@ sub new {
 	$self->{ua}->connect_timeout(5);
 	$self->{json}				= Mojo::JSON->new();
 	
-	$self->{isTest}	= 	$hash{isTest} || 0;	
+	$self->{isTest}	= 	$hash{isTest} || 0;
+	$self->{proxy}	= 	$hash{proxy} || "";
+	if($self->{proxy} ne ""){
+		$self->{ua}->http_proxy($self->{proxy});
+		$self->{ua}->https_proxy($self->{proxy});
+	}
 	
 	return $self;
 }
