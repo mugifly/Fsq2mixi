@@ -97,6 +97,7 @@ sub getRedirectURL {
 sub refreshTokens {
 	my $self = shift;
 	my $rToken = shift;
+	if($self->{isTest}){return $self->refreshTokens_T($rToken);} 
 	
 	my $res = $self->{ua}->post_form('https://secure.mixi-platform.com/2/token' => 
 		{
@@ -121,9 +122,16 @@ sub refreshTokens {
 	return ($aToken, $rToken);
 }
 
+sub refreshTokens_T {
+	my $self = shift;
+	my $rToken = shift;
+	return "TEST-ACCESS-TOKEN_REF-".time;
+}
+
 sub getTokens {
 	my $self = shift;
 	my $code = shift;
+	if($self->{isTest}){return $self->getTokens_T($code);} 
 	
 	my $res = $self->{ua}->post_form('https://secure.mixi-platform.com/2/token' => 
 		{
@@ -149,10 +157,17 @@ sub getTokens {
 	return ($aToken, $rToken);
 }
 
+sub getTokens_T {
+	my $self = shift;
+	my $code = shift;
+	return "TEST-ACCESS-TOKEN_FST-".time;
+}
+
 sub postVoice {
 	my $self = shift;
 	my $text = shift;
 	my $noRetry = shift;
+	if($self->{isTest}){return $self->postVoice_T($text);} 
 	my $res = $self->{ua}->post_form('https://api.mixi-platform.com/2/voice/statuses/update' => 
 		{
 			status => $text,
@@ -172,6 +187,16 @@ sub postVoice {
 	}elsif($noRetry ne 1){
 		$self->refreshTokens($self->{refresh_token});
 		$self->postVoice($text,1);
+	}
+}
+
+sub postVoice_T {
+	my $self = shift;
+	my $text = shift;
+	if($text ne ""){
+		return time;
+	}else{
+		return undef;
 	}
 }
 
@@ -252,6 +277,10 @@ sub postCheckinSpot{
 sub getCheckinSpots{
 	my ($self, $latitude,$longitude) = @_;
 	my $noRetry = 0;
+	if($latitude eq "" || $longitude eq ""){
+		return undef;
+	}
+	if($self->{isTest}){return $self->getCheckinSpots_T($latitude,$longitude);}
 	my @spots = ();
 	my $req_StartPage = 0;
 	my $REQ_PERPAGE = 20;
@@ -277,6 +306,26 @@ sub getCheckinSpots{
 		}
 	}
 	return @spots;
+}
+
+sub getCheckinSpots_T {
+	my @arr = ();
+	my $json = {
+		id		=>	0,
+		name	=>	{
+			formatted =>	"コーヒー専門店 銀座３丁目店"
+		},
+		address=>	{
+			formatted	=>	"〒104-0061 東京都中央区銀座３丁目７-１"
+		},
+		location=> {
+			latitude	=>	"37.416343",
+			longitude	=>	"-122.153013"
+		},
+		description=>	"ここに店舗の説明文が入ります"
+	};
+	push(@arr,$json);
+	return @arr;
 }
 
 1;

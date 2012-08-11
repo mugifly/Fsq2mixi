@@ -1,7 +1,6 @@
-use Mojo::Base -strict;
-
 # Basic Test
 
+use Mojo::Base -strict;
 use Test::More tests => 4;
 use Test::Mojo;
 
