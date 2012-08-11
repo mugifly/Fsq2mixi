@@ -2,6 +2,8 @@ package Fsq2mixi::Login;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 use Mojo::UserAgent;
+use LWP::UserAgent;
+use Mojo::JSON;
 
 sub mixi_redirect_authpage {
 	my $self = shift;
@@ -53,31 +55,32 @@ sub foursquare_redirect_authpage {
 sub foursquare_callback {
 	my $self = shift;
 	# Checking consistency
-	if($self->flash("auth_flg") ne 'fsqauth-'.$self->config->{fsq_client_id} || $self->param("code") eq ""){
+	if($self->app->mode ne "test" && $self->flash("auth_flg") ne 'fsqauth-'.$self->config->{fsq_client_id} || $self->param("code") eq ""){
 		$self->redirect_to('/?callback_valid');
-		return 0;
+		return 1;
 	}
 	
 	# Get access-token from 4sq-server
-	my $ua = Mojo::UserAgent->new;
-	my $token = $ua->get('https://ja.foursquare.com/oauth2/access_token'.
-		'?client_id='.$self->config->{fsq_client_id}.
-		'&client_secret='.$self->config->{fsq_client_secret}.
-		'&grant_type=authorization_code'.
-		'&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq'.
-		'&code='.$self->param("code")
-	)
-	->res->json('/access_token');
+	my $ua = LWP::UserAgent->new;
+	my $js = Mojo::JSON->decode($ua->get('https://ja.foursquare.com/oauth2/access_token',
+		client_id		=>	$self->config->{fsq_client_id},
+		client_secret	=>	$self->config->{fsq_client_secret},
+		grant_type		=>	'authorization_code',
+		redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq',
+		code			=>	$self->param("code")
+	)->content);
+	my $token = $js->{access_token};
 	
-	if($token eq ""){
+	if(!defined($token) || $token eq ""){
 		# if Token is valid...
-		$self->redirect_to('/?token_valid');
-		return 0;
+		$self->app->log->fatal("re");
+		$self->redirect_to('/');
+		return 1;
 	}
 	
 	# Get user-data from 4sq-server
-	my $js = $ua->get('https://api.foursquare.com/v2/users/self?oauth_token='.$token);
-	my $fsq_id = $js->res->json('/response/user/id');
+	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self',oauth_token => $token)->content);
+	my $fsq_id = $js->{response}->{user}->{id};
 	
 	# Insert and Update user-data to DB
 	my $row = $self->db->find_or_create(

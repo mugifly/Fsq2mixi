@@ -14,8 +14,10 @@ use Config::Pit;
 use DateTime;
 use JSON;
 use String::Trigram;
-
 use Data::Model::Driver::DBI;
+
+use Test::Mock::LWP::Conditional;
+
 use Fsq2mixi::DBSchemas;
 use Fsq2mixi::Model::PostToMixi;
 use Mixi;
@@ -26,6 +28,7 @@ sub startup {
 	
 	# Load settings by using Config::Pit
 	my $config = pit_get('fsq2mixi');# setting_name of Config::Pit
+	$self->config->{proxy} = '';
 	$self->helper(config => sub{return $config});
 	
 	# Set cookie-settings
@@ -56,6 +59,10 @@ sub startup {
 		my $dbpath = 'db_fsq2mixi.db';
 		if(defined($config->{dbpath}) && $config->{dbpath} ne ""){
 			$dbpath = $config->{dbpath};
+		}
+		if($self->mode eq "test"){# Temporary DB for Test-mode
+			$dbpath = "test-".$dbpath;
+			if(-e $dbpath){ unlink($dbpath); }
 		}
 		my $driver = Data::Model::Driver::DBI->new(dsn => 'dbi:SQLite:dbname='.$dbpath);
 		$db->set_base_driver($driver);
@@ -99,7 +106,6 @@ sub startup {
 	$r = $r->bridge->to(
 		cb => sub{
 			my $self = shift;
-			
 			# Checking Configuration
 			if(!defined($config->{fsq_client_id}) || !defined($config->{mixi_consumer_key})){
 				$self->render_text("fsq2mixi Debug: Config::Pit is not configured.");
@@ -136,7 +142,7 @@ sub startup {
 					return 0;
 				}
 			}
-			return 1;
+			return 1;# return true = continue after process
 		}
 	);
 	$r->route('/login')->to('user#login');
