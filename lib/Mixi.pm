@@ -33,8 +33,8 @@ sub new {
 	$self->{consumer_secret}	= $hash{consumer_secret} || "";
 	$self->{access_token}		= $hash{access_token} || "";
 	$self->{refresh_token}		= $hash{refresh_token} || "";
-	$self->{ua}					= Mojo::UserAgent->new();
-	$self->{ua}->connect_timeout(5);
+	$self->{ua}					= LWP::UserAgent->new();
+	$self->{ua}->timeout(20);
 	$self->{json}				= JSON->new();
 	
 	$self->{isTest}	= 	$hash{isTest} || 0;
