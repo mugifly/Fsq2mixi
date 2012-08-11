@@ -1,0 +1,9 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head><title>Error</title></head>
+	<body>
+		<h1>エラー</h1>
+		ご迷惑をおかけし申し訳ございません。エラーが発生しました。<br>
+		<%= link_to '/' => begin %>ホームへ<% end %>
+	</body>
+ </html>
