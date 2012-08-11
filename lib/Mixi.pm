@@ -23,8 +23,7 @@ our $VERSION = '1.0.0';
 use Carp;
 
 use JSON;
-use Mojo::UserAgent;
-use Mojo::JSON;
+use LWP::UserAgent;
 
 sub new {
 	my ($class, %hash) = @_;
@@ -36,7 +35,7 @@ sub new {
 	$self->{refresh_token}		= $hash{refresh_token} || "";
 	$self->{ua}					= Mojo::UserAgent->new();
 	$self->{ua}->connect_timeout(5);
-	$self->{json}				= Mojo::JSON->new();
+	$self->{json}				= JSON->new();
 	
 	$self->{isTest}	= 	$hash{isTest} || 0;
 	$self->{proxy}	= 	$hash{proxy} || "";
@@ -67,7 +66,7 @@ sub getProfile {
 	if($self->{access_token} eq ""){return undef;}
 	if($self->{isTest}){return $self->getProfile_T();} 
 	
-	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self?oauth_token='.$self->{access_token});
+	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self', oauth_token=> $self->{access_token});
 	if($res->success){
 		return $res->res->body;
 	}elsif($noRetry ne 1){
@@ -290,9 +289,11 @@ sub getCheckinSpots{
 	my $req_StartPage = 0;
 	my $REQ_PERPAGE = 20;
 	while(1){
-		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots?oauth_token='.$self->{access_token}.'&count='.$REQ_PERPAGE
-			.'&startIndex='.$req_StartPage
-			.'&center='.$latitude.','.$longitude
+		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots',
+			oauth_token	=>	$self->{access_token},
+			count			=>	$REQ_PERPAGE,
+			startIndex		=>	$req_StartPage,
+			center			=>	$latitude.','.$longitude
 		);
 		if($res->success){
 			my $r = JSON->new->decode($res->res->body);
