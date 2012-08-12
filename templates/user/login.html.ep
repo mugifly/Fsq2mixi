@@ -12,4 +12,20 @@
 	<p><small>foursquareのウェブサイトへジャンプして認証します。 (<%= link_to privacy => begin %>fsq2mixiのプライバシーポリシー<% end %>)</small></p>
 	<p>これまでにfsq2mixiをお使いの方で、設定を変更されたい場合もこのボタンからログインしてください。</p>
 </div>
+<div style=”text-align:left;vertical-align:middle;height:auto;”>
+<table style=”margin-right:auto;margin-left:0″>
+<tr><td style=”vertical-align:top;”>
+<g:plusone annotation="none" href="https://s1.mpnets.net/services/fsq2mixi/"></g:plusone>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
 
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>&nbsp;</td><td style=”vertical-align:top;”><a href="http://mixi.jp/share.pl" class="mixi-check-button" data-key="ca8e6ce04f8b12e4668de31872d1f7679dd72332" data-button="button-6" data-url="https://s1.mpnets.net/services/fsq2mixi/">mixiチェック</a>
+<script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
+&nbsp;</td><td style=”vertical-align:top;”><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://s1.mpnets.net/services/fsq2mixi/" data-text="fsq2mixi" data-lang="ja" data-count="none" data-hashtags="fsq2mixi">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table></div>
