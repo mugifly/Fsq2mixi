@@ -18,9 +18,9 @@
 		<i class="icon-ok-sign"></i> 最新のチェックイン1件をmixiチェックインへ投稿しました:<br> <%= $result->{name} %>
 	<% } else { %>
 		<i class="icon-remove-sign"></i> mixiへの投稿エラーが発生しました。後ほど再度お試しください。<br>
-		エラーID:<%= $result->{resultFlg} %>
+		エラーID:<%= $result->{sendFlg} %>
 		<% if ($result->{error} ne "") { %>
-			 - $result->{error}
+			 - <%= $result->{error}
 		<% } %>
 	<% } %>
 </p>
