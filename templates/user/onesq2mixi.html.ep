@@ -20,7 +20,7 @@
 		<i class="icon-remove-sign"></i> mixiへの投稿エラーが発生しました。後ほど再度お試しください。<br>
 		エラーID:<%= $result->{sendFlg} %>
 		<% if ($result->{error} ne "") { %>
-			 - <%= $result->{error}
+			 - <%= $result->{error} %>
 		<% } %>
 	<% } %>
 </p>
