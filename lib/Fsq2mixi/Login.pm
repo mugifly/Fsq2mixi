@@ -81,7 +81,7 @@ sub foursquare_callback {
 	}
 	
 	# Get user-data from 4sq-server
-	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self',oauth_token => $token)->content);
+	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self', 'Authorization' => 'OAuth '.$token)->content);
 	my $fsq_id = $js->{response}->{user}->{id};
 	
 	# Insert and Update user-data to DB
