@@ -17,6 +17,7 @@ mixiを扱うための超簡易モジュール
 use strict;
 use warnings;
 use utf8;
+use Encode;
 
 our $VERSION = '1.0.0';
 
@@ -24,6 +25,7 @@ use Carp;
 
 use JSON;
 use LWP::UserAgent;
+use Test::Mock::LWP::Conditional;
 
 sub new {
 	my ($class, %hash) = @_;
@@ -33,9 +35,9 @@ sub new {
 	$self->{consumer_secret}	= $hash{consumer_secret} || "";
 	$self->{access_token}		= $hash{access_token} || "";
 	$self->{refresh_token}		= $hash{refresh_token} || "";
-	$self->{ua}					= LWP::UserAgent->new();
+	$self->{ua}					= LWP::UserAgent->new;
 	$self->{ua}->timeout(20);
-	$self->{json}				= JSON->new();
+	$self->{json}				= JSON->new;
 	
 	$self->{isTest}	= 	$hash{isTest} || 0;
 	$self->{proxy}	= 	$hash{proxy} || "";
@@ -66,9 +68,9 @@ sub getProfile {
 	if($self->{access_token} eq ""){return undef;}
 	if($self->{isTest}){return $self->getProfile_T();} 
 	
-	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self', oauth_token=> $self->{access_token});
-	if($res->success){
-		return $res->res->body;
+	my $res = $self->{ua}->get('https://api.mixi-platform.com/2/people/@me/@self', Authorization => 'OAuth '. $self->{access_token});
+	if($res->is_success){
+		return Encode::decode_utf8($res->content);
 	}elsif($noRetry ne 1){
 		$self->refreshTokens($self->{refresh_token});
 		return $self->getProfile(1);
@@ -103,14 +105,14 @@ sub refreshTokens {
 	my $rToken = shift;
 	if($self->{isTest}){return $self->refreshTokens_T($rToken);} 
 	
-	my $res = $self->{ua}->post_form('https://secure.mixi-platform.com/2/token' => 
+	my $res = Encode::decode_utf8($self->{ua}->post('https://secure.mixi-platform.com/2/token', 
 		{
 			client_id =>  		$self->{consumer_key},
 			client_secret =>  	$self->{consumer_secret},
 			grant_type => 		'refresh_token',
 			refresh_token =>	$rToken
 		}
-	)->res->body;
+	)->content);
 	
 	my $r = $self->{json}->decode($res);
 	
@@ -137,7 +139,7 @@ sub getTokens {
 	my $code = shift;
 	if($self->{isTest}){return $self->getTokens_T($code);} 
 	
-	my $res = $self->{ua}->post_form('https://secure.mixi-platform.com/2/token' => 
+	my $res = Encode::decode_utf8($self->{ua}->post('https://secure.mixi-platform.com/2/token',
 		{
 			client_id =>  		$self->{consumer_key},
 			client_secret =>  	$self->{consumer_secret},
@@ -145,7 +147,7 @@ sub getTokens {
 			redirect_uri =>		'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_mixi',
 			code =>				$code
 		}
-	)->res->body;
+	)->content);
 	
 	my $r = $self->{json}->decode($res);
 	
@@ -172,15 +174,15 @@ sub postVoice {
 	my $text = shift;
 	my $noRetry = shift;
 	if($self->{isTest}){return $self->postVoice_T($text);} 
-	my $res = $self->{ua}->post_form('https://api.mixi-platform.com/2/voice/statuses/update' => 
+	my $res = $self->{ua}->post('https://api.mixi-platform.com/2/voice/statuses/update',
 		{
 			status => $text,
 			oauth_token => $self->{access_token}
 		}
 	);
 	
-	if($res->success){
-		$res = $res->res->body;
+	if($res->is_success){
+		$res = Encode::decode_utf8($res->content);
 		my $r = $self->{json}->decode($res);
 		my $postId = $r->{id};
 		if($postId ne ""){
@@ -222,8 +224,8 @@ sub postCheckin{
 	while($retry<=1){
 		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,JSON->new->utf8(1)->encode($checkinData));
 		
-		if($res->success){
-			$res = $res->res->body;
+		if($res->is_success){
+			$res = Encode::decode_utf8($res->content);
 			my $r = $self->{json}->decode($res);
 			my $postId = $r->{id};
 			if($postId ne ""){
@@ -259,8 +261,8 @@ sub postCheckinSpot{
 	while($retry<=1){
 		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',JSON->new->utf8(1)->encode($spotData));
 		
-		if($res->success){
-			$res = $res->res->body;
+		if($res->is_success){
+			$res = Encode::decode_utf8($res->content);
 			my $r = $self->{json}->decode($res);
 			my $postId = $r->{id};
 			if($postId ne ""){
@@ -295,8 +297,8 @@ sub getCheckinSpots{
 			startIndex		=>	$req_StartPage,
 			center			=>	$latitude.','.$longitude
 		);
-		if($res->success){
-			my $r = JSON->new->decode($res->res->body);
+		if($res->is_success){
+			my $r = JSON->new->decode(Encode::decode_utf8($res->content));
 			foreach my $s(@{$r->{entry}}){
 				push(@spots,$s);
 			}

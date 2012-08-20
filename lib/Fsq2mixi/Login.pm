@@ -62,19 +62,21 @@ sub foursquare_callback {
 	
 	# Get access-token from 4sq-server
 	my $ua = LWP::UserAgent->new;
-	my $js = Mojo::JSON->decode($ua->get('https://ja.foursquare.com/oauth2/access_token',
-		client_id		=>	$self->config->{fsq_client_id},
-		client_secret	=>	$self->config->{fsq_client_secret},
-		grant_type		=>	'authorization_code',
-		redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq',
-		code			=>	$self->param("code")
+	my $js = Mojo::JSON->decode($ua->post('https://ja.foursquare.com/oauth2/access_token',
+		{
+			client_id		=>	$self->config->{fsq_client_id},
+			client_secret	=>	$self->config->{fsq_client_secret},
+			grant_type		=>	'authorization_code',
+			redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq',
+			code			=>	$self->param("code")
+		}
 	)->content);
 	my $token = $js->{access_token};
 	
 	if(!defined($token) || $token eq ""){
 		# if Token is valid...
 		$self->app->log->fatal("re");
-		$self->redirect_to('/');
+		$self->redirect_to('/?access_token_valid');
 		return 1;
 	}
 	
