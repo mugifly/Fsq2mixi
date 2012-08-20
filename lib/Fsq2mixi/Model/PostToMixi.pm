@@ -63,6 +63,7 @@ sub postToMixi{
 			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
 			if($mixi_postId eq undef){# failed
 				$ret->{sendFlg} = 100;
+				$ret->{error} = "Post checkin failed";
 			}else{ # success
 				$ret->{sendFlg} = 2;
 			}
@@ -98,6 +99,7 @@ sub postToMixi{
 		my $mixi_postId = $mixi->postVoice($statusText);
 		if($mixi_postId eq undef){# failed	
 			$ret->{sendFlg} = 100;
+				$ret->{error} = "Post voice failed";
 		}else{ # success
 			$ret->{sendFlg} = 1;
 		}

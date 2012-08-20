@@ -220,6 +220,7 @@ sub postCheckin{
 	while($retry<=1){
 		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,
 			Authorization	=> 'OAuth '.$self->{access_token},
+			Content_Type    => 'application/json',
 			Content 		=> JSON->new->utf8(1)->encode($checkinData)
 		);
 		
@@ -256,6 +257,7 @@ sub postCheckinSpot{
 	while($retry<=1){
 		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',
 			Authorization	=> 'OAuth '.$self->{access_token},
+			Content_Type    => 'application/json',
 			Content 		=> JSON->new->utf8(1)->encode($spotData)
 		);
 		
