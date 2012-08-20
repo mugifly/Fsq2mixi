@@ -60,6 +60,8 @@ sub onesq2mixi {
 			
 			$r->mixi_send_status($ret->{sendFlg});
 			$r->update;
+		}else{
+			$self->app->log->warn("1sq2mixi-error: ".$ret);
 		}
 		$self->stash(result => $ret);
 		$resultFlg = $ret->{sendFlg};
