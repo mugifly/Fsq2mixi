@@ -209,10 +209,6 @@ sub postVoice_T {
 # postCheckin(SpotId,Lat,Lon,Message)
 sub postCheckin{
 	my ($self, $spotid, $latitude, $longitude, $message) = @_;
-	$self->{ua}->on(start => sub {
-		my ($ua, $tx) = @_;
-		$tx->req->headers->header('Authorization', 'OAuth '.$self->{access_token});
-	});
 	my $checkinData = {
 		'message'			=> $message,
 		'location' => {
@@ -222,7 +218,10 @@ sub postCheckin{
 	};
 	my $retry = 0;
 	while($retry<=1){
-		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,JSON->new->utf8(1)->encode($checkinData));
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/checkins/'.$spotid,
+			Authorization	=> 'OAuth '.$self->{access_token},
+			Content 		=> JSON->new->utf8(1)->encode($checkinData)
+		);
 		
 		if($res->is_success){
 			$res = Encode::decode_utf8($res->content);
@@ -244,10 +243,6 @@ sub postCheckin{
 # postCheckinSpots(Name,Lat,Lon,Description) - Check-in マイスポット作成
 sub postCheckinSpot{
 	my ($self, $name, $latitude, $longitude, $description) = @_;
-	$self->{ua}->on(start => sub {
-		my ($ua, $tx) = @_;
-		$tx->req->headers->header('Authorization', 'OAuth '.$self->{access_token});
-	});
 	my $spotData = {
 		'name'			=> $name,
 		'location' => {
@@ -259,7 +254,10 @@ sub postCheckinSpot{
 	
 	my $retry = 0;
 	while($retry<=1){
-		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',JSON->new->utf8(1)->encode($spotData));
+		my $res = $self->{ua}->post('https://api.mixi-platform.com/2/spots/@me/@self',
+			Authorization	=> 'OAuth '.$self->{access_token},
+			Content 		=> JSON->new->utf8(1)->encode($spotData)
+		);
 		
 		if($res->is_success){
 			$res = Encode::decode_utf8($res->content);
@@ -291,11 +289,11 @@ sub getCheckinSpots{
 	my $req_StartPage = 0;
 	my $REQ_PERPAGE = 20;
 	while(1){
-		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots',
-			oauth_token	=>	$self->{access_token},
-			count			=>	$REQ_PERPAGE,
-			startIndex		=>	$req_StartPage,
-			center			=>	$latitude.','.$longitude
+		my $res = $self->{ua}->get('https://api.mixi-platform.com/2/search/spots'
+				.'?count='.$REQ_PERPAGE
+				.'&startIndex='.$req_StartPage
+				.'&center='.$latitude.','.$longitude,
+			Authorization => 'OAuth '. $self->{access_token}
 		);
 		if($res->is_success){
 			my $r = JSON->new->decode(Encode::decode_utf8($res->content));
