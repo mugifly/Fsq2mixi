@@ -29,7 +29,8 @@ sub postToMixi{
 		"postId"		=>	"",
 		"spotName"		=>	$fsq_spotName,
 		"id"			=>	$fsq_id,
-		"sendFlg"		=>	0 # 1 = Success(mixiVoice), 2 = Success(mixiCheck-in), 100 = Failed
+		"sendFlg"		=>	0, # 1 = Success(mixiVoice), 2 = Success(mixiCheck-in), 100 = Failed
+		"error"		=> "",
 	};
 	my $latitude = $ret->{latitude};
 	my $longitude = $ret->{longitude};
@@ -54,7 +55,10 @@ sub postToMixi{
 				#$isNewSpot = 1;
 			}
 		}
-		if($spotId ne ""){
+		if($spotId eq ""){
+			# SpotId is null...
+			$ret->{error} = "spotId is null";
+		}else{
 			# post check-in
 			my $mixi_postId = $mixi->postCheckin($spotId,$latitude,$longitude,$fsq_shout."from foursquare (Fsq2mixi)");
 			if($mixi_postId eq undef){# failed
@@ -100,7 +104,6 @@ sub postToMixi{
 		$ret->{postId} = $mixi_postId;
 	}
 	
-	$ret->{sendFlg} = $ret->{sendFlg};
 	return ($ret);
 }
 

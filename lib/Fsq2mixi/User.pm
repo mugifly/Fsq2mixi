@@ -36,7 +36,7 @@ sub onesq2mixi {
 	if(defined($r) && defined($r->id)){
 		$checkin = $r->{column_values};
 	}
-	# post to mixi
+	
 	if($self->param("nosend") eq 1){
 		# redirect: 1sq2mixi infomation page (no post)
 		$self->flash("nosend" => 1);
@@ -50,8 +50,9 @@ sub onesq2mixi {
 		$self->stash(result => {});
 		$resultFlg = "NOT_AUTH";
 	}elsif(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
+		# Really Post-To-Mixi processing
 		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, 1);
-		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
+		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){# Success...
 			# Update DB user-data
 			$userrow->mixi_token($mixi->{access_token});
 			$userrow->mixi_rtoken($mixi->{refresh_token});
@@ -60,8 +61,8 @@ sub onesq2mixi {
 			
 			$r->mixi_send_status($ret->{sendFlg});
 			$r->update;
-		}else{
-			$self->app->log->warn("1sq2mixi-error: ".$ret);
+		}else{# Error...
+			$self->app->log->warn("1sq2mixi-error: ".Mojo::JSON->encode($ret));
 		}
 		$self->stash(result => $ret);
 		$resultFlg = $ret->{sendFlg};
