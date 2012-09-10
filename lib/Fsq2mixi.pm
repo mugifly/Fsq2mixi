@@ -31,6 +31,11 @@ sub startup {
 	$self->config->{proxy} = '';
 	$self->helper(config => sub{return $config});
 	
+	if(!defined($config->{session_expires})){
+		# Default session expires
+		$config->{session_expires} = 2678400;# 2678400 sec = 31day * 24hour * 60min * 60sec
+	}
+	
 	# Set cookie-settings
 	if(defined($config->{secret})){
 		$self->secret('fsq2mixi'.$config->{secret});
@@ -115,7 +120,6 @@ sub startup {
 				return 0;
 			}
 			
-			$self->session(expires => time + 604800);
 			my $fsq_token = "";
 			$user = {};
 			if(defined($self->session('fsq_token')) && $self->session('fsq_token') ne ""){

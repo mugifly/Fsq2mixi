@@ -8,6 +8,7 @@ use Data::Model::Mixin modules => ['FindOrCreate'];
   
 install_model user => schema {
 	key 'id';
+	unique 'fsq_id';
 	unique 'fsq_token';
 	
 	column 'user.id' => {

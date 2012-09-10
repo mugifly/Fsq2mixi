@@ -149,15 +149,20 @@ sub usermenu {
 	}
 	
 	# get mixi user-data
-	my $mixiUserName = $mixi->getUser_MixiName();
-	$self->stash(mixiUserName => $mixiUserName);
-	if(!defined($mixiUserName) || $mixiUserName eq ""){
-		$self->stash(is_mixiLogin => "false");
+	if($userrow->mixi_token ne ""){
+		my $mixiUserName = $mixi->getUser_MixiName();
+		$self->stash(mixiUserName => $mixiUserName);
+		if(!defined($mixiUserName) || $mixiUserName eq ""){
+			$self->stash(is_mixiLogin => "false");
+		}else{
+			$self->stash(is_mixiLogin => "true");
+			$userrow->mixi_token($mixi->{access_token});
+			$userrow->mixi_rtoken($mixi->{refresh_token});
+			$userrow->update;
+		}
 	}else{
-		$self->stash(is_mixiLogin => "true");
-		$userrow->mixi_token($mixi->{access_token});
-		$userrow->mixi_rtoken($mixi->{refresh_token});
-		$userrow->update;
+		$self->stash(is_mixiLogin => "false");
+		$self->stash(mixiUserName => "");
 	}
 	
 	# load Check-in history

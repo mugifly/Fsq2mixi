@@ -29,6 +29,11 @@ sub mixi_callback {
 	# Load session
 	my $fsq_token = $self->session('fsq_token');
 	
+	if($mixi_token eq ""){
+		$self->redirect_to('/?callback_valid');
+		return;
+	}
+	
 	# Update user-data on DB
 	my ($d, ) = $self->db->get('user' => {
 		where => [
@@ -40,7 +45,7 @@ sub mixi_callback {
 	$d->update;
 	
 	# Redirect client
-	$self->redirect_to('/');
+	$self->redirect_to('/?'.$mixi_token);
 }
 
 sub foursquare_redirect_authpage {
@@ -87,7 +92,7 @@ sub foursquare_callback {
 	# Insert and Update user-data to DB
 	my $row = $self->db->find_or_create(
 		user => {
-           fsq_token => $token ,
+           fsq_id => $fsq_id,
 		} => {
 			fsq_token				=> $token,
 			fsq_id					=> $fsq_id,
@@ -101,6 +106,7 @@ sub foursquare_callback {
 	$row->update;
 	
 	# Save session
+	$self->session(expires => time + $self->config->{session_expires});
 	$self->session(fsq_token => $token);
 	
 	# Redirect client
