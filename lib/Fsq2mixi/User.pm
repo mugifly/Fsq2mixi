@@ -149,7 +149,7 @@ sub usermenu {
 	}
 	
 	# get mixi user-data
-	if($userrow->mixi_token ne ""){
+	if(defined($userrow->mixi_token) && $userrow->mixi_token ne ""){
 		my $mixiUserName = $mixi->getUser_MixiName();
 		$self->stash(mixiUserName => $mixiUserName);
 		if(!defined($mixiUserName) || $mixiUserName eq ""){
