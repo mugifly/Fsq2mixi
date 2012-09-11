@@ -106,7 +106,7 @@ sub foursquare_callback {
 	$row->update;
 	
 	# Save session
-	$self->session(expires => time + $self->config->{session_expires});
+	$self->session(expiration=> $self->config->{session_expires});
 	$self->session(fsq_token => $token);
 	
 	# Redirect client
