@@ -21,7 +21,7 @@ __This application is still a test version.__
 
 ***
 
-### Environment-setting by using Config::Pit
+### Environment setting by using Config::Pit
 
 ~/.pit/default.yaml
 
@@ -34,6 +34,21 @@ __This application is still a test version.__
         "secret": 'COOKIE_SECRET'
         "basepath": '/fsq2mixi'
         "dbpath": 'SQLITE_DATABASE_SAVEPATH'
+
+### Running on Mojo::Server::Hypnotoad
+(Mojolicious 3.3x)
+
+#### Start:
+
+    hypnotoad /PATHTO_fsq2mixi/script/fsq2mixi -f /PATHTO_fsq2mixi/script/fsq2mixi
+
+#### Setting:
+
+/PATHTO_fsq2mixi/fsq2mixi.conf
+
+    {hypnotoad => {listen => ['http://*:80'], workers => 10}};
+
+see detail: http://mojolicio.us/perldoc/Mojo/Server/Hypnotoad#SETTINGS
 
 ### License and Author
 

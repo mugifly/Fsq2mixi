@@ -26,6 +26,9 @@ use Mixi;
 sub startup {
 	my $self = shift;
 	
+	# Load settings for hypnotoad, etc...
+	$self->plugin('Config' => {'file' => 'fsq2mixi.conf' });
+	
 	# Load settings by using Config::Pit
 	my $config = pit_get('fsq2mixi');# setting_name of Config::Pit
 	$self->config->{proxy} = '';
