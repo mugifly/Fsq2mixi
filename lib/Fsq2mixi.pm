@@ -94,8 +94,7 @@ sub startup {
 	$self->stash(page => "Home");
 	
 	# Prepare user-data hash & helper
-	my $user;$user = undef;
-	$self->helper(ownUser => sub{return $user});
+	$self->helper(ownUser => sub{return undef});
 	$self->helper(ownUserRow => sub{
 		my $self = shift;
 		my ($d, ) = $self->db->get('user' => {
@@ -106,65 +105,27 @@ sub startup {
 		return $d;
 	});
 	
-	# Initial Routes (for not log-in to 4sq , and all-users)
+	# Routes (for not log-in to 4sq , and all-users)
 	my $r = $self->routes;
 	$r->route('/about')->to('about#about');
 	$r->route('/privacy')->to('about#privacy');
 	
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
+	
+	$r->route('/login')->to('user#login');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
-	# Bridge (login check)
-	$r = $r->bridge->to(
-		cb => sub{
-			my $self = shift;
-			# Checking Configuration
-			if(!defined($config->{fsq_client_id}) || !defined($config->{mixi_consumer_key})){
-				$self->render_text("fsq2mixi Debug: Config::Pit is not configured.");
-				$self->app->log->fatal("fsq2mixi Debug: Config::Pit is not configured.");
-				return 0;
-			}
-			
-			my $fsq_token = "";
-			$user = {};
-			if(defined($self->session('fsq_token')) && $self->session('fsq_token') ne ""){
-				$fsq_token = $self->session('fsq_token');
-			}
-			
-			if($fsq_token ne ""){#token check
-				 my $users = $db->get('user' => {
-					where => [
-						fsq_token => $fsq_token
-					]
-				});
-				my $r = $users->next;
-				if(!defined($r) || !defined($r->id)){
-					$self->redirect_to("/login");
-					if($self->current_route ne "login"){
-						$self->redirect_to('/login');
-						return 0;
-					}
-				}else{#found user-data from db
-					$user = $r->{column_values};
-				}
-			}else{#token is null...
-				if($self->current_route ne "login"){
-					$self->redirect_to('/login?tokennull');
-					return 0;
-				}
-			}
-			return 1;# return true = continue after process
-		}
-	);
-	$r->route('/login')->to('user#login');
 	
-	# Routes (for logged-in)
-	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
-	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
-	$r->route('/1sq2mixi')->to('user#onesq2mixi');
-	$r->route('/logout')->to('logout#logout');
-	$r->route('/')->to('user#usermenu');
-	$r->route('')->to('user#usermenu');
+	# Bridge (login check)
+	my $auth = $r->bridge->to('login#logincheck');
+	
+	# Routes (for logged-in users)
+	$auth->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
+	$auth->route('/oauth_callback_mixi')->to('login#mixi_callback');
+	$auth->route('/1sq2mixi')->to('user#onesq2mixi');
+	$auth->route('/logout')->to('logout#logout');
+	$auth->route('/')->to('user#usermenu');
+	$auth->route('')->to('user#usermenu');
 }
 
 1;
