@@ -42,7 +42,7 @@ __This application is still a test version.__
 
     hypnotoad /PATHTO_fsq2mixi/script/fsq2mixi -f /PATHTO_fsq2mixi/script/fsq2mixi
 
-#### Setting:
+#### Setting: (optionally)
 
 /PATHTO_fsq2mixi/fsq2mixi.conf
 
