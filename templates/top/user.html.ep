@@ -15,7 +15,7 @@
                 <% } else { %>
                 <i class="icon-remove"></i> 未認証 - <strong>まずmixiでログインしてfsq2mixiを接続許可してください:</strong>
                 <br>
-                <%= link_to mixi_redirect_authpage => (class => 'btn btn-primary') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
+                <%= link_to '/session/oauth_mixi_redirect' => (class => 'btn btn-primary') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
                 <% } %>
                 </i>
         </ul>
