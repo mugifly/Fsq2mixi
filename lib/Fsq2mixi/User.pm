@@ -4,6 +4,11 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub login {
 	my $self = shift;
+	if ( defined($self->ownUser) && defined($self->ownUser->{id}) ) {
+		$self->redirect_to("/top");
+		return;
+	}
+	
 	$self->stash(page => "Home");
 	if(defined($self->ownUser) && defined($self->ownUser->{id}) && $self->ownUser->{id} ne ""){
 		$self->redirect_to('/');

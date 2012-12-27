@@ -8,13 +8,17 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub fsq_checkin_receiver {
 	my $self = shift;
+	$self->app->log->fatal("DEBUG:Pushreceiver");
 	
 	my $param_checkin = $self->param('checkin');
 	my $param_secret = $self->param('secret');
 	
+	$self->app->log->fatal("  param_checkin: $param_checkin");
+	
 	my $sendFlg = 0;
 	
 	# verify push-secret
+	$self->app->log->fatal("  verify push-secret");
 	if($param_secret ne $self->config->{fsq_push_secret}){
 		$self->render(status => 401);
 		$self->render_json({'result' => 0, 'error_text'=>'push verify failed'});
@@ -22,6 +26,7 @@ sub fsq_checkin_receiver {
 	}
 	
 	# extract checkin-data
+	$self->app->log->fatal("  extract checkin-data");
 	my $checkin = JSON->new->decode($param_checkin);
 	my $fsq_id = $checkin->{user}->{id};
 	my $fsq_shout = "";
@@ -31,6 +36,7 @@ sub fsq_checkin_receiver {
 	my $fsq_spotName = $checkin->{venue}->{name};
 	
 	# load user-data
+	$self->app->log->fatal("  load user-data");
 	my $user;
 	my ($r, ) = $self->db->get('user' => {
 		where => [
@@ -47,11 +53,13 @@ sub fsq_checkin_receiver {
 	
 	if($user->{mixi_is_active} eq 1 && $user->{mixi_token} ne ""){#send to mixi is enable
 		# prepare connection for mixi
+		$self->app->log->fatal("  Prepare Mixi... mixi_token = $user->{mixi_token}");
 		my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 			access_token => $user->{mixi_token},
 			refresh_token => $user->{mixi_rtoken},
 		);
 		
+		$self->app->log->fatal("  PostToMixi");
 		my $ret = $self->PostToMixi->postToMixi($param_checkin, $mixi, $user->{mixi_mode}, 1);
 		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){#Success
 			# Update DB user-data
@@ -70,6 +78,7 @@ sub fsq_checkin_receiver {
 		});
 		$sendFlg = $ret->{sendFlg};
 	}else{#send to mixi is disable
+		$self->app->log->fatal("  #send to mixi is disable");
 		$self->render_json({
 			'result'	=> -1,
 		});
@@ -77,6 +86,7 @@ sub fsq_checkin_receiver {
 	}
 	
 	# save checkin to database
+	$self->app->log->fatal("  Save checkin to database");
 	$self->db->set('checkin'=> {
 		'id'					=>	$checkin->{id},
 		'name'					=>	$fsq_spotName,
@@ -87,6 +97,7 @@ sub fsq_checkin_receiver {
 	});
 	
 	# auto deletion of old checkin
+	$self->app->log->fatal("  auto deletion of old checkin");
 	my $h = $self->db->get('checkin' => {
 		where => [
 			fsq_id => $fsq_id
@@ -105,6 +116,8 @@ sub fsq_checkin_receiver {
 		);
 		last;
 	}
+	
+	$self->app->log->fatal("  done - sendFlg: $sendFlg");
 	return 1;
 }
 
