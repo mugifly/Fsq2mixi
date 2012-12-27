@@ -6,7 +6,7 @@ use utf8;
 sub login_check {
 my $self = shift;
 	# Check configuration
-	if(!defined($self->config->{fsq_client_id}) || !defined($self->config->{mixi_consumer_key})){
+	if($self->app->mode ne "test" && (!defined($self->config->{fsq_client_id}) || !defined($self->config->{mixi_consumer_key}))){
 		$self->render_text("fsq2mixi Debug: Config::Pit is not configured.");
 		$self->app->log->fatal("fsq2mixi Debug: Config::Pit is not configured.");
 		return 0;
