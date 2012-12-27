@@ -1,86 +1,23 @@
-package Fsq2mixi::User;
+package Fsq2mixi::Controller::Top;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 
-sub login {
+sub guest {
 	my $self = shift;
-	$self->stash(page => "Home");
-	if(defined($self->ownUser) && defined($self->ownUser->{id}) && $self->ownUser->{id} ne ""){
-		$self->redirect_to('/');
+	if ( defined($self->ownUser) && defined($self->ownUser->{id}) ) {
+		$self->redirect_to("/top");
+		return;
 	}
-	$self->session(expires => 1);
 	$self->render();
 }
 
-sub onesq2mixi {
+sub user {
 	my $self = shift;
-	$self->stash(page => "1sq2mixi");
-	my $userrow = $self->ownUserRow;
-	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
-		access_token => $userrow->mixi_token,
-		refresh_token => $userrow->mixi_rtoken,
-	);
-	my $resultFlg = -1;
 	
-	# load latest checkin from DB
-	my $checkin = {};
-	my $h = $self->db->get('checkin' => {
-		where => [
-			fsq_id => $self->ownUserRow->fsq_id,
-		],
-		order => [
-			{date => 'DESC'}
-		],
-	});
-	my $r = $h->next;
-	if(defined($r) && defined($r->id)){
-		$checkin = $r->{column_values};
+	if(defined($self->flash("message_info"))){
+		$self->stash("message_info", $self->flash("message_info"));
 	}
 	
-	if($self->param("nosend") eq 1){
-		# redirect: 1sq2mixi infomation page (no post)
-		$self->flash("nosend" => 1);
-		$self->redirect_to("/1sq2mixi");
-		return 0;
-	}elsif($self->flash("nosend") eq 1){
-		# 1sq2mixi infomation page (no post)
-		$self->stash(result => {});
-		$resultFlg = "INFO";
-	}elsif($userrow->mixi_token eq ""){
-		$self->stash(result => {});
-		$resultFlg = "NOT_AUTH";
-	}elsif(defined($checkin->{id}) && ($checkin->{mixi_send_status} eq 0 || $checkin->{mixi_send_status} eq 100 )){# unsent or last time is error...
-		# Really Post-To-Mixi processing
-		my $ret = $self->PostToMixi->postToMixi($checkin->{json}, $mixi, $userrow->mixi_mode, 1);
-		if($ret->{sendFlg} eq 1 || $ret->{sendFlg} eq 2){# Success...
-			# Update DB user-data
-			$userrow->mixi_token($mixi->{access_token});
-			$userrow->mixi_rtoken($mixi->{refresh_token});
-			$userrow->mixi_latestsend_date(time());
-			$userrow->update;
-			
-			$r->mixi_send_status($ret->{sendFlg});
-			$r->update;
-		}else{# Error...
-			$self->app->log->warn("1sq2mixi-error: ".Mojo::JSON->encode($ret));
-		}
-		$self->stash(result => $ret);
-		$resultFlg = $ret->{sendFlg};
-	}elsif($checkin->{mixi_send_status} eq 1 || $checkin->{mixi_send_status} eq 2){
-		$self->stash(result => {});
-		$resultFlg = "SENT";
-	}else{
-		$self->stash(result => {});
-		$resultFlg = "HISTORY_NULL";
-	}
-	
-	$self->stash(resultFlg => $resultFlg);
-	$self->render();
-}
-
-sub usermenu {
-	my $self = shift;
-	$self->stash(page => "Home");
 	my $userrow = $self->ownUserRow;
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 		access_token => $userrow->mixi_token,
@@ -150,15 +87,23 @@ sub usermenu {
 	
 	# get mixi user-data
 	if(defined($userrow->mixi_token) && $userrow->mixi_token ne ""){
-		my $mixiUserName = $mixi->getUser_MixiName();
-		$self->stash(mixiUserName => $mixiUserName);
-		if(!defined($mixiUserName) || $mixiUserName eq ""){
+		eval{
+			my $mixiUserName = $mixi->getUser_MixiName();
+			$self->stash(mixiUserName => $mixiUserName);
+			if(!defined($mixiUserName) || $mixiUserName eq ""){
+				$self->stash(is_mixiLogin => "false");
+			}else{
+				$self->stash(is_mixiLogin => "true");
+				$userrow->mixi_token($mixi->{access_token});
+				$userrow->mixi_rtoken($mixi->{refresh_token});
+				$userrow->update;
+			}
+		};
+		if($@){
+			$self->stash("message_error", "mixiからのアカウント情報取得に失敗しました。再度、[mixiへのログイン]ボタンから認証してください。");
+			$self->app->log->error("Usermenu-error: ".$@);
 			$self->stash(is_mixiLogin => "false");
-		}else{
-			$self->stash(is_mixiLogin => "true");
-			$userrow->mixi_token($mixi->{access_token});
-			$userrow->mixi_rtoken($mixi->{refresh_token});
-			$userrow->update;
+			$self->stash(mixiUserName => "");
 		}
 	}else{
 		$self->stash(is_mixiLogin => "false");
