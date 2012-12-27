@@ -15,6 +15,7 @@ my $self = shift;
 	# Maintenance mode
 	if(defined($self->config->{maintain_mode})){
 		$self->render(template => 'maintenance');
+		return 0;
 	}
 	
 	# Reset user-data helper
