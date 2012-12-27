@@ -65,6 +65,22 @@
 	</div>
 	
 	<div class="container">
+        <!-- for alert message -->
+            <% if(defined($self->stash('message_error'))){ %>
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <%= Mojo::ByteStream->new($self->stash('message_error')) %>
+                </div>
+            <% } %>
+        <!--end-->
+        <!-- for info message -->
+            <% if(defined($self->stash('message_info'))){ %>
+                <div class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <%= Mojo::ByteStream->new($self->stash('message_info')) %>
+                </div>
+            <% } %>
+        <!--end-->
 		<%= content %>
 	</div>
 

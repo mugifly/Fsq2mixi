@@ -86,6 +86,11 @@ sub onesq2mixi {
 sub usermenu {
 	my $self = shift;
 	$self->stash(page => "Home");
+	
+	if(defined($self->flash("message_info"))){
+		$self->stash("message_info", $self->flash("message_info"));
+	}
+	
 	my $userrow = $self->ownUserRow;
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
 		access_token => $userrow->mixi_token,
@@ -155,15 +160,23 @@ sub usermenu {
 	
 	# get mixi user-data
 	if(defined($userrow->mixi_token) && $userrow->mixi_token ne ""){
-		my $mixiUserName = $mixi->getUser_MixiName();
-		$self->stash(mixiUserName => $mixiUserName);
-		if(!defined($mixiUserName) || $mixiUserName eq ""){
+		eval{
+			my $mixiUserName = $mixi->getUser_MixiName();
+			$self->stash(mixiUserName => $mixiUserName);
+			if(!defined($mixiUserName) || $mixiUserName eq ""){
+				$self->stash(is_mixiLogin => "false");
+			}else{
+				$self->stash(is_mixiLogin => "true");
+				$userrow->mixi_token($mixi->{access_token});
+				$userrow->mixi_rtoken($mixi->{refresh_token});
+				$userrow->update;
+			}
+		};
+		if($@){
+			$self->stash("message_error", "mixiからのアカウント情報取得に失敗しました。再度、[mixiへのログイン]ボタンから認証してください。");
+			$self->app->log->error("Usermenu-error: ".$@);
 			$self->stash(is_mixiLogin => "false");
-		}else{
-			$self->stash(is_mixiLogin => "true");
-			$userrow->mixi_token($mixi->{access_token});
-			$userrow->mixi_rtoken($mixi->{refresh_token});
-			$userrow->update;
+			$self->stash(mixiUserName => "");
 		}
 	}else{
 		$self->stash(is_mixiLogin => "false");

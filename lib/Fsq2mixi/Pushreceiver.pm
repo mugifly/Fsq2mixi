@@ -52,6 +52,7 @@ sub fsq_checkin_receiver {
 	}
 	
 	if($user->{mixi_is_active} eq 1 && $user->{mixi_token} ne ""){#send to mixi is enable
+	
 		# prepare connection for mixi
 		$self->app->log->fatal("  Prepare Mixi... mixi_token = $user->{mixi_token}");
 		my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret},
