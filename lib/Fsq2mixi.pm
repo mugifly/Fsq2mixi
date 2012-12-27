@@ -51,7 +51,7 @@ sub startup {
 		my $self = shift;
 		if ( $self->req->headers->header('X-Forwarded-Host') && defined($config->{basepath})) {
 			# Set url base-path (directory path)
-			my @basepaths = split(/\//,$self->{basepath});	shift @basepaths;
+			my @basepaths = split(/\//,$config->{basepath});	shift @basepaths;
 			foreach my $part(@basepaths){
 				if($part eq ${$self->req->url->path->parts}[0]){ push @{$self->req->url->base->path->parts}, shift @{$self->req->url->path->parts};	
 				} else { last; }
@@ -104,7 +104,7 @@ sub startup {
 	$r->route('/session/oauth_mixi_redirect')->to('session#oauth_mixi_redirect');
 	$r->route('/session/oauth_mixi_callback')->to('session#oauth_mixi_callback');
 	$r->route('/1sq2mixi')->to('onesq2mixi#onesq2mixi');
-	$r->route('/logout')->to('session#logout');
+	$r->route('/session/logout')->to('session#logout');
 }
 
 1;
