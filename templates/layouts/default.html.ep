@@ -10,6 +10,8 @@
 	
 	<%= stylesheet '/css/bootstrap.min.css' %>
 	<%= stylesheet '/css/bootstrap-responsive.min.css' %>
+    <%= javascript '/js/bootstrap-button.js' %>
+    <%= javascript '/js/bootstrap-collapse.js' %>
 	<%= javascript '/js/bootstrap.min.js' %>
 	<%= javascript '/js/jquery-1.7.2.min.js' %>
 	<meta property="og:description" content="...">
@@ -95,7 +97,10 @@
 		<%= content %>
 	</div>
 
-<div align="right" style="margin-right: 50px;">fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, 
-		<a href="http://ohgita.info/">Masanori</a> (<a href="https://plus.google.com/100193705060363203281/">g+</a>).<br> Powered by perl + Mojolicious.</div>
+<div align="right" style="margin-right: 50px;">
+    fsq2mixi by <a href="https://github.com/mugifly/Fsq2mixi">Fsq2mixi Project</a>, 
+		<a href="http://ohgita.info/">Masanori</a> (<a href="https://plus.google.com/100193705060363203281/">g+</a>).<br> 
+    Powered by <a href="http://www.perl.org/">perl</a> + <a href="http://mojolicio.us/">Mojolicious</a> + Other CPAN modules.<br>
+    Includes small icons from <a href="http://www.glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/deed.en">CC BY 3.0</a>. thanks.</div></div>
 </body>
 </html>
