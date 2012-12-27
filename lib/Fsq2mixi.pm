@@ -29,7 +29,7 @@ sub startup {
 	my $r = $self->routes;
 	
 	# Set namespace
-	$r->namespace('Fsq2mixi::Controller');
+	$r = $r->namespaces(['Fsq2mixi::Controller']);
 	
 	# Load settings for hypnotoad, etc...
 	$self->plugin('Config' => {'file' => 'fsq2mixi.conf' }) if (-f 'fsq2mixi.conf');
