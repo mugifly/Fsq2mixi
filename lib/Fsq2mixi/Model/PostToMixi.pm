@@ -98,7 +98,7 @@ sub postToMixi{
 		# send to mixi
 		my $mixi_postId = $mixi->postVoice($statusText);
 		if($mixi_postId eq undef){# failed	
-			$ret->{sendFlg} = 100;
+			$ret->{sendFlg} = 101;
 				$ret->{error} = "Post voice failed";
 		}else{ # success
 			$ret->{sendFlg} = 1;
