@@ -1,4 +1,4 @@
-package Fsq2mixi::Pushreceiver;
+package Fsq2mixi::Controller::Pushreceiver;
 use utf8;
 use Encode;
 use Mojo::Base 'Mojolicious::Controller';
@@ -6,7 +6,7 @@ use Mojo::Base 'Mojolicious::Controller';
 # PushReceiver
 # for Request (Push from Foursquare-server)
 
-sub fsq_checkin_receiver {
+sub foursquare_checkin {
 	my $self = shift;
 	$self->app->log->fatal("DEBUG:Pushreceiver");
 	
