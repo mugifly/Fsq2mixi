@@ -9,7 +9,7 @@ mixiチェックイン および、mixiボイスへの自動投稿が行えま�
 <p>
 <ul>
 <li>利用は無料です。</li>
-<li>foursquareアカウントとmixiアカウントが必要です。(<%= link_to privacy => begin %> プライバシーポリシー <% end %>)</li>
+<li>foursquareアカウントとmixiアカウントが必要です。(<%= link_to '/docs/privacy' => begin %> プライバシーポリシー <% end %>)</li>
 <li>更新履歴: <%= link_to 'https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja' => begin %>https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja<% end %></li>
 </ul>
 </p>

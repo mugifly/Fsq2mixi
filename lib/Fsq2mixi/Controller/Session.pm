@@ -73,7 +73,7 @@ sub oauth_foursquare_callback {
 			client_id		=>	$self->config->{fsq_client_id},
 			client_secret	=>	$self->config->{fsq_client_secret},
 			grant_type		=>	'authorization_code',
-			redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq',
+			redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/session/oauth_foursquare_callback',
 			code			=>	$self->param("code")
 		}
 	)->content);
