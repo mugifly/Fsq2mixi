@@ -12,7 +12,6 @@
 	<%= stylesheet '/css/bootstrap-responsive.min.css' %>
 	<%= javascript '/js/bootstrap.min.js' %>
 	<%= javascript '/js/jquery-1.7.2.min.js' %>
-	<%= javascript '/js/bootstrap.min.js' %>
 	<meta property="og:description" content="...">
 	<style>
 		body {
