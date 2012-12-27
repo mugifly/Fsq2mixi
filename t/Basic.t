@@ -7,4 +7,4 @@ use Test::Mojo;
 use_ok 'Fsq2mixi';
 
 my $t = Test::Mojo->new('Fsq2mixi');
-$t->get_ok('/login')->status_is(200)->content_like(qr/fsq2mixi/i);
+$t->get_ok('/')->status_is(200)->content_like(qr/fsq2mixi/i);

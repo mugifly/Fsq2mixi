@@ -44,5 +44,5 @@ $t->app->hook(before_dispatch => sub {
 	);
 });
 
-$t->get_ok('/oauth_callback_fsq?code=testauthcode')->status_is(302)->header_like(Location => qr|http://localhost:\d+/\?logined|);
+$t->get_ok('/session/oauth_foursquare_callback?code=testauthcode')->status_is(302)->header_like(Location => qr|http://localhost:\d+/\?logined|);
 

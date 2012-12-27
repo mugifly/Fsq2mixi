@@ -144,7 +144,7 @@ sub getTokens {
 			client_id =>  		$self->{consumer_key},
 			client_secret =>  	$self->{consumer_secret},
 			grant_type => 		'authorization_code',
-			redirect_uri =>		'https://s1.mpnets.net/services/fsq2mixi/oauth_callback_mixi',
+			redirect_uri =>		'https://s1.mpnets.net/services/fsq2mixi/session/oauth_mixi_callback',
 			code =>				$code
 		}
 	)->content);

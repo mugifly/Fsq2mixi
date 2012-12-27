@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
 	<title><%= title %></title>
-	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,8 +12,7 @@
 	<%= stylesheet '/css/bootstrap-responsive.min.css' %>
 	<%= javascript '/js/bootstrap.min.js' %>
 	<%= javascript '/js/jquery-1.7.2.min.js' %>
-	<%= javascript '/js/bootstrap.min.js' %>
-	
+	<meta property="og:description" content="...">
 	<style>
 		body {
 			padding-top:60px;
@@ -28,7 +27,7 @@
 			background-color: #f5f5f5;
 		}
 	</style>
-	<% if ($page eq "1sq2mixi") { %>
+	<% if($self->current_route eq "1sq2mixi"){ %>
 		<link rel="apple-touch-icon" href="<%= url_for("/img/1sq2mixi_icon_styled_150.png") => begin %><% end %>"/>
 	<% } else { %>
 		<link rel="apple-touch-icon" href="<%= url_for("/img/fsq2mixi_icon_styled_150.png") => begin %><% end %>"/>
@@ -48,23 +47,51 @@
 				<%= link_to '/' => (class => 'brand') => begin %><%= image '/img/fsq2mixi_icon_styled_150.png', style=>'margin-top:-5px;' ,height=>"25px" %>&nbsp;&nbsp;&nbsp;fsq2mixi<% end %>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<% if ($page eq "Home") { %>
+					    <% if($self->current_route eq "" || $self->current_route eq "top") { %>
 							<li class="active"><%= link_to '/' => begin %>ホーム<% end %></li>
-							<li><%= link_to '/about' => begin %>当サービスについて<% end %></li>
-						<% }elsif ($page eq "About"){ %>
+							<li><%= link_to '/docs/about' => begin %>当サービスについて<% end %></li>
+						<% } elsif($self->current_route eq "docsabout") { %>
 							<li><%= link_to '/' => begin %>ホーム<% end %></li>
-							<li class="active"><%= link_to '/about' => begin %>当サービスについて<% end %></li>
-						<% }else{ %>
+							<li class="active"><%= link_to '/docs/about' => begin %>当サービスについて<% end %></li>
+						<% } else { %>
 							<li><%= link_to '/' => begin %>ホーム<% end %></li>
-							<li><%= link_to '/about' => begin %>当サービスについて<% end %></li>
+							<li><%= link_to '/docs/about' => begin %>当サービスについて<% end %></li>
 						<% } %>
 					</ul>
+					
+                        <% if ($logined){ %>
+                            <div class="navbar-text pull-right">
+                                <%= link_to '/session/logout' => class => "navbar-link" => begin %>ログアウト<% end %>
+                            </div>
+                        <% } %>
+					
 				</div><!--/.nav-collapse -->
 			</div>
 		</div>
 	</div>
 	
-	<div class="container">
+	<% if ($self->current_route eq "top") { %>
+        <div class="container-fluid">
+	<% } else { %>
+        <div class="container">    
+    <% } %>
+	    
+        <!-- for alert message -->
+            <% if(defined($self->stash('message_error'))){ %>
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <%= Mojo::ByteStream->new($self->stash('message_error')) %>
+                </div>
+            <% } %>
+        <!--end-->
+        <!-- for info message -->
+            <% if(defined($self->stash('message_info'))){ %>
+                <div class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <%= Mojo::ByteStream->new($self->stash('message_info')) %>
+                </div>
+            <% } %>
+        <!--end-->
 		<%= content %>
 	</div>
 

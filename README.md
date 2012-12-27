@@ -7,9 +7,9 @@ https://s1.mpnets.net/services/fsq2mixi
 
 ***
 
-* Perl
+* perl 5.10 (or later)
 
-* Mojolicious
+* Mojolicious 3.70 (or later)
 
 * Foursquare UserPush API
 
@@ -35,8 +35,9 @@ __This application is still a test version.__
         "basepath": '/fsq2mixi'
         "dbpath": 'SQLITE_DATABASE_SAVEPATH'
 
+
 ### Running on Mojo::Server::Hypnotoad
-(Mojolicious 3.3x)
+(Mojolicious 3.70)
 
 #### Start:
 
