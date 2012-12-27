@@ -113,47 +113,4 @@ sub foursquare_callback {
 	$self->redirect_to('/?logined');
 }
 
-sub logincheck {
-	my $self = shift;
-	# Checking Configuration
-	if(!defined($self->config->{fsq_client_id}) || !defined($self->config->{mixi_consumer_key})){
-		$self->render_text("fsq2mixi Debug: Config::Pit is not configured.");
-		$self->app->log->fatal("fsq2mixi Debug: Config::Pit is not configured.");
-		return 0;
-	}
-	
-	my $fsq_token = "";
-	my $user = {};
-	if(defined($self->session('fsq_token')) && $self->session('fsq_token') ne ""){
-		$fsq_token = $self->session('fsq_token');
-	}
-	
-	if($fsq_token ne ""){#token check
-		 my $users = $self->db->get('user' => {
-			where => [
-				fsq_token => $fsq_token
-			]
-		});
-		my $r = $users->next;
-		if(!defined($r) || !defined($r->id)){
-			$self->redirect_to("/login");
-			if($self->current_route ne "login"){
-				$self->redirect_to('/login');
-				$self->app->helper(ownUser => sub{return undef});
-				return 0;
-			}
-		}else{#found user-data from db
-			$user = $r->{column_values};
-			$self->app->helper(ownUser => sub{return $user});
-		}
-	}else{#token is null...
-		if($self->current_route ne "login"){
-			$self->redirect_to('/login?tokennull');
-			$self->app->helper(ownUser => sub{return undef});
-			return 0;
-		}
-	}
-	return 1;# return true = continue after process
-}
-
 1;

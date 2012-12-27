@@ -26,6 +26,9 @@ use Mixi;
 sub startup {
 	my $self = shift;
 	
+	# Initialize router
+	my $r = $self->routes;
+	
 	# Load settings for hypnotoad, etc...
 	if(-f 'fsq2mixi.conf'){
 		$self->plugin('Config' => {'file' => 'fsq2mixi.conf' });
@@ -105,27 +108,26 @@ sub startup {
 		return $d;
 	});
 	
+	# Bridge (for login check)
+	$r = $r->bridge->to('bridge#login_check');
+	
 	# Routes (for not log-in to 4sq , and all-users)
-	my $r = $self->routes;
+	$r->route('')->to('user#login');
+	$r->route('/login')->to('user#login');
+	
 	$r->route('/about')->to('about#about');
 	$r->route('/privacy')->to('about#privacy');
 	
 	$r->route('/foursquare_pushreceiver')->to('pushreceiver#fsq_checkin_receiver');
-	
-	$r->route('/login')->to('user#login');
 	$r->route('/foursquare_redirect_authpage')->to('login#foursquare_redirect_authpage');
 	$r->route('/oauth_callback_fsq')->to('login#foursquare_callback');
 	
-	# Bridge (login check)
-	my $auth = $r->bridge->to('login#logincheck');
-	
 	# Routes (for logged-in users)
-	$auth->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
-	$auth->route('/oauth_callback_mixi')->to('login#mixi_callback');
-	$auth->route('/1sq2mixi')->to('user#onesq2mixi');
-	$auth->route('/logout')->to('logout#logout');
-	$auth->route('/')->to('user#usermenu');
-	$auth->route('')->to('user#usermenu');
+	$r->route('/top')->to('user#usermenu');
+	$r->route('/mixi_redirect_authpage')->to('login#mixi_redirect_authpage');
+	$r->route('/oauth_callback_mixi')->to('login#mixi_callback');
+	$r->route('/1sq2mixi')->to('user#onesq2mixi');
+	$r->route('/logout')->to('logout#logout');
 }
 
 1;
