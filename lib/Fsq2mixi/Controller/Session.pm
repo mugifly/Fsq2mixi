@@ -1,11 +1,11 @@
-package Fsq2mixi::Login;
+package Fsq2mixi::Controller::Session;
 use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 use Mojo::UserAgent;
 use LWP::UserAgent;
 use Mojo::JSON;
 
-sub mixi_redirect_authpage {
+sub oauth_mixi_redirect {
 	my $self = shift;
 	# Temporary-flash for consistency check
 	$self->flash(auth_flg => 'mixiauth-'.$self->config->{mixi_consumer_key});
@@ -15,7 +15,7 @@ sub mixi_redirect_authpage {
 	$self->redirect_to($mixi->getRedirectURL());
 }
 
-sub mixi_callback {
+sub oauth_mixi_callback {
 	my $self = shift;
 	# Checking consistency
 	if(($self->flash("auth_flg") ne 'mixiauth-'.$self->config->{mixi_consumer_key}) || $self->param('code') eq ""){
@@ -48,16 +48,17 @@ sub mixi_callback {
 	$self->redirect_to('/?'.$mixi_token);
 }
 
-sub foursquare_redirect_authpage {
+sub oauth_foursquare_redirect {
 	my $self = shift;
 	# Temporary-flash for consistency check
 	$self->flash(auth_flg => 'fsqauth-'.$self->config->{fsq_client_id});
 	
 	# Redirect client to mixi auth-page
-	$self->redirect_to("https://foursquare.com/oauth2/authenticate?client_id=".$self->config->{fsq_client_id}."&response_type=code&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/oauth_callback_fsq");
+	$self->redirect_to("https://foursquare.com/oauth2/authenticate?client_id=".
+		$self->config->{fsq_client_id}."&response_type=code&redirect_uri=https://s1.mpnets.net/services/fsq2mixi/session/oauth_foursquare_callback");
 }
 
-sub foursquare_callback {
+sub oauth_foursquare_callback {
 	my $self = shift;
 	# Checking consistency
 	if($self->app->mode ne "test" && $self->flash("auth_flg") ne 'fsqauth-'.$self->config->{fsq_client_id} || $self->param("code") eq ""){
@@ -111,6 +112,12 @@ sub foursquare_callback {
 	
 	# Redirect client
 	$self->redirect_to('/?logined');
+}
+
+sub logout {
+	my $self = shift;
+	$self->session(expires => 1);
+	$self->redirect_to('/');
 }
 
 1;

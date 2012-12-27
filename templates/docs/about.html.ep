@@ -1,13 +1,15 @@
 % layout 'default';
 % title 'fsq2mixiについて - fsq2mixi';
+<a href="https://github.com/mugifly/Fsq2mixi"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 <h1>fsq2mixiについて</h1>
 <div class="page-header">
 <p>fsq2mixiは、foursquareでのチェックイン時にmixiへ自動投稿を行うサービスです。<br>
 mixiチェックイン および、mixiボイスへの自動投稿が行えます。今のところ、それだけです（＾＾）ゞ</p>
-<p>友人のふとしたアイデアから作ってみることにしました。</p>
+<p>友人(<a href="https://twitter.com/_utamaru_ss">@_utamaru_ss</a>)のふとしたアイデアから作ってみることにしました。</p>
 <p>
 <ul>
-<li>ご利用には、foursquareアカウントとmixiアカウントが必要です。<%= link_to privacy => begin %> プライバシーポリシー <% end %></li>
+<li>利用は無料です。</li>
+<li>foursquareアカウントとmixiアカウントが必要です。(<%= link_to privacy => begin %> プライバシーポリシー <% end %>)</li>
 <li>更新履歴: <%= link_to 'https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja' => begin %>https://github.com/mugifly/Fsq2mixi/wiki/fsq2mixi-History-Ja<% end %></li>
 </ul>
 </p>
@@ -16,11 +18,13 @@ mixiチェックイン および、mixiボイスへの自動投稿が行えま�
 
 <h2>開発者</h2>
 <div class="page-header">
-<p>Masanori Ohgita - <%= link_to 'http://ohgita.info/' => begin %>http://ohgita.info/<% end %>
- (<%= link_to 'https://plus.google.com/100193705060363203281/' => begin %>g+<% end %>)</p>
+<ul><li>Masanori Ohgita - <%= link_to 'http://ohgita.info/' => begin %>http://ohgita.info/<% end %>
+ (<%= link_to 'https://plus.google.com/100193705060363203281/' => begin %>g+<% end %>)</li>
+</ul>
 <p>GitHubで拙いソースコードを公開しています: <%= link_to 'https://github.com/mugifly/Fsq2mixi' => begin %>https://github.com/mugifly/Fsq2mixi<% end %><br>
-適当実装なところが多いです。今後改良していければ...と考えています。<br>
-ご意見、ご要望、ご指摘などなど、お気軽に。お待ちしております。</p>
+適当実装なところが多いです。今後改良していければ...と考えています。</p>
+<p>ご意見、ご要望、ご指摘などなど、お気軽に!!<br>
+    Issue、アツ〜い Pull Requestもお待ちしております。Fork me！</p>
 <p>GitHubのアカウントをお持ちでない方は、<br>
 	g+でメッセージを送っていただくか、<%= link_to 'https://twitter.com/piyo3728' => begin %>Twitter:@piyo3728<% end %>へお送りください。フォローもお待ちしております!!
 </p>
