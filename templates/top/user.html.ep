@@ -127,8 +127,7 @@
                     <ul>
                         % foreach my $art (@$checkin_histories) {
                         <li>
-                            <%= $art->{name} %> - (<%= $art->{date} %>) ：
-                            <br>
+                            <b><%= $art->{name} %> - (<%= $art->{date} %>) </b>：
                             <% if ($art->{mixi_send_status} eq "0") { %>
                             未投稿
                             <% } elsif ($art->{mixi_send_status} eq "1") { %>
@@ -150,7 +149,7 @@
                 <h3>当サービスについて</h3>
             </p>
             <p>
-                <%= link_to 'docs/about' => begin %>fsq2mixiについて<% end %>
+                <%= link_to '/docs/about' => begin %>fsq2mixiについて<% end %>
             </p>
             <p>
                 登録抹消について: foursquare、mixiとの接続許可の解除は、各サービスの設定画面から行えます。</>
