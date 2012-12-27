@@ -21,6 +21,45 @@ __This application is still a test version.__
 
 ***
 
+## Libraries and Materials
+Many thanks :)
+
+### Mojolicious
+
+https://github.com/kraih/mojo
+
+### Data::Model
+
+http://github.com/yappo/p5-Data-Model/
+
+### Bootstrap (Twitter Bootstrap)
+
+https://github.com/twitter/bootstrap
+
+Copyright 2012 Twitter, Inc.
+
+> Apache License 2.0 https://github.com/twitter/bootstrap/blob/master/LICENSE
+
+### jQuery
+
+https://github.com/jquery/jquery
+
+Copyright 2012 jQuery Foundation and other contributors. http://jquery.com/
+
+> MIT License https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt
+
+### Glyphicons Free
+
+http://glyphicons.com/
+
+
+> GLYPHICONS FREE are released under the Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+	The GLYPHICONS FREE can be used both commercially and for personal use, 
+	but you must always add a link to glyphicons.com in a prominent place (e.g. the footer of a website), 
+	include the CC-BY license and the reference to glyphicons.com on every page using GLYPHICONS.
+
+### etc...
+
 ### Environment setting by using Config::Pit
 
 ~/.pit/default.yaml
