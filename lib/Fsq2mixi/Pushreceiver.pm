@@ -68,6 +68,8 @@ sub fsq_checkin_receiver {
 			$r->mixi_rtoken($mixi->{refresh_token});
 			$r->mixi_latestsend_date(time());
 			$r->update;
+		}else{
+			$self->app->log->error("  PostToMixi...Failed:".$ret->{sendFlg});
 		}
 		
 		$self->render_json({

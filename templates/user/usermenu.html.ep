@@ -15,11 +15,11 @@
 	<div class="btn-group" data-toggle="buttons-checkbox">
 	<% if ($is_mixiLogin eq "true") { %>
 		<% if ($mixi_is_active eq "true") { %>
-			<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_active => "true") => begin %><% end %>"><i class="icon-ok"></i> する</a>
-			<a class="btn" href="<%= url_for('/')->query(mixi_is_active => "false") => begin %><% end %>">しない</a>
+			<a class="btn active" data-toggle="button" href="<%= url_for('/top')->query(mixi_is_active => "true") => begin %><% end %>"><i class="icon-ok"></i> する</a>
+			<a class="btn" href="<%= url_for('/top')->query(mixi_is_active => "false") => begin %><% end %>">しない</a>
 		<% } else { %>
-			<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_is_active => "true") => begin %><% end %>">する</a>
-			<a class="btn active" href="<%= url_for('/')->query(mixi_is_active => "false") => begin %><% end %>"><i class="icon-remove"></i> しない</a>
+			<a class="btn" data-toggle="button" href="<%= url_for('/top')->query(mixi_is_active => "true") => begin %><% end %>">する</a>
+			<a class="btn active" href="<%= url_for('/top')->query(mixi_is_active => "false") => begin %><% end %>"><i class="icon-remove"></i> しない</a>
 		<% } %>
 	<% } else { %>
 		<button class="btn disabled" data-toggle="button">する</button>
@@ -31,11 +31,11 @@
 	<div class="btn-group" data-toggle="buttons-checkbox">
 		<% if ($is_mixiLogin eq "true") { %>
 			<% if ($mixi_mode eq "checkin") { %>
-				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
-				<a class="btn" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>
+				<a class="btn active" data-toggle="button" href="<%= url_for('/top')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
+				<a class="btn" href="<%= url_for('/top')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>
 			<% } else { %>
-				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
-				<a class="btn active" href="<%= url_for('/')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>			
+				<a class="btn" data-toggle="button" href="<%= url_for('/top')->query(mixi_mode => "checkin") => begin %><% end %>"><i class="icon-map-marker"></i> mixiチェックイン</a>
+				<a class="btn active" href="<%= url_for('/top')->query(mixi_mode => "voice") => begin %><% end %>"><i class="icon-comment"></i> mixiボイス</a>			
 			<% } %>
 		<% } else { %>
 			<button class="btn disabled" data-toggle="button"><i class="icon-map-marker"></i> mixiチェックイン</button>
@@ -47,11 +47,11 @@
 	<li><i class="icon-map-marker"></i> 自動投稿時：mixiチェックイン - マイスポットの自動作成:
 		<div class="btn-group" data-toggle="buttons-checkbox">
 			<% if ($mixi_is_makemyspot eq "true") { %>
-				<a class="btn active" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
-				<a class="btn" href="<%= url_for('/')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
+				<a class="btn active" data-toggle="button" href="<%= url_for('/top')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
+				<a class="btn" href="<%= url_for('/top')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
 			<% } else { %>
-				<a class="btn" data-toggle="button" href="<%= url_for('/')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
-				<a class="btn active" href="<%= url_for('/')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
+				<a class="btn" data-toggle="button" href="<%= url_for('/top')->query(mixi_is_makemyspot => "true") => begin %><% end %>">する</a>
+				<a class="btn active" href="<%= url_for('/top')->query(mixi_is_makemyspot => "false") => begin %><% end %>">しない</a>
 			<% } %>
 		</div>(mixiの仕様により、本サービスからのチェックインは、「マイスポット」に対してのみ行えます。<br>ここで「する」にした場合、マイスポットが無い地点では自動作成してからチェックインされます。)<br><br>
 	</li>
