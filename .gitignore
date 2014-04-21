@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *.class
 *.merge-left*
 *.merge-right*
@@ -10,7 +9,9 @@
 .svn
 _svn
 svn-commit*.tmp
-=======
+.project
+.includepath
+local/
 blib/
 .build/
 _build/
@@ -26,7 +27,6 @@ META.yml
 MYMETA.yml
 nytprof.out
 pm_to_blib
->>>>>>> origin/master
 db_fsq2mixi.db
 log/development.log
 log/development.log

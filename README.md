@@ -60,7 +60,17 @@ http://glyphicons.com/
 
 ### etc...
 
-### Environment setting by using Config::Pit
+## How to start
+
+### 1. Git clone; Then install dependencies by using the Carton.
+
+    $ cpanm Carton
+    $ git clone https://github.com/mugifly/Fsq2mixi.git
+    $ carton install
+
+### 2. Make a configuration file
+
+Please make a configuration file as below for the Config::Pit.
 
 ~/.pit/default.yaml
 
@@ -74,13 +84,18 @@ http://glyphicons.com/
         "basepath": '/fsq2mixi'
         "dbpath": 'SQLITE_DATABASE_SAVEPATH'
 
+### 3. Test a project
+Please working on a directory of the Fsq2mixi (That means the cloned directory), when executing a following commands.
 
-### Running on Mojo::Server::Hypnotoad
+    $ carton exec -- prove -lv t/*
+
+### 4. Run on Mojo::Server::Hypnotoad
 (Mojolicious 3.70)
 
 #### Start:
+Please working on a directory of the Fsq2mixi, when executing a following commands.
 
-    hypnotoad /PATHTO_fsq2mixi/script/fsq2mixi -f /PATHTO_fsq2mixi/script/fsq2mixi
+    $ carton exec -- hypnotoad /PATHTO_fsq2mixi/script/fsq2mixi -f /PATHTO_fsq2mixi/script/fsq2mixi
 
 #### Setting: (optionally)
 
@@ -90,7 +105,7 @@ http://glyphicons.com/
 
 see detail: http://mojolicio.us/perldoc/Mojo/Server/Hypnotoad#SETTINGS
 
-### License and Author
+## License and Author
 
  Copyright (c) 2012 Masanori Ohgita (http://ohgita.info/).
  This program is free software distributed under the terms of the MIT license.

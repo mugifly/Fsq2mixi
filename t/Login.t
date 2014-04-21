@@ -23,9 +23,10 @@ $t->app->hook(before_dispatch => sub {
 		"https://ja.foursquare.com/oauth2/access_token"	=> HTTP::Response->new(200,"OK",
 			[content_type => 'application/json'],
 			'{"access_token":"TESTACCESSTOKEN"}'
-		),
-		# https://api.foursquare.com/v2/users/self
-		"https://api.foursquare.com/v2/users/self"	=> HTTP::Response->new(200,"OK",
+		));
+	Test::Mock::LWP::Conditional->stub_request(
+		# https://api.foursquare.com/v2/users/self?v=20140422
+		"https://api.foursquare.com/v2/users/self?v=20140422"	=> HTTP::Response->new(200,"OK",
 			[content_type => 'application/json'],
 			JSON->new->encode({
 				meta => {

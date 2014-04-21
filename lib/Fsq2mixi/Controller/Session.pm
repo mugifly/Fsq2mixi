@@ -75,15 +75,16 @@ sub oauth_foursquare_callback {
 	
 	# Get access-token from 4sq-server
 	my $ua = LWP::UserAgent->new;
-	my $js = Mojo::JSON->decode($ua->post('https://ja.foursquare.com/oauth2/access_token',
+	my $r = $ua->post('https://ja.foursquare.com/oauth2/access_token',
 		{
-			client_id		=>	$self->config->{fsq_client_id},
-			client_secret	=>	$self->config->{fsq_client_secret},
+			client_id		=>	$self->config->{fsq_client_id} || '',
+			client_secret	=>	$self->config->{fsq_client_secret} || '',
 			grant_type		=>	'authorization_code',
 			redirect_uri	=>	'https://s1.mpnets.net/services/fsq2mixi/session/oauth_foursquare_callback',
 			code			=>	$self->param("code")
 		}
-	)->content);
+	);
+	my $js = Mojo::JSON::decode_json($r->decoded_content);
 	my $token = $js->{access_token};
 	
 	if(!defined($token) || $token eq ""){
@@ -92,13 +93,14 @@ sub oauth_foursquare_callback {
 		$self->redirect_to('/?access_token_valid');
 		return 1;
 	}
-	
+
 	# Get user-data from 4sq-server
-	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self?v=20140422', 'Authorization' => 'OAuth '.$token)->content);
+	$r = $ua->post('https://api.foursquare.com/v2/users/self?v=20140422', 'Authorization' => 'OAuth '.$token);
+	$js = Mojo::JSON::decode_json($r->decoded_content);
 	my $fsq_id = $js->{response}->{user}->{id};
 	my $fsq_name = $js->{response}->{user}->{firstName};
 	if (!defined $fsq_id || $fsq_id eq '') {
-		$self->redirect_to('/');
+		$self->redirect_to('/?invalid_fsq_user');
 		return 1;
 	}
 	
