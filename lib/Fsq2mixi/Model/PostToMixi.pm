@@ -51,11 +51,30 @@ sub postToMixi{
 		if($spotId eq ""){# not existing mixi-check-in-spot...
 			if($mixi_is_makemyspot eq 1){ 
 				# make new spot
-				$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
-				#$isNewSpot = 1;
+				for (my $retry = 0; $retry <= 1; $retry++) {
+					eval{
+						$spotId = $mixi->postCheckinSpot($fsq_spotName,$latitude,$longitude,"");
+					};
+					if ($@ && $@ =~ /parameter_over_capacity/) {
+						# Delete old spots
+						my @spots = $mixi->getMyCheckinSpots();
+						@spots = reverse(@spots);
+						for (my $i = 0; $i < 10; $i++) {
+							my $spot = $spots[$i];
+							my $id = $spot->{id};
+							$mixi->deleteCheckinSpot($id);
+						}
+					} elsif($@) {
+						$ret->{error} = $@;
+					} else {
+						last;
+					}
+				}
 			}
 		}
-		if($spotId eq ""){
+		if($ret->{error} ne ""){
+			# Do not anyting
+		}elsif($spotId eq ""){
 			# SpotId is null...
 			$ret->{error} = "spotId is null";
 		}else{

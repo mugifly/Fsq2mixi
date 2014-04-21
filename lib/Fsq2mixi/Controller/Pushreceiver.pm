@@ -21,7 +21,7 @@ sub foursquare_checkin {
 	$self->app->log->fatal("  verify push-secret");
 	if($param_secret ne $self->config->{fsq_push_secret}){
 		$self->render(status => 401);
-		$self->render_json({'result' => 0, 'error_text'=>'push verify failed'});
+		$self->render(json => {'result' => 0, 'error_text'=>'push verify failed'});
 		return 0;
 	}
 	
@@ -45,7 +45,7 @@ sub foursquare_checkin {
 	});
 	if(!defined($r) || !defined($r->id)){
 		$self->render(status => 401);
-		$self->render_json({'result' => 0, 'error_text'=>'user not found', 'chk'=> $checkin});
+		$self->render(json => {'result' => 0, 'error_text'=>'user not found', 'chk'=> $checkin});
 		return 0;
 	}else{
 		$user = $r->{column_values};
@@ -72,7 +72,7 @@ sub foursquare_checkin {
 			$self->app->log->error("  PostToMixi...Failed:".$ret->{sendFlg});
 		}
 		
-		$self->render_json({
+		$self->render(json => {
 			'result' => $ret->{sendFlg},
 			'mixi_postId' => $ret->{postId},
 			'name'=> $ret->{name},
@@ -82,7 +82,7 @@ sub foursquare_checkin {
 		$sendFlg = $ret->{sendFlg};
 	}else{#send to mixi is disable
 		$self->app->log->fatal("  #send to mixi is disable");
-		$self->render_json({
+		$self->render(json => {
 			'result'	=> -1,
 		});
 		$sendFlg = 0;

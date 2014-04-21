@@ -18,4 +18,4 @@ EOF
 $ENV{MOJO_APP} ||= 'Fsq2mixi';
 
 # Start commands
-Mojolicious::Commands->start;
+Mojolicious::Commands->start_app('Fsq2mixi');

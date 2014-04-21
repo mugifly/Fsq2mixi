@@ -32,7 +32,7 @@ sub startup {
 	$r = $r->namespaces(['Fsq2mixi::Controller']);
 	
 	# Load settings for hypnotoad, etc...
-	$self->plugin('Config' => {'file' => 'fsq2mixi.conf' }) if (-f 'fsq2mixi.conf');
+	$self->plugin('Config' => {'file' => '/var/fsq2mixi/fsq2mixi.conf' }) if (-f '/var/fsq2mixi/fsq2mixi.conf');
 	
 	# Load settings by using Config::Pit
 	my $config = pit_get('fsq2mixi');# setting_name of Config::Pit

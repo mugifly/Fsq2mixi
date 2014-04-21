@@ -4,16 +4,21 @@
 
     <div class="span4 hero-unit">
         <p>
-            <h3>チェックイン投稿先</h3>
+            <h3>ログイン状態</h3>
         </p>
         <ul class="unstyled">
+	<li>
+		<i class="icon-user"></i>
+		Foursquare:<br/>
+		&nbsp;&nbsp;<%= $self->ownUser->{fsq_name} %> (ID: <%= $self->ownUser->{fsq_id} %>)
+	</li>
             <li>
-                <i class="icon-user"></i> mixi認証状態:
+		<i class="icon-user"></i> mixi (投稿先):
                 <br>
                 <% if ($is_mixiLogin eq "true") { %>
-                <i class="icon-ok"></i> 認証済み - <%= $mixiUserName %>
+                &nbsp;&nbsp;<i class="icon-ok"></i> 認証済み - <%= $mixiUserName %><br/><%= link_to '/session/oauth_mixi_redirect' => (class => 'btn btn-primary') => begin %><i class="icon-user"></i> mixiでの再認証<% end %>
                 <% } else { %>
-                <i class="icon-remove"></i> 未認証 - <strong>まずmixiでログインしてfsq2mixiを接続許可してください:</strong>
+                &nbsp;&nbsp;<i class="icon-remove"></i> 未認証 - <strong>まずmixiでログインしてfsq2mixiを接続許可してください:</strong>
                 <br>
                 <%= link_to '/session/oauth_mixi_redirect' => (class => 'btn btn-primary') => begin %><i class="icon-user"></i> mixiへのログイン<% end %>
                 <% } %>

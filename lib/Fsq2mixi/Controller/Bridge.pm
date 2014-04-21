@@ -1,6 +1,7 @@
 package Fsq2mixi::Controller::Bridge;
 use Mojo::Base 'Mojolicious::Controller';
 
+use Data::Dumper;
 use utf8;
 
 sub login_check {
@@ -19,12 +20,16 @@ my $self = shift;
 	}
 	
 	# Reset user-data hash & helper
-	$self->app->helper(ownUser => sub { return undef });
+	$self->app->helper(ownUser => sub { return shift->stash('user') || undef; });
 	$self->app->helper(ownUserRow => sub{
 		my $self = shift;
+		my $uid = $self->ownUser->{id};
+		if (!defined $uid) {
+			return undef;
+		}
 		my ($d, ) = $self->db->get('user' => {
 			where => [
-				id => $self->ownUser->{id} 
+				id => $uid 
 			],
 		});
 		return $d;
@@ -41,7 +46,8 @@ my $self = shift;
 		my $r = $users->next;
 		if(defined($r) && defined($r->id)){ # If found user
 			my $user = $r->{column_values};
-			$self->app->helper(ownUser => sub{return $user});
+			$self->stash(user => $user);
+			$self->stash(user_d => Dumper($user));
 			$self->stash(logined => 1);
 			return 1;
 		}

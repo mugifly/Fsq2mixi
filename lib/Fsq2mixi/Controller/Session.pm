@@ -4,6 +4,7 @@ use Mojo::Base 'Mojolicious::Controller';
 use Mojo::UserAgent;
 use LWP::UserAgent;
 use Mojo::JSON;
+use Data::Dumper;
 
 sub oauth_mixi_redirect {
 	my $self = shift;
@@ -26,23 +27,29 @@ sub oauth_mixi_callback {
 	my $mixi = Mixi->new(consumer_key=> $self->config->{mixi_consumer_key}, consumer_secret => $self->config->{mixi_consumer_secret});
 	my ($mixi_token, $mixi_rtoken) = $mixi->getTokens($self->param('code'));
 	
-	# Load session
-	my $fsq_token = $self->session('fsq_token');
+	# Update
+	my $user = $self->ownUserRow();
+	if (!defined $user) {
+		$self->redirect_to('/');
+		return;
+	}
+	my $fsq_token = $user->{column_values}->{fsq_token};
+	if (!defined $fsq_token) {
+		$self->redirect_to('/');
+		return;
+	}
 	
-	if($mixi_token eq ""){
+	if (!defined $mixi_token) {
+		$user->mixi_token('');
+		$user->mixi_rtoken('');
+		$user->update;
 		$self->redirect_to('/?callback_valid');
 		return;
 	}
 	
-	# Update user-data on DB
-	my ($d, ) = $self->db->get('user' => {
-		where => [
-			fsq_token => $fsq_token
-		],
-	});
-	$d->mixi_token($mixi_token);
-	$d->mixi_rtoken($mixi_rtoken);
-	$d->update;
+	$user->mixi_token($mixi_token);
+	$user->mixi_rtoken($mixi_rtoken);
+	$user->update;
 	
 	# Redirect client
 	$self->redirect_to('/?'.$mixi_token);
@@ -87,8 +94,13 @@ sub oauth_foursquare_callback {
 	}
 	
 	# Get user-data from 4sq-server
-	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self', 'Authorization' => 'OAuth '.$token)->content);
+	$js = Mojo::JSON->decode($ua->get('https://api.foursquare.com/v2/users/self?v=20140422', 'Authorization' => 'OAuth '.$token)->content);
 	my $fsq_id = $js->{response}->{user}->{id};
+	my $fsq_name = $js->{response}->{user}->{firstName};
+	if (!defined $fsq_id || $fsq_id eq '') {
+		$self->redirect_to('/');
+		return 1;
+	}
 	
 	# Insert and Update user-data to DB
 	my $row = $self->db->find_or_create(
@@ -97,11 +109,13 @@ sub oauth_foursquare_callback {
 		} => {
 			fsq_token				=> $token,
 			fsq_id					=> $fsq_id,
+			fsq_name				=> $fsq_name,
 			mixi_is_active		=> 1,
 			mixi_is_makemyspot	=> 1,
 			mixi_mode				=> 'voice'
 		}
 	);
+	$row->fsq_name($fsq_name);
 	$row->fsq_token($token);
 	$row->fsq_id($fsq_id);
 	$row->update;

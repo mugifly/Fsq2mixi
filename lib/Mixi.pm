@@ -252,6 +252,8 @@ sub postCheckinSpot{
 		},
 		'description'	=>	$description
 	};
+
+	my $last_text = "";
 	
 	my $retry = 0;
 	while($retry<=1){
@@ -261,6 +263,7 @@ sub postCheckinSpot{
 			Content 		=> JSON->new->utf8(1)->encode($spotData)
 		);
 		
+		$last_text =  Encode::decode_utf8($res->content);
 		if($res->is_success){
 			$res = Encode::decode_utf8($res->content);
 			my $r = $self->{json}->decode($res);
@@ -268,6 +271,7 @@ sub postCheckinSpot{
 			if($postId ne ""){
 				return $postId;
 			}else{
+				die($r->{error}." ".$r->{error_description});
 				return undef;
 			}
 		}else{
@@ -275,6 +279,9 @@ sub postCheckinSpot{
 		}
 		$retry = $retry + 1;
 	}
+
+	die($last_text);
+	
 	return undef;
 }
 
@@ -334,6 +341,48 @@ sub getCheckinSpots_T {
 	};
 	push(@arr,$json);
 	return @arr;
+}
+
+sub getMyCheckinSpots{
+        my ($self) = @_;
+        my $noRetry = 0;
+        my @spots = ();
+        my $req_StartPage = 0;
+        my $REQ_PERPAGE = 20;
+        while(1){
+                my $res = $self->{ua}->get('https://api.mixi-platform.com/2/spots/@me/@self'
+                                .'?count='.$REQ_PERPAGE
+                                .'&startIndex='.$req_StartPage,
+                        Authorization => 'OAuth '. $self->{access_token}
+                );
+                if($res->is_success){
+                        my $r = JSON->new->decode(Encode::decode_utf8($res->content));
+                        foreach my $s(@{$r->{entry}}){
+                                push(@spots,$s);
+                        }
+                        if(!defined($r->{totalResults}) || ($req_StartPage + $REQ_PERPAGE) >= $r->{totalResults}){
+                                last;
+                        }
+                        $req_StartPage += $REQ_PERPAGE;
+                }elsif($noRetry eq 0){
+                        $self->refreshTokens($self->{refresh_token});
+                        $noRetry = 1;
+                }else{
+                        last;
+                }
+        }
+        return @spots;
+}
+
+sub deleteCheckinSpot {
+	my ($self, $id) = @_;
+	my $res = $self->{ua}->delete('https://api.mixi-platform.com/2/spots/@me/@self/'.$id,
+		Authorization => 'OAuth '. $self->{access_token}
+	);
+	if ($res->is_success) {
+		return 1;
+	}
+	return 0;
 }
 
 1;
