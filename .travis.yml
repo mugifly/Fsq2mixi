@@ -4,6 +4,7 @@ perl:
   - "5.14"
 
 install:
-    - cpanm -v --installdeps --notest . 
+    - cpanm Carton 
+    - carton install
 
-script: "perl Makefile.PL && make test"
+script: "carton exec -- prove -lv t/*"
